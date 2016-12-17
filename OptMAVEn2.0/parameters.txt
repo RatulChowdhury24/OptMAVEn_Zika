@@ -1,0 +1,3 @@
+AntibodyH /home/matthew/Maranas_Lab/IPRO_Suite_OptMAVEn2.0/modules/CPP/initialization/MoleculeH.pdb PDB
+Antigen test.pdb PDB
+Epitope 306 307 342 343 344 350 353 355 388 391 392 393 395
