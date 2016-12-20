@@ -1,0 +1,13 @@
+
+
+objects = energy_parts_antigen_main.o InitialAntigen.o
+energy_parts_antigen.out : $(objects)
+	#g++ -L/usr/global/boost/1_51_0/lib -o initialantigen.out $(objects)
+	g++ -o energy_parts_antigen.out $(objects)
+energy_parts_antigen_main.o : energy_parts_antigen_main.cpp InitialAntigen.h MOLECULES.h
+	g++ -I/usr/global/boost/1_51_0/include -c energy_parts_antigen_main.cpp -o energy_parts_antigen_main.o -std=c++0x
+InitialAntigen.o : InitialAntigen.cpp InitialAntigen.h MOLECULES.h ENERGY_FUNCTIONS.h DOCKING_FUNCTIONS.h
+	g++  -I/usr/global/boost/1_51_0/include -c InitialAntigen.cpp -o InitialAntigen.o -std=c++0x
+
+clean :
+	rm -f $(objects)

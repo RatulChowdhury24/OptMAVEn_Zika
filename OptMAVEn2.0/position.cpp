@@ -5,73 +5,68 @@
 #include <fstream>
 #include <sstream>
 #include <string>
+#include "EXPERIMENT2.h"
 #include "MOLECULES2.cpp"
-#include "UTILITIES.h"
-using namespace std;
+#include "STANDARDS2.h"
+#include "UTILITIES2.h"
 
-
-/* This program begins by reading the parameter file, which should contain all of the following information:
-
-Angle       angle_begin  angle_end    angle_step
-Antigen     /path/to/structure/of/antigen structure_file_format
-AntibodyH   /path/to/structure/of/antibody_H_chain structure_file_format
-AntibodyK   /path/to/structure/of/antibody_K_chain structure_file_format
-*/
 
 /* USAGE of argv:
-1: path to file containing parameters
+1: path to file containing parameters	
 */
 int main(int argc, char* argv[])
 {
-	string parameter_file_path = argv[1];  // Get the location of the parameter file.
-	ifstream in(parameter_file_path.c_str());  // Open the parameter file.
-	string line;
-	string parameter;
-	float angle_begin;
-	float angle_end;
-	float angle_step;
-	string antigen_file_path;
-	string antigen_file_format;
-	string chain_H_file_path;
-	string chain_H_file_format;
-	string chain_K_file_path;
-	string chain_K_file_format;
-	int residue;
-	vector<int> epitope;
-	getline(in, line);
-	// Read until the end of the file.
-	while (!in.eof())
+	std::string parameter_file_path = argv[1];  // Get the location of the parameter file.	
+	try
 	{
-		stringstream info(line);  // Stream in the line.
-		info >> parameter;  // Read the parameter name.
-		// Determine where to put the value.
-		if (parameter == "Angle")
-			info >> angle_begin >> angle_end >> angle_step;
-		else if (parameter == "Antigen")
-			info >> antigen_file_path >> antigen_file_format;
-		else if (parameter == "AntibodyH")
-			info >> chain_H_file_path >> chain_H_file_format;
-		else if (parameter == "AntibodyK")
-			info >> chain_K_file_path >> chain_K_file_format;
-		else if (parameter == "Epitope")
+		// Load the Experiment from the parameters.
+		Experiment ex;
+		ex.load(parameter_file_path);
+		// Make a Molecule for the antigen.
+		Antigen antigen;
+		std::cout << "Loading Antigen" << std::endl;
+		antigen.load(ex.antigen_file_path, ex.antigen_file_format);
+		antigen.write("scanf.pdb", "PDB");
+		std::cout << "Loading Epitope" << std::endl;
+		antigen.define_epitope(ex.epitope);  // Tell the antigen which residues are part of the epitope.
+		std::cout << "Mounting" << std::endl;
+		antigen.mount_epitope();  // Move the antigen so its epitope is centered at the origin and points in the negative z direction.
+		std::cout << "Writing" << std::endl;
+		antigen.write(AgInit(), MFF());  // Save a file of the antigen in its new position.
+		for (int i = 0; i < 3; i++)
 		{
-			while (!info.eof())
-			{
-				info >> residue;
-				epitope.push_back(residue);
-			}
-		}		
-		getline(in, line);
+			std::cout << antigen.center_of_geometry[i] << ", ";
+		}
+		for (int i = 0; i < 3; i++)
+		{
+			std::cout << antigen.get_epicenter()[i] << ", ";
+		}
 	}
-	// Make a molecule of the antigen.
-	Antigen antigen;
-	cout << "Loading antigen" << endl;
-	antigen.load(antigen_file_path, antigen_file_format);
-	cout << "Setting epitope" << endl;
-	antigen.set_epitope(epitope);  // Tell the antigen which residues are part of the epitope.	
-	cout << "Rotating zmin" << endl;
-	antigen.epitope_zmin();  // Rotate the antigen so as to minimize the z coordinates of its epitope.
-	cout << "Writing PDB" << endl;
-	antigen.write("zneg.pdb", "PDB");  //FIXME
+	catch (std::string msg)
+	{
+		std::cout << msg << std::endl;
+		exit(EXIT_FAILURE);
+	}	
+		
+	// FIXME: let the experiment load these values.
+	/*
+	// Make molecules for the antibodies.
+	Molecule IgH; IgH.load("MoleculeH.pdb", "PDB");
+	// Find positions in which the antibodies and antigen do not clash.
+	std::cout << "Valid" << std::endl;
+	for (float zt = 0.0; zt < 360.0; zt += 20.0)
+	{
+		// Simulate what it would be like to need to load the structure for every time.
+		antigen.load(AgInit(), MFF());
+		antigen.define_epitope(ex.epitope);  // Tell the antigen which residues are part of the epitope.
+		array<float, 3> negz = {0, 0, -1};
+		antigen.rotate(negz, zt);
+		char name[81];
+		snprintf(name, 81, "Agt%f", zt);
+		antigen.write(std::string(name), "PDB");
+		if (!clashing(antigen, IgH))
+			std::cout << zt << std::endl;
+	}
+	*/
 	return 0;
 }

@@ -1,0 +1,5 @@
+
+
+In the Makefile, make sure real Tab character should be before any command
+In vim, press ctrl + V, then tab to input real tab in the insert mode
+Using cat -e -t -v Makefile to check the tab character  begining(I^) end($)
