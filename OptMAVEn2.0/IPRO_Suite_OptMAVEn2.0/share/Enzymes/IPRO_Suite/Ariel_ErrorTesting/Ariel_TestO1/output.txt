@@ -1,0 +1,25 @@
+
+The Optzyme Groups
+Optzyme Group:                Eliminate Km using ground Molecules: B
+
+
+
+
+
+
+The Optzyme Groups
+Optzyme Group:                Maintain Kcat/km using TSA Molecules: B
+
+
+# Error with kcat, error occurs at end, when just kcat and kcat with another
+# optzyme group - does not produce any output.
+
+
+The Optzyme Groups
+Optzyme Group:                Maintain Km using ground Molecules: B
+
+The Optzyme Groups
+Optzyme Group:                Improve Kcat/km using TSA Molecules: B
+
+The Optzyme Groups
+Optzyme Group:                Eliminate Km using ground Molecules: B

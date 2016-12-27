@@ -1,0 +1,18 @@
+#PBS -l pmem=4gb
+#PBS -l walltime=5:00:00
+#PBS -j oe
+#PBS -q lionxf-cdm
+#PBS -me -M mjg5185@psu.edu
+
+set -u
+cd /gpfs/scratch/mjg5185/IPRO_Suite/IPRO/experiments/MCR_F430_5/
+
+module load gams
+
+echo " "
+echo " "
+echo "Job started on $(hostname -s) at $(date)"
+python IPRO.py
+echo " "
+echo "Job ended at $(date)"
+echo " "

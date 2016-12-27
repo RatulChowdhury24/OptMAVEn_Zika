@@ -1,0 +1,3964 @@
+1
+                 Chemistry at HARvard Macromolecular Mechanics
+                   (CHARMM) - Developmental Version 34b1     August 15, 2007   
+       Copyright(c) 1984-2001  President and Fellows of Harvard College
+                              All Rights Reserved
+      Current operating system: Linux-2.6.32-431.17.1.el6.x86_64(x86_64)@lio
+                 Created on  6/ 3/14 at 20:37:55 by user: mjg5185     
+
+            Maximum number of ATOMS:    240480, and RESidues:       80160
+            Current HEAP size:        10240000, and STACK size:  10000000
+
+ RDTITL> * THE PERTURBATION OF DESIGN GROUP 1
+ RDTITL> *
+  
+ CHARMM>     
+  
+ CHARMM>    wrnl -2
+  
+ CHARMM>    !prnl -2
+ CHARMM>    bomb -2
+  
+ CHARMM>     
+  
+ CHARMM>    ! Load the Topology file(s)
+ CHARMM>    open read unit 10 form name mcr_topology.rtf card
+ VOPEN> Attempting to open::mcr_topology.rtf::
+ OPNLGU> Unit 10 opened for READONLY access to mcr_topology.rtf
+  
+ CHARMM>    read rtf card unit 10
+ MAINIO> Residue topology file being read from unit  10.
+ TITLE> *>>>>>>>>CHARMM22 ALL-HYDROGEN TOPOLOGY FILE FOR PROTEINS <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>> AND NUCLEIC ACIDS <<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> *>>>>> INCLUDES PHI, PSI CROSS TERM MAP (CMAP) CORRECTION <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>>>>   JULY, 2004    <<<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> * ALL COMMENTS TO ADM JR. VIA THE CHARMM WEB SITE: WWW.CHARMM.ORG
+ TITLE> *               PARAMETER SET DISCUSSION FORUM
+ TITLE> *
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Load the Parameter file(s)
+ CHARMM>    open read unit 10 form name mcr_parameters.prm card
+ VOPEN> Attempting to open::mcr_parameters.prm::
+ OPNLGU> Unit 10 opened for READONLY access to mcr_parameters.prm
+  
+ CHARMM>    read para card unit 10
+
+          PARAMETER FILE BEING READ FROM UNIT 10
+ TITLE> * PARAMETERS FOR MCR WITH UNMODIFIED F430, COM, AND COB
+ TITLE>  
+ PARMIO> NONBOND, HBOND lists and IMAGE atoms cleared.
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Load DESIGN Molecule A
+ CHARMM>    open read unit 10 form name group1_moleculea_preperturbation.pdb
+ VOPEN> Attempting to open::group1_moleculea_preperturbation.pdb::
+ OPNLGU> Unit 10 opened for READONLY access to group1_moleculea_preperturbation.pdb
+  
+ CHARMM>    read sequ pdb offi unit 10
+ MAINIO> Sequence information being read from unit  10.
+ TITLE>   Created by Matthew Grisewood on 6/3/2014 at 20:37:52
+ TITLE>  *
+
+          RESIDUE SEQUENCE --   578 RESIDUES
+          PRO TYR ASN ASP ILE GLN HSD ASN PHE LEU LYS ALA MET SER ASP LYS PHE ALA GLU LYS 
+          PRO GLU SER THR ALA THR GLU PHE TYR THR TYR GLY GLY ILE ALA GLY GLY GLY GLY MET 
+          ARG GLY ARG GLU PHE ILE ALA GLU ALA SER LYS ILE VAL ASP SER ARG VAL ASN SER THR 
+          PRO ALA TYR ASN PRO ASP ALA GLY MET PRO GLY GLY GLY GLY GLY GLY GLY PRO GLY GLY 
+          GLY ASN HSD THR ASP ILE MET VAL ASN ALA ASP ASP LEU HSD TRP ILE ASN ASN ALA ALA 
+          MET GLN GLN ALA TRP ASP ASP MET LYS ARG GLY ILE VAL LEU GLY LEU ASP ASP ALA HSD 
+          GLY LEU LEU GLU ALA ARG LEU GLY LYS GLU VAL THR PRO ASP THR ILE SER ASN TYR MET 
+          GLU VAL LEU ASN HSD ALA LEU PRO GLY GLY ALA VAL ILE GLN GLY GLY MET VAL GLU THR 
+          LYS PRO MET LEU VAL ASN ASP SER TYR ALA LYS ILE PHE SER GLY ASP ASP ASP LEU VAL 
+          ASP SER VAL ASP ARG ARG PHE ILE LEU ASP ILE ASN LYS GLU PHE ALA ALA GLY TYR ASP 
+          LYS PRO GLY GLU GLN ALA ASP GLN LEU LYS ASP ALA ILE GLY LYS LYS ILE TRP GLN ILE 
+          LEU TRP MET PRO THR VAL VAL ALA ARG GLN THR ASP GLY GLY THR MET PHE ARG TRP VAL 
+          GLY MET GLN VAL GLY MET THR MET ILE ASN ALA TYR LYS LEU CYS ALA GLY GLU SER VAL 
+          THR GLY GLU PHE ALA TYR TYR ALA LYS HSD ALA ALA VAL VAL GLN LEU SER ASN TYR MET 
+          PRO VAL LYS ARG ALA ARG SER HSD ASN GLU PRO GLY GLY MET PRO LEU GLY ILE ASN ALA 
+          ASP SER THR ARG SER PRO ALA LEU PHE PRO ASN ASP PRO ILE ARG ALA GLU LEU GLU SER 
+          ILE ALA VAL ALA ALA MET VAL TYR ASP GLN LEU TRP PHE GLY THR TYR MET SER GLY GLY 
+          VAL GLY PHE THR GLN TYR ALA SER ALA THR TYR THR ASP ASN ILE LEU GLU ASP PHE CYS 
+          TYR LYS GLY CYS GLU ILE GLY LEU ASP TYR ALA GLY GLY LYS MET ALA SER ILE LYS GLY 
+          ASP LYS LEU ASN MET ASP ILE LEU GLU GLU ILE ILE ARG ALA GLU ASN ASP TYR ALA LEU 
+          THR GLN TYR GLU ALA TYR PRO THR VAL ALA GLU SER HSD PHE GLY GLY SER VAL ARG ALA 
+          CYS CYS ALA ALA ALA GLY CYS GLY SER ALA VAL ALA CYS ALA THR GLY LEU ALA GLN PRO 
+          ALA LEU SER ALA TRP SER LEU SER MET LEU GLY HSD TYR GLU ARG VAL GLY ARG LEU GLY 
+          PHE PHE GLY TYR ASP LEU GLN ASP GLN CYS THR ALA CYS GLY SER TYR SER TYR GLN SER 
+          ASP GLU GLY MET PRO PHE GLU MET ARG GLY VAL ASN TYR PRO ASN TYR ALA MET ASN VAL 
+          GLY HSD GLN SER ALA TYR ALA GLY LEU VAL ALA GLY ALA HSD SER ALA ASN HSD ASP ALA 
+          TRP VAL LEU SER PRO LEU TRP LYS VAL ALA PHE SER ASP ARG ASP LEU PRO PHE ASP ARG 
+          GLY TYR VAL THR ARG GLU TYR GLY LEU GLY ALA ASN ARG GLU TYR THR LYS VAL ALA GLY 
+          GLU ARG ASP LEU ILE ILE ALA GLY HSD TYR GLY ARG GLU PRO GLY ALA LYS LEU 
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>    gene mla setup
+ THE PATCH 'PROP' WILL BE USED FOR THE FIRST RESIDUE
+ THE PATCH 'CTER' WILL BE USED FOR THE LAST  RESIDUE
+ GENPSF> Segment   1 has been generated. Its identifier is MLA.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =      578
+         Number of atoms         =     8572   Number of groups     =     2606
+         Number of bonds         =     8676   Number of angles     =    15588
+         Number of dihedrals     =    22751   Number of impropers  =     1499
+         Number of cross-terms   =      576
+         Number of HB acceptors  =      861   Number of HB donors  =      948
+         Number of NB exclusions =        0   Total charge =  -23.00000
+ QXFORM> Expanded format used.
+         More than 4 character atom type used.
+  
+ CHARMM>    open read unit 10 form name group1_moleculea_preperturbation.pdb
+ VOPEN> Attempting to open::group1_moleculea_preperturbation.pdb::
+ OPNLGU> Unit 10 opened for READONLY access to group1_moleculea_preperturbation.pdb
+  
+ CHARMM>    read coor pdb unit 10
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 10
+ TITLE>   CREATED BY MATTHEW GRISEWOOD ON 6/3/2014 AT 20:37:52
+ TITLE>  *
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Load DESIGN Molecule D
+ CHARMM>    open read unit 10 form name group1_moleculed_preperturbation.pdb
+ VOPEN> Attempting to open::group1_moleculed_preperturbation.pdb::
+ OPNLGU> Unit 10 opened for READONLY access to group1_moleculed_preperturbation.pdb
+  
+ CHARMM>    read sequ pdb offi unit 10
+ MAINIO> Sequence information being read from unit  10.
+ TITLE>   Created by Matthew Grisewood on 6/3/2014 at 20:37:53
+ TITLE>  *
+
+          RESIDUE SEQUENCE --   578 RESIDUES
+          PRO     TYR     ASN     ASP     ILE     GLN     HSD     ASN     PHE     LEU     LYS     ALA     MET     SER     ASP     LYS     PHE     ALA     GLU     LYS     
+          PRO     GLU     SER     THR     ALA     THR     GLU     PHE     TYR     THR     TYR     GLY     GLY     ILE     ALA     GLY     GLY     GLY     GLY     MET     
+          ARG     GLY     ARG     GLU     PHE     ILE     ALA     GLU     ALA     SER     LYS     ILE     VAL     ASP     SER     ARG     VAL     ASN     SER     THR     
+          PRO     ALA     TYR     ASN     PRO     ASP     ALA     GLY     MET     PRO     GLY     GLY     GLY     GLY     GLY     GLY     GLY     PRO     GLY     GLY     
+          GLY     ASN     HSD     THR     ASP     ILE     MET     VAL     ASN     ALA     ASP     ASP     LEU     HSD     TRP     ILE     ASN     ASN     ALA     ALA     
+          MET     GLN     GLN     ALA     TRP     ASP     ASP     MET     LYS     ARG     GLY     ILE     VAL     LEU     GLY     LEU     ASP     ASP     ALA     HSD     
+          GLY     LEU     LEU     GLU     ALA     ARG     LEU     GLY     LYS     GLU     VAL     THR     PRO     ASP     THR     ILE     SER     ASN     TYR     MET     
+          GLU     VAL     LEU     ASN     HSD     ALA     LEU     PRO     GLY     GLY     ALA     VAL     ILE     GLN     GLY     GLY     MET     VAL     GLU     THR     
+          LYS     PRO     MET     LEU     VAL     ASN     ASP     SER     TYR     ALA     LYS     ILE     PHE     SER     GLY     ASP     ASP     ASP     LEU     VAL     
+          ASP     SER     VAL     ASP     ARG     ARG     PHE     ILE     LEU     ASP     ILE     ASN     LYS     GLU     PHE     ALA     ALA     GLY     TYR     ASP     
+          LYS     PRO     GLY     GLU     GLN     ALA     ASP     GLN     LEU     LYS     ASP     ALA     ILE     GLY     LYS     LYS     ILE     TRP     GLN     ILE     
+          LEU     TRP     MET     PRO     THR     VAL     VAL     ALA     ARG     GLN     THR     ASP     GLY     GLY     THR     MET     PHE     ARG     TRP     VAL     
+          GLY     MET     GLN     VAL     GLY     MET     THR     MET     ILE     ASN     ALA     TYR     LYS     LEU     CYS     ALA     GLY     GLU     SER     VAL     
+          THR     GLY     GLU     PHE     ALA     TYR     TYR     ALA     LYS     HSD     ALA     ALA     VAL     VAL     GLN     LEU     SER     ASN     TYR     MET     
+          PRO     VAL     LYS     ARG     ALA     ARG     SER     HSD     ASN     GLU     PRO     GLY     GLY     MET     PRO     LEU     GLY     ILE     ASN     ALA     
+          ASP     SER     THR     ARG     SER     PRO     ALA     LEU     PHE     PRO     ASN     ASP     PRO     ILE     ARG     ALA     GLU     LEU     GLU     SER     
+          ILE     ALA     VAL     ALA     ALA     MET     VAL     TYR     ASP     GLN     LEU     TRP     PHE     GLY     THR     TYR     MET     SER     GLY     GLY     
+          VAL     GLY     PHE     THR     GLN     TYR     ALA     SER     ALA     THR     TYR     THR     ASP     ASN     ILE     LEU     GLU     ASP     PHE     CYS     
+          TYR     LYS     GLY     CYS     GLU     ILE     GLY     LEU     ASP     TYR     ALA     GLY     GLY     LYS     MET     ALA     SER     ILE     LYS     GLY     
+          ASP     LYS     LEU     ASN     MET     ASP     ILE     LEU     GLU     GLU     ILE     ILE     ARG     ALA     GLU     ASN     ASP     TYR     ALA     LEU     
+          THR     GLN     TYR     GLU     ALA     TYR     PRO     THR     VAL     ALA     GLU     SER     HSD     PHE     GLY     GLY     SER     VAL     ARG     ALA     
+          CYS     CYS     ALA     ALA     ALA     GLY     CYS     GLY     SER     ALA     VAL     ALA     CYS     ALA     THR     GLY     LEU     ALA     GLN     PRO     
+          ALA     LEU     SER     ALA     TRP     SER     LEU     SER     MET     LEU     GLY     HSD     TYR     GLU     ARG     VAL     GLY     ARG     LEU     GLY     
+          PHE     PHE     GLY     TYR     ASP     LEU     GLN     ASP     GLN     CYS     THR     ALA     CYS     GLY     SER     TYR     SER     TYR     GLN     SER     
+          ASP     GLU     GLY     MET     PRO     PHE     GLU     MET     ARG     GLY     VAL     ASN     TYR     PRO     ASN     TYR     ALA     MET     ASN     VAL     
+          GLY     HSD     GLN     SER     ALA     TYR     ALA     GLY     LEU     VAL     ALA     GLY     ALA     HSD     SER     ALA     ASN     HSD     ASP     ALA     
+          TRP     VAL     LEU     SER     PRO     LEU     TRP     LYS     VAL     ALA     PHE     SER     ASP     ARG     ASP     LEU     PRO     PHE     ASP     ARG     
+          GLY     TYR     VAL     THR     ARG     GLU     TYR     GLY     LEU     GLY     ALA     ASN     ARG     GLU     TYR     THR     LYS     VAL     ALA     GLY     
+          GLU     ARG     ASP     LEU     ILE     ILE     ALA     GLY     HSD     TYR     GLY     ARG     GLU     PRO     GLY     ALA     LYS     LEU     
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>    gene mld setup
+ THE PATCH 'PROP' WILL BE USED FOR THE FIRST RESIDUE
+ THE PATCH 'CTER' WILL BE USED FOR THE LAST  RESIDUE
+ GENPSF> Segment   2 has been generated. Its identifier is MLD.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        2   Number of residues   =     1156
+         Number of atoms         =    17144   Number of groups     =     5212
+         Number of bonds         =    17352   Number of angles     =    31176
+         Number of dihedrals     =    45502   Number of impropers  =     2998
+         Number of cross-terms   =     1152
+         Number of HB acceptors  =     1722   Number of HB donors  =     1896
+         Number of NB exclusions =        0   Total charge =  -46.00000
+  
+ CHARMM>    open read unit 10 form name group1_moleculed_preperturbation.pdb
+ VOPEN> Attempting to open::group1_moleculed_preperturbation.pdb::
+ OPNLGU> Unit 10 opened for READONLY access to group1_moleculed_preperturbation.pdb
+  
+ CHARMM>    read coor pdb unit 10
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 10
+ TITLE>   CREATED BY MATTHEW GRISEWOOD ON 6/3/2014 AT 20:37:53
+ TITLE>  *
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Load TARGET Molecule F
+ CHARMM>    open read unit 10 form name group1_moleculef_preperturbation.pdb
+ VOPEN> Attempting to open::group1_moleculef_preperturbation.pdb::
+ OPNLGU> Unit 10 opened for READONLY access to group1_moleculef_preperturbation.pdb
+  
+ CHARMM>    read sequ pdb offi unit 10
+ MAINIO> Sequence information being read from unit  10.
+ TITLE>   Created by Matthew Grisewood on 6/3/2014 at 20:37:54
+ TITLE>  *
+
+          RESIDUE SEQUENCE --     1 RESIDUES
+          F43     
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>    gene mlf setup
+ NO PATCHING WILL BE DONE ON THE FIRST RESIDUE
+ NO PATCHING WILL BE DONE ON THE LAST  RESIDUE
+ CHECKDH> dihedral :17153172521716117160 will NOT be generated
+ CHECKDH> dihedral :17153172521716117162 will NOT be generated
+ CHECKDH> dihedral :17150171651725217157 will NOT be generated
+ CHECKDH> dihedral :17157172521716517164 will NOT be generated
+ CHECKDH> dihedral :17154171531725217161 will NOT be generated
+ CHECKDH> dihedral :17152171531725217161 will NOT be generated
+ CHECKDH> dihedral :17156171571725217165 will NOT be generated
+ CHECKDH> dihedral :17158171571725217165 will NOT be generated
+ GENPSF> Segment   3 has been generated. Its identifier is MLF.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        3   Number of residues   =     1157
+         Number of atoms         =    17252   Number of groups     =     5213
+         Number of bonds         =    17469   Number of angles     =    31407
+         Number of dihedrals     =    45890   Number of impropers  =     3006
+         Number of cross-terms   =     1152
+         Number of HB acceptors  =     1737   Number of HB donors  =     1899
+         Number of NB exclusions =        0   Total charge =  -51.00000
+  
+ CHARMM>    open read unit 10 form name group1_moleculef_preperturbation.pdb
+ VOPEN> Attempting to open::group1_moleculef_preperturbation.pdb::
+ OPNLGU> Unit 10 opened for READONLY access to group1_moleculef_preperturbation.pdb
+  
+ CHARMM>    read coor pdb unit 10
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 10
+ TITLE>   CREATED BY MATTHEW GRISEWOOD ON 6/3/2014 AT 20:37:54
+ TITLE>  *
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Load TARGET Molecule M
+ CHARMM>    open read unit 10 form name group1_moleculem_preperturbation.pdb
+ VOPEN> Attempting to open::group1_moleculem_preperturbation.pdb::
+ OPNLGU> Unit 10 opened for READONLY access to group1_moleculem_preperturbation.pdb
+  
+ CHARMM>    read sequ pdb offi unit 10
+ MAINIO> Sequence information being read from unit  10.
+ TITLE>   Created by Matthew Grisewood on 6/3/2014 at 20:37:54
+ TITLE>  *
+
+          RESIDUE SEQUENCE --     1 RESIDUES
+          COM     
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>    gene mlm setup
+ NO PATCHING WILL BE DONE ON THE FIRST RESIDUE
+ NO PATCHING WILL BE DONE ON THE LAST  RESIDUE
+ GENPSF> Segment   4 has been generated. Its identifier is MLM.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        4   Number of residues   =     1158
+         Number of atoms         =    17263   Number of groups     =     5214
+         Number of bonds         =    17479   Number of angles     =    31425
+         Number of dihedrals     =    45908   Number of impropers  =     3006
+         Number of cross-terms   =     1152
+         Number of HB acceptors  =     1741   Number of HB donors  =     1899
+         Number of NB exclusions =        0   Total charge =  -53.00000
+  
+ CHARMM>    open read unit 10 form name group1_moleculem_preperturbation.pdb
+ VOPEN> Attempting to open::group1_moleculem_preperturbation.pdb::
+ OPNLGU> Unit 10 opened for READONLY access to group1_moleculem_preperturbation.pdb
+  
+ CHARMM>    read coor pdb unit 10
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 10
+ TITLE>   CREATED BY MATTHEW GRISEWOOD ON 6/3/2014 AT 20:37:54
+ TITLE>  *
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Load TARGET Molecule B
+ CHARMM>    open read unit 10 form name group1_moleculeb_preperturbation.pdb
+ VOPEN> Attempting to open::group1_moleculeb_preperturbation.pdb::
+ OPNLGU> Unit 10 opened for READONLY access to group1_moleculeb_preperturbation.pdb
+  
+ CHARMM>    read sequ pdb offi unit 10
+ MAINIO> Sequence information being read from unit  10.
+ TITLE>   Created by Matthew Grisewood on 6/3/2014 at 20:37:54
+ TITLE>  *
+
+          RESIDUE SEQUENCE --     1 RESIDUES
+          COB     
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>    gene mlb setup
+ NO PATCHING WILL BE DONE ON THE FIRST RESIDUE
+ NO PATCHING WILL BE DONE ON THE LAST  RESIDUE
+ GENPSF> Segment   5 has been generated. Its identifier is MLB.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        5   Number of residues   =     1159
+         Number of atoms         =    17303   Number of groups     =     5215
+         Number of bonds         =    17518   Number of angles     =    31496
+         Number of dihedrals     =    46002   Number of impropers  =     3008
+         Number of cross-terms   =     1152
+         Number of HB acceptors  =     1750   Number of HB donors  =     1901
+         Number of NB exclusions =        0   Total charge =  -56.00000
+  
+ CHARMM>    open read unit 10 form name group1_moleculeb_preperturbation.pdb
+ VOPEN> Attempting to open::group1_moleculeb_preperturbation.pdb::
+ OPNLGU> Unit 10 opened for READONLY access to group1_moleculeb_preperturbation.pdb
+  
+ CHARMM>    read coor pdb unit 10
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 10
+ TITLE>   CREATED BY MATTHEW GRISEWOOD ON 6/3/2014 AT 20:37:54
+ TITLE>  *
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Add missing Atoms and assign them coordinates
+ CHARMM>    ic fill preserve
+  
+ CHARMM>    ic param
+  
+ CHARMM>    ic build
+  
+ CHARMM>    hbuild
+  
+ CHARMM>     
+  
+ CHARMM>    cons dihe 75 C 76 N 76 CA 76 C force 32800.0 min -96.331
+ NEW DIHEDRAL RESTRAINT ADDED
+    1:    75       MLA      C       /  76       MLA      N       /  76       MLA      CA      /  76       MLA      C       
+      FORCe= 32800.00  MIN=   -96.33  PERIod=   0  WIDTh=     0.00
+  
+ CHARMM>    cons dihe 76 N 76 CA 76 C 77 N  force 32800.0 min 84.614
+ NEW DIHEDRAL RESTRAINT ADDED
+    2:    76       MLA      N       /  76       MLA      CA      /  76       MLA      C       /  77       MLA      N       
+      FORCe= 32800.00  MIN=    84.61  PERIod=   0  WIDTh=     0.00
+  
+ CHARMM>    cons dihe 653 C 654 N 654 CA 654 C force 32800.0 min -85.123
+ NEW DIHEDRAL RESTRAINT ADDED
+    3:    653      MLD      C       /  654      MLD      N       /  654      MLD      CA      /  654      MLD      C       
+      FORCe= 32800.00  MIN=   -85.12  PERIod=   0  WIDTh=     0.00
+  
+ CHARMM>    cons dihe 654 N 654 CA 654 C 655 N  force 32800.0 min 78.378
+ NEW DIHEDRAL RESTRAINT ADDED
+    4:    654      MLD      N       /  654      MLD      CA      /  654      MLD      C       /  655      MLD      N       
+      FORCe= 32800.00  MIN=    78.38  PERIod=   0  WIDTh=     0.00
+  
+ CHARMM>    ! Carry out an energy minimization
+ CHARMM>     
+  
+ CHARMM>     
+  
+ CHARMM>    nbon nbxm 5
+
+ NONBOND OPTION FLAGS: 
+     ELEC     VDW      ATOMs    CDIElec  SHIFt    VATOm    VSWItch 
+     BYGRoup  NOEXtnd  NOEWald 
+ CUTNB  = 14.000 CTEXNB =999.000 CTONNB = 10.000 CTOFNB = 12.000
+ WMIN   =  1.500 WRNMXD =  0.500 E14FAC =  1.000 EPS    =  1.000
+ NBXMOD =      5
+ There are        0 atom  pairs and        0 atom  exclusions.
+ There are        0 group pairs and        0 group exclusions.
+ <MAKINB> with mode   5 found  49014 exclusions and  45156 interactions(1-4)
+ <MAKGRP> found  15182 group exclusions.
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  4972045 ATOM PAIRS AND        0 GROUP PAIRS
+ == PRIMARY == SPACE FOR  7458087 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  7228480 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   426549 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+  
+ CHARMM>    defi fixed sele none end
+ SELRPN>      0 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1 end
+ SELRPN>     16 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 2 end
+ SELRPN>     37 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 3 end
+ SELRPN>     51 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 4 end
+ SELRPN>     63 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 5 end
+ SELRPN>     82 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 6 end
+ SELRPN>     99 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 7 end
+ SELRPN>    116 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 8 end
+ SELRPN>    130 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 9 end
+ SELRPN>    150 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 10 end
+ SELRPN>    169 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 11 end
+ SELRPN>    191 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 12 end
+ SELRPN>    201 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 13 end
+ SELRPN>    218 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 14 end
+ SELRPN>    229 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 15 end
+ SELRPN>    241 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 16 end
+ SELRPN>    263 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 17 end
+ SELRPN>    283 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 18 end
+ SELRPN>    293 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 19 end
+ SELRPN>    308 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 20 end
+ SELRPN>    330 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 21 end
+ SELRPN>    344 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 22 end
+ SELRPN>    359 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 23 end
+ SELRPN>    370 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 24 end
+ SELRPN>    384 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 25 end
+ SELRPN>    394 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 26 end
+ SELRPN>    408 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 27 end
+ SELRPN>    423 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 28 end
+ SELRPN>    443 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 29 end
+ SELRPN>    464 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 30 end
+ SELRPN>    478 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 31 end
+ SELRPN>    499 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 32 end
+ SELRPN>    506 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 34 end
+ SELRPN>    525 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 35 end
+ SELRPN>    535 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 40 end
+ SELRPN>    552 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 41 end
+ SELRPN>    576 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 43 end
+ SELRPN>    600 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 44 end
+ SELRPN>    615 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 45 end
+ SELRPN>    635 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 46 end
+ SELRPN>    654 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 47 end
+ SELRPN>    664 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 48 end
+ SELRPN>    679 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 49 end
+ SELRPN>    689 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 50 end
+ SELRPN>    700 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 51 end
+ SELRPN>    722 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 52 end
+ SELRPN>    741 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 53 end
+ SELRPN>    757 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 54 end
+ SELRPN>    769 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 55 end
+ SELRPN>    780 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 56 end
+ SELRPN>    804 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 57 end
+ SELRPN>    820 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 58 end
+ SELRPN>    834 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 59 end
+ SELRPN>    845 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 60 end
+ SELRPN>    859 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 61 end
+ SELRPN>    873 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 62 end
+ SELRPN>    883 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 63 end
+ SELRPN>    904 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 64 end
+ SELRPN>    918 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 65 end
+ SELRPN>    932 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 66 end
+ SELRPN>    944 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 67 end
+ SELRPN>    954 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 68 end
+ SELRPN>    961 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 69 end
+ SELRPN>    978 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 70 end
+ SELRPN>    992 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 82 end
+ SELRPN>   1006 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 83 end
+ SELRPN>   1023 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 84 end
+ SELRPN>   1037 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 85 end
+ SELRPN>   1049 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 86 end
+ SELRPN>   1068 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 87 end
+ SELRPN>   1085 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 88 end
+ SELRPN>   1101 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 89 end
+ SELRPN>   1115 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 90 end
+ SELRPN>   1125 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 91 end
+ SELRPN>   1137 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 92 end
+ SELRPN>   1149 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 93 end
+ SELRPN>   1168 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 94 end
+ SELRPN>   1185 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 95 end
+ SELRPN>   1209 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 96 end
+ SELRPN>   1228 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 97 end
+ SELRPN>   1242 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 98 end
+ SELRPN>   1256 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 99 end
+ SELRPN>   1266 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 100 end
+ SELRPN>   1276 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 101 end
+ SELRPN>   1293 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 102 end
+ SELRPN>   1310 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 103 end
+ SELRPN>   1327 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 104 end
+ SELRPN>   1337 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 105 end
+ SELRPN>   1361 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 106 end
+ SELRPN>   1373 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 107 end
+ SELRPN>   1385 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 108 end
+ SELRPN>   1402 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 109 end
+ SELRPN>   1424 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 110 end
+ SELRPN>   1448 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 111 end
+ SELRPN>   1455 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 112 end
+ SELRPN>   1474 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 113 end
+ SELRPN>   1490 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 114 end
+ SELRPN>   1509 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 115 end
+ SELRPN>   1516 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 116 end
+ SELRPN>   1535 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 117 end
+ SELRPN>   1547 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 118 end
+ SELRPN>   1559 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 119 end
+ SELRPN>   1569 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 120 end
+ SELRPN>   1586 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 121 end
+ SELRPN>   1593 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 122 end
+ SELRPN>   1612 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 123 end
+ SELRPN>   1631 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 124 end
+ SELRPN>   1646 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 125 end
+ SELRPN>   1656 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 126 end
+ SELRPN>   1680 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 127 end
+ SELRPN>   1699 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 128 end
+ SELRPN>   1706 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 129 end
+ SELRPN>   1728 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 130 end
+ SELRPN>   1743 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 131 end
+ SELRPN>   1759 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 132 end
+ SELRPN>   1773 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 133 end
+ SELRPN>   1787 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 134 end
+ SELRPN>   1799 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 135 end
+ SELRPN>   1813 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 136 end
+ SELRPN>   1832 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 137 end
+ SELRPN>   1843 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 138 end
+ SELRPN>   1857 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 139 end
+ SELRPN>   1878 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 140 end
+ SELRPN>   1895 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 141 end
+ SELRPN>   1910 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 142 end
+ SELRPN>   1926 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 143 end
+ SELRPN>   1945 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 144 end
+ SELRPN>   1959 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 145 end
+ SELRPN>   1976 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 146 end
+ SELRPN>   1986 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 147 end
+ SELRPN>   2005 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 148 end
+ SELRPN>   2019 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 149 end
+ SELRPN>   2026 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 150 end
+ SELRPN>   2033 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 151 end
+ SELRPN>   2043 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 152 end
+ SELRPN>   2059 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 153 end
+ SELRPN>   2078 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 154 end
+ SELRPN>   2095 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 157 end
+ SELRPN>   2112 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 158 end
+ SELRPN>   2128 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 159 end
+ SELRPN>   2143 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 160 end
+ SELRPN>   2157 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 161 end
+ SELRPN>   2179 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 162 end
+ SELRPN>   2193 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 163 end
+ SELRPN>   2210 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 164 end
+ SELRPN>   2229 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 165 end
+ SELRPN>   2245 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 166 end
+ SELRPN>   2259 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 167 end
+ SELRPN>   2271 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 168 end
+ SELRPN>   2282 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 169 end
+ SELRPN>   2303 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 170 end
+ SELRPN>   2313 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 171 end
+ SELRPN>   2335 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 172 end
+ SELRPN>   2354 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 173 end
+ SELRPN>   2374 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 174 end
+ SELRPN>   2385 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 175 end
+ SELRPN>   2392 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 176 end
+ SELRPN>   2404 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 177 end
+ SELRPN>   2416 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 178 end
+ SELRPN>   2428 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 179 end
+ SELRPN>   2447 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 180 end
+ SELRPN>   2463 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 181 end
+ SELRPN>   2475 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 182 end
+ SELRPN>   2486 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 183 end
+ SELRPN>   2502 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 184 end
+ SELRPN>   2514 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 185 end
+ SELRPN>   2538 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 186 end
+ SELRPN>   2562 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 187 end
+ SELRPN>   2582 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 188 end
+ SELRPN>   2601 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 189 end
+ SELRPN>   2620 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 190 end
+ SELRPN>   2632 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 191 end
+ SELRPN>   2651 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 192 end
+ SELRPN>   2665 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 193 end
+ SELRPN>   2687 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 194 end
+ SELRPN>   2702 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 195 end
+ SELRPN>   2722 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 196 end
+ SELRPN>   2732 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 197 end
+ SELRPN>   2742 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 198 end
+ SELRPN>   2749 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 199 end
+ SELRPN>   2770 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 200 end
+ SELRPN>   2782 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 201 end
+ SELRPN>   2804 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 202 end
+ SELRPN>   2818 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 203 end
+ SELRPN>   2825 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 204 end
+ SELRPN>   2840 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 205 end
+ SELRPN>   2857 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 206 end
+ SELRPN>   2867 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 207 end
+ SELRPN>   2879 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 208 end
+ SELRPN>   2896 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 209 end
+ SELRPN>   2915 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 210 end
+ SELRPN>   2937 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 211 end
+ SELRPN>   2949 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 212 end
+ SELRPN>   2959 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 213 end
+ SELRPN>   2978 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 214 end
+ SELRPN>   2985 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 215 end
+ SELRPN>   3007 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 216 end
+ SELRPN>   3029 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 217 end
+ SELRPN>   3048 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 218 end
+ SELRPN>   3072 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 219 end
+ SELRPN>   3089 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 220 end
+ SELRPN>   3108 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 221 end
+ SELRPN>   3127 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 222 end
+ SELRPN>   3151 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 223 end
+ SELRPN>   3168 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 224 end
+ SELRPN>   3182 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 225 end
+ SELRPN>   3196 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 226 end
+ SELRPN>   3212 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 227 end
+ SELRPN>   3228 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 228 end
+ SELRPN>   3238 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 229 end
+ SELRPN>   3262 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 230 end
+ SELRPN>   3279 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 231 end
+ SELRPN>   3293 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 232 end
+ SELRPN>   3305 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 233 end
+ SELRPN>   3312 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 234 end
+ SELRPN>   3319 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 235 end
+ SELRPN>   3333 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 236 end
+ SELRPN>   3350 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 237 end
+ SELRPN>   3370 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 238 end
+ SELRPN>   3394 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 239 end
+ SELRPN>   3418 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 240 end
+ SELRPN>   3434 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 241 end
+ SELRPN>   3441 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 242 end
+ SELRPN>   3458 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 243 end
+ SELRPN>   3475 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 244 end
+ SELRPN>   3491 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 245 end
+ SELRPN>   3498 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 246 end
+ SELRPN>   3515 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 247 end
+ SELRPN>   3529 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 248 end
+ SELRPN>   3546 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 249 end
+ SELRPN>   3565 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 250 end
+ SELRPN>   3579 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 251 end
+ SELRPN>   3589 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 252 end
+ SELRPN>   3610 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 253 end
+ SELRPN>   3632 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 254 end
+ SELRPN>   3651 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 255 end
+ SELRPN>   3662 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 256 end
+ SELRPN>   3672 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 257 end
+ SELRPN>   3679 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 258 end
+ SELRPN>   3694 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 259 end
+ SELRPN>   3705 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 260 end
+ SELRPN>   3721 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 261 end
+ SELRPN>   3735 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 262 end
+ SELRPN>   3742 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 263 end
+ SELRPN>   3757 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 264 end
+ SELRPN>   3777 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 265 end
+ SELRPN>   3787 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 266 end
+ SELRPN>   3808 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 267 end
+ SELRPN>   3829 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 268 end
+ SELRPN>   3839 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 269 end
+ SELRPN>   3861 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 270 end
+ SELRPN>   3878 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 271 end
+ SELRPN>   3888 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 272 end
+ SELRPN>   3898 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 273 end
+ SELRPN>   3914 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 274 end
+ SELRPN>   3930 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 275 end
+ SELRPN>   3947 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 276 end
+ SELRPN>   3966 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 277 end
+ SELRPN>   3977 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 278 end
+ SELRPN>   3991 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 279 end
+ SELRPN>   4012 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 280 end
+ SELRPN>   4029 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 281 end
+ SELRPN>   4043 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 282 end
+ SELRPN>   4059 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 283 end
+ SELRPN>   4081 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 284 end
+ SELRPN>   4105 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 285 end
+ SELRPN>   4115 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 286 end
+ SELRPN>   4139 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 287 end
+ SELRPN>   4150 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 288 end
+ SELRPN>   4167 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 289 end
+ SELRPN>   4181 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 290 end
+ SELRPN>   4196 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 291 end
+ SELRPN>   4210 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 292 end
+ SELRPN>   4217 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 293 end
+ SELRPN>   4224 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 294 end
+ SELRPN>   4241 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 295 end
+ SELRPN>   4255 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 296 end
+ SELRPN>   4274 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 297 end
+ SELRPN>   4281 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 298 end
+ SELRPN>   4300 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 299 end
+ SELRPN>   4314 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 300 end
+ SELRPN>   4324 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 301 end
+ SELRPN>   4336 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 302 end
+ SELRPN>   4347 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 303 end
+ SELRPN>   4361 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 304 end
+ SELRPN>   4385 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 305 end
+ SELRPN>   4396 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 306 end
+ SELRPN>   4410 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 307 end
+ SELRPN>   4420 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 308 end
+ SELRPN>   4439 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 309 end
+ SELRPN>   4459 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 310 end
+ SELRPN>   4473 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 311 end
+ SELRPN>   4487 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 312 end
+ SELRPN>   4499 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 313 end
+ SELRPN>   4513 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 314 end
+ SELRPN>   4532 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 315 end
+ SELRPN>   4556 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 316 end
+ SELRPN>   4566 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 317 end
+ SELRPN>   4581 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 318 end
+ SELRPN>   4600 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 319 end
+ SELRPN>   4615 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 320 end
+ SELRPN>   4626 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 321 end
+ SELRPN>   4645 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 322 end
+ SELRPN>   4655 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 323 end
+ SELRPN>   4671 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 324 end
+ SELRPN>   4681 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 325 end
+ SELRPN>   4691 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 326 end
+ SELRPN>   4708 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 327 end
+ SELRPN>   4724 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 328 end
+ SELRPN>   4745 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 329 end
+ SELRPN>   4757 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 330 end
+ SELRPN>   4774 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 331 end
+ SELRPN>   4793 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 332 end
+ SELRPN>   4817 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 333 end
+ SELRPN>   4837 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 334 end
+ SELRPN>   4844 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 335 end
+ SELRPN>   4858 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 336 end
+ SELRPN>   4879 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 337 end
+ SELRPN>   4896 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 338 end
+ SELRPN>   4907 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 339 end
+ SELRPN>   4914 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 340 end
+ SELRPN>   4921 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 341 end
+ SELRPN>   4937 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 342 end
+ SELRPN>   4944 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 343 end
+ SELRPN>   4964 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 344 end
+ SELRPN>   4978 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 345 end
+ SELRPN>   4995 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 346 end
+ SELRPN>   5016 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 347 end
+ SELRPN>   5026 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 348 end
+ SELRPN>   5037 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 349 end
+ SELRPN>   5047 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 350 end
+ SELRPN>   5061 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 351 end
+ SELRPN>   5082 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 352 end
+ SELRPN>   5096 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 353 end
+ SELRPN>   5108 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 354 end
+ SELRPN>   5122 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 355 end
+ SELRPN>   5141 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 356 end
+ SELRPN>   5160 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 357 end
+ SELRPN>   5175 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 358 end
+ SELRPN>   5187 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 359 end
+ SELRPN>   5207 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 360 end
+ SELRPN>   5218 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 361 end
+ SELRPN>   5239 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 362 end
+ SELRPN>   5261 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 363 end
+ SELRPN>   5268 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 364 end
+ SELRPN>   5279 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 365 end
+ SELRPN>   5294 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 366 end
+ SELRPN>   5313 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 367 end
+ SELRPN>   5320 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 368 end
+ SELRPN>   5339 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 369 end
+ SELRPN>   5351 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 370 end
+ SELRPN>   5372 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 371 end
+ SELRPN>   5382 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 372 end
+ SELRPN>   5389 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 373 end
+ SELRPN>   5396 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 374 end
+ SELRPN>   5418 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 375 end
+ SELRPN>   5435 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 376 end
+ SELRPN>   5445 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 377 end
+ SELRPN>   5456 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 378 end
+ SELRPN>   5475 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 379 end
+ SELRPN>   5497 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 380 end
+ SELRPN>   5504 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 381 end
+ SELRPN>   5516 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 382 end
+ SELRPN>   5538 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 383 end
+ SELRPN>   5557 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 384 end
+ SELRPN>   5571 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 385 end
+ SELRPN>   5588 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 386 end
+ SELRPN>   5600 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 387 end
+ SELRPN>   5619 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 388 end
+ SELRPN>   5638 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 389 end
+ SELRPN>   5653 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 390 end
+ SELRPN>   5668 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 391 end
+ SELRPN>   5687 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 392 end
+ SELRPN>   5706 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 393 end
+ SELRPN>   5730 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 394 end
+ SELRPN>   5740 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 395 end
+ SELRPN>   5755 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 396 end
+ SELRPN>   5769 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 397 end
+ SELRPN>   5781 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 398 end
+ SELRPN>   5802 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 399 end
+ SELRPN>   5812 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 400 end
+ SELRPN>   5831 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 401 end
+ SELRPN>   5845 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 402 end
+ SELRPN>   5862 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 403 end
+ SELRPN>   5883 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 404 end
+ SELRPN>   5898 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 405 end
+ SELRPN>   5908 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 406 end
+ SELRPN>   5929 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 407 end
+ SELRPN>   5943 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 408 end
+ SELRPN>   5957 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 409 end
+ SELRPN>   5973 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 410 end
+ SELRPN>   5983 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 411 end
+ SELRPN>   5998 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 412 end
+ SELRPN>   6009 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 413 end
+ SELRPN>   6026 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 414 end
+ SELRPN>   6046 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 415 end
+ SELRPN>   6053 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 416 end
+ SELRPN>   6060 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 417 end
+ SELRPN>   6071 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 418 end
+ SELRPN>   6087 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 419 end
+ SELRPN>   6111 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 420 end
+ SELRPN>   6121 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 421 end
+ SELRPN>   6132 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 422 end
+ SELRPN>   6143 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 423 end
+ SELRPN>   6153 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 424 end
+ SELRPN>   6163 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 425 end
+ SELRPN>   6173 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 426 end
+ SELRPN>   6180 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 427 end
+ SELRPN>   6191 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 428 end
+ SELRPN>   6198 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 429 end
+ SELRPN>   6209 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 430 end
+ SELRPN>   6219 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 431 end
+ SELRPN>   6235 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 432 end
+ SELRPN>   6245 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 433 end
+ SELRPN>   6256 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 434 end
+ SELRPN>   6266 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 435 end
+ SELRPN>   6280 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 436 end
+ SELRPN>   6287 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 437 end
+ SELRPN>   6306 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 438 end
+ SELRPN>   6316 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 439 end
+ SELRPN>   6333 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 440 end
+ SELRPN>   6347 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 441 end
+ SELRPN>   6357 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 442 end
+ SELRPN>   6376 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 443 end
+ SELRPN>   6387 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 444 end
+ SELRPN>   6397 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 445 end
+ SELRPN>   6421 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 446 end
+ SELRPN>   6432 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 447 end
+ SELRPN>   6451 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 448 end
+ SELRPN>   6462 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 449 end
+ SELRPN>   6479 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 450 end
+ SELRPN>   6498 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 451 end
+ SELRPN>   6505 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 452 end
+ SELRPN>   6522 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 453 end
+ SELRPN>   6543 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 454 end
+ SELRPN>   6558 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 455 end
+ SELRPN>   6582 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 456 end
+ SELRPN>   6598 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 457 end
+ SELRPN>   6605 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 458 end
+ SELRPN>   6629 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 459 end
+ SELRPN>   6648 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 460 end
+ SELRPN>   6655 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 461 end
+ SELRPN>   6675 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 462 end
+ SELRPN>   6695 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 463 end
+ SELRPN>   6702 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 464 end
+ SELRPN>   6723 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 465 end
+ SELRPN>   6735 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 466 end
+ SELRPN>   6754 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 467 end
+ SELRPN>   6771 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 468 end
+ SELRPN>   6783 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 469 end
+ SELRPN>   6800 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 470 end
+ SELRPN>   6811 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 471 end
+ SELRPN>   6825 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 472 end
+ SELRPN>   6835 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 473 end
+ SELRPN>   6846 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 474 end
+ SELRPN>   6853 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 475 end
+ SELRPN>   6864 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 476 end
+ SELRPN>   6885 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 477 end
+ SELRPN>   6896 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 478 end
+ SELRPN>   6917 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 479 end
+ SELRPN>   6934 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 480 end
+ SELRPN>   6945 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 481 end
+ SELRPN>   6957 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 482 end
+ SELRPN>   6972 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 483 end
+ SELRPN>   6979 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 484 end
+ SELRPN>   6996 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 485 end
+ SELRPN>   7010 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 486 end
+ SELRPN>   7030 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 487 end
+ SELRPN>   7045 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 488 end
+ SELRPN>   7062 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 489 end
+ SELRPN>   7086 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 490 end
+ SELRPN>   7093 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 491 end
+ SELRPN>   7109 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 492 end
+ SELRPN>   7123 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 493 end
+ SELRPN>   7144 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 494 end
+ SELRPN>   7158 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 495 end
+ SELRPN>   7172 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 496 end
+ SELRPN>   7193 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 497 end
+ SELRPN>   7203 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 498 end
+ SELRPN>   7220 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 499 end
+ SELRPN>   7234 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 500 end
+ SELRPN>   7250 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 501 end
+ SELRPN>   7257 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 502 end
+ SELRPN>   7274 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 503 end
+ SELRPN>   7291 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 504 end
+ SELRPN>   7302 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 505 end
+ SELRPN>   7312 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 506 end
+ SELRPN>   7333 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 507 end
+ SELRPN>   7343 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 508 end
+ SELRPN>   7350 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 509 end
+ SELRPN>   7369 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 510 end
+ SELRPN>   7385 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 511 end
+ SELRPN>   7395 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 512 end
+ SELRPN>   7402 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 513 end
+ SELRPN>   7412 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 514 end
+ SELRPN>   7429 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 515 end
+ SELRPN>   7440 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 516 end
+ SELRPN>   7450 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 517 end
+ SELRPN>   7464 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 518 end
+ SELRPN>   7481 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 519 end
+ SELRPN>   7493 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 520 end
+ SELRPN>   7503 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 521 end
+ SELRPN>   7527 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 522 end
+ SELRPN>   7543 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 523 end
+ SELRPN>   7562 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 524 end
+ SELRPN>   7573 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 525 end
+ SELRPN>   7587 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 526 end
+ SELRPN>   7606 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 527 end
+ SELRPN>   7630 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 528 end
+ SELRPN>   7652 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 529 end
+ SELRPN>   7668 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 530 end
+ SELRPN>   7678 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 531 end
+ SELRPN>   7698 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 532 end
+ SELRPN>   7709 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 533 end
+ SELRPN>   7721 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 534 end
+ SELRPN>   7745 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 535 end
+ SELRPN>   7757 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 536 end
+ SELRPN>   7776 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 537 end
+ SELRPN>   7790 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 538 end
+ SELRPN>   7810 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 539 end
+ SELRPN>   7822 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 540 end
+ SELRPN>   7846 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 541 end
+ SELRPN>   7853 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 542 end
+ SELRPN>   7874 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 543 end
+ SELRPN>   7890 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 544 end
+ SELRPN>   7904 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 545 end
+ SELRPN>   7928 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 546 end
+ SELRPN>   7943 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 547 end
+ SELRPN>   7964 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 548 end
+ SELRPN>   7971 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 549 end
+ SELRPN>   7990 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 550 end
+ SELRPN>   7997 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 551 end
+ SELRPN>   8007 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 552 end
+ SELRPN>   8021 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 553 end
+ SELRPN>   8045 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 554 end
+ SELRPN>   8060 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 555 end
+ SELRPN>   8081 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 556 end
+ SELRPN>   8095 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 557 end
+ SELRPN>   8117 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 558 end
+ SELRPN>   8133 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 559 end
+ SELRPN>   8143 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 560 end
+ SELRPN>   8150 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 561 end
+ SELRPN>   8165 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 562 end
+ SELRPN>   8189 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 563 end
+ SELRPN>   8201 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 564 end
+ SELRPN>   8220 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 565 end
+ SELRPN>   8239 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 566 end
+ SELRPN>   8258 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 567 end
+ SELRPN>   8268 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 568 end
+ SELRPN>   8275 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 569 end
+ SELRPN>   8292 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 570 end
+ SELRPN>   8313 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 571 end
+ SELRPN>   8320 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 572 end
+ SELRPN>   8344 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 573 end
+ SELRPN>   8359 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 574 end
+ SELRPN>   8373 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 575 end
+ SELRPN>   8380 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 576 end
+ SELRPN>   8390 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 577 end
+ SELRPN>   8412 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 578 end
+ SELRPN>   8432 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 579 end
+ SELRPN>   8448 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 580 end
+ SELRPN>   8469 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 581 end
+ SELRPN>   8483 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 582 end
+ SELRPN>   8495 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 583 end
+ SELRPN>   8514 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 584 end
+ SELRPN>   8531 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 585 end
+ SELRPN>   8548 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 586 end
+ SELRPN>   8562 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 587 end
+ SELRPN>   8582 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 588 end
+ SELRPN>   8601 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 589 end
+ SELRPN>   8623 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 590 end
+ SELRPN>   8633 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 591 end
+ SELRPN>   8650 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 592 end
+ SELRPN>   8661 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 593 end
+ SELRPN>   8673 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 594 end
+ SELRPN>   8695 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 595 end
+ SELRPN>   8715 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 596 end
+ SELRPN>   8725 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 597 end
+ SELRPN>   8740 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 598 end
+ SELRPN>   8762 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 599 end
+ SELRPN>   8776 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 600 end
+ SELRPN>   8791 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 601 end
+ SELRPN>   8802 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 602 end
+ SELRPN>   8816 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 603 end
+ SELRPN>   8826 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 604 end
+ SELRPN>   8840 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 605 end
+ SELRPN>   8855 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 606 end
+ SELRPN>   8875 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 607 end
+ SELRPN>   8896 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 608 end
+ SELRPN>   8910 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 609 end
+ SELRPN>   8931 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 610 end
+ SELRPN>   8938 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 612 end
+ SELRPN>   8957 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 613 end
+ SELRPN>   8967 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 618 end
+ SELRPN>   8984 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 619 end
+ SELRPN>   9008 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 621 end
+ SELRPN>   9032 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 622 end
+ SELRPN>   9047 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 623 end
+ SELRPN>   9067 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 624 end
+ SELRPN>   9086 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 625 end
+ SELRPN>   9096 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 626 end
+ SELRPN>   9111 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 627 end
+ SELRPN>   9121 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 628 end
+ SELRPN>   9132 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 629 end
+ SELRPN>   9154 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 630 end
+ SELRPN>   9173 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 631 end
+ SELRPN>   9189 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 632 end
+ SELRPN>   9201 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 633 end
+ SELRPN>   9212 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 634 end
+ SELRPN>   9236 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 635 end
+ SELRPN>   9252 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 636 end
+ SELRPN>   9266 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 637 end
+ SELRPN>   9277 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 638 end
+ SELRPN>   9291 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 639 end
+ SELRPN>   9305 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 640 end
+ SELRPN>   9315 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 641 end
+ SELRPN>   9336 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 642 end
+ SELRPN>   9350 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 643 end
+ SELRPN>   9364 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 644 end
+ SELRPN>   9376 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 645 end
+ SELRPN>   9386 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 646 end
+ SELRPN>   9393 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 647 end
+ SELRPN>   9410 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 648 end
+ SELRPN>   9424 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 660 end
+ SELRPN>   9438 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 661 end
+ SELRPN>   9455 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 662 end
+ SELRPN>   9469 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 663 end
+ SELRPN>   9481 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 664 end
+ SELRPN>   9500 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 665 end
+ SELRPN>   9517 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 666 end
+ SELRPN>   9533 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 667 end
+ SELRPN>   9547 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 668 end
+ SELRPN>   9557 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 669 end
+ SELRPN>   9569 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 670 end
+ SELRPN>   9581 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 671 end
+ SELRPN>   9600 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 672 end
+ SELRPN>   9617 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 673 end
+ SELRPN>   9641 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 674 end
+ SELRPN>   9660 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 675 end
+ SELRPN>   9674 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 676 end
+ SELRPN>   9688 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 677 end
+ SELRPN>   9698 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 678 end
+ SELRPN>   9708 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 679 end
+ SELRPN>   9725 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 680 end
+ SELRPN>   9742 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 681 end
+ SELRPN>   9759 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 682 end
+ SELRPN>   9769 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 683 end
+ SELRPN>   9793 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 684 end
+ SELRPN>   9805 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 685 end
+ SELRPN>   9817 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 686 end
+ SELRPN>   9834 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 687 end
+ SELRPN>   9856 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 688 end
+ SELRPN>   9880 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 689 end
+ SELRPN>   9887 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 690 end
+ SELRPN>   9906 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 691 end
+ SELRPN>   9922 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 692 end
+ SELRPN>   9941 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 693 end
+ SELRPN>   9948 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 694 end
+ SELRPN>   9967 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 695 end
+ SELRPN>   9979 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 696 end
+ SELRPN>   9991 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 697 end
+ SELRPN>  10001 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 698 end
+ SELRPN>  10018 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 699 end
+ SELRPN>  10025 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 700 end
+ SELRPN>  10044 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 701 end
+ SELRPN>  10063 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 702 end
+ SELRPN>  10078 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 703 end
+ SELRPN>  10088 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 704 end
+ SELRPN>  10112 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 705 end
+ SELRPN>  10131 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 706 end
+ SELRPN>  10138 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 707 end
+ SELRPN>  10160 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 708 end
+ SELRPN>  10175 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 709 end
+ SELRPN>  10191 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 710 end
+ SELRPN>  10205 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 711 end
+ SELRPN>  10219 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 712 end
+ SELRPN>  10231 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 713 end
+ SELRPN>  10245 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 714 end
+ SELRPN>  10264 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 715 end
+ SELRPN>  10275 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 716 end
+ SELRPN>  10289 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 717 end
+ SELRPN>  10310 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 718 end
+ SELRPN>  10327 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 719 end
+ SELRPN>  10342 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 720 end
+ SELRPN>  10358 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 721 end
+ SELRPN>  10377 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 722 end
+ SELRPN>  10391 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 723 end
+ SELRPN>  10408 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 724 end
+ SELRPN>  10418 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 725 end
+ SELRPN>  10437 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 726 end
+ SELRPN>  10451 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 727 end
+ SELRPN>  10458 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 728 end
+ SELRPN>  10465 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 729 end
+ SELRPN>  10475 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 730 end
+ SELRPN>  10491 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 731 end
+ SELRPN>  10510 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 732 end
+ SELRPN>  10527 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 735 end
+ SELRPN>  10544 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 736 end
+ SELRPN>  10560 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 737 end
+ SELRPN>  10575 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 738 end
+ SELRPN>  10589 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 739 end
+ SELRPN>  10611 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 740 end
+ SELRPN>  10625 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 741 end
+ SELRPN>  10642 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 742 end
+ SELRPN>  10661 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 743 end
+ SELRPN>  10677 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 744 end
+ SELRPN>  10691 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 745 end
+ SELRPN>  10703 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 746 end
+ SELRPN>  10714 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 747 end
+ SELRPN>  10735 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 748 end
+ SELRPN>  10745 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 749 end
+ SELRPN>  10767 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 750 end
+ SELRPN>  10786 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 751 end
+ SELRPN>  10806 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 752 end
+ SELRPN>  10817 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 753 end
+ SELRPN>  10824 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 754 end
+ SELRPN>  10836 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 755 end
+ SELRPN>  10848 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 756 end
+ SELRPN>  10860 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 757 end
+ SELRPN>  10879 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 758 end
+ SELRPN>  10895 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 759 end
+ SELRPN>  10907 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 760 end
+ SELRPN>  10918 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 761 end
+ SELRPN>  10934 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 762 end
+ SELRPN>  10946 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 763 end
+ SELRPN>  10970 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 764 end
+ SELRPN>  10994 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 765 end
+ SELRPN>  11014 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 766 end
+ SELRPN>  11033 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 767 end
+ SELRPN>  11052 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 768 end
+ SELRPN>  11064 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 769 end
+ SELRPN>  11083 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 770 end
+ SELRPN>  11097 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 771 end
+ SELRPN>  11119 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 772 end
+ SELRPN>  11134 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 773 end
+ SELRPN>  11154 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 774 end
+ SELRPN>  11164 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 775 end
+ SELRPN>  11174 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 776 end
+ SELRPN>  11181 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 777 end
+ SELRPN>  11202 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 778 end
+ SELRPN>  11214 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 779 end
+ SELRPN>  11236 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 780 end
+ SELRPN>  11250 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 781 end
+ SELRPN>  11257 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 782 end
+ SELRPN>  11272 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 783 end
+ SELRPN>  11289 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 784 end
+ SELRPN>  11299 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 785 end
+ SELRPN>  11311 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 786 end
+ SELRPN>  11328 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 787 end
+ SELRPN>  11347 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 788 end
+ SELRPN>  11369 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 789 end
+ SELRPN>  11381 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 790 end
+ SELRPN>  11391 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 791 end
+ SELRPN>  11410 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 792 end
+ SELRPN>  11417 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 793 end
+ SELRPN>  11439 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 794 end
+ SELRPN>  11461 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 795 end
+ SELRPN>  11480 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 796 end
+ SELRPN>  11504 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 797 end
+ SELRPN>  11521 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 798 end
+ SELRPN>  11540 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 799 end
+ SELRPN>  11559 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 800 end
+ SELRPN>  11583 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 801 end
+ SELRPN>  11600 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 802 end
+ SELRPN>  11614 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 803 end
+ SELRPN>  11628 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 804 end
+ SELRPN>  11644 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 805 end
+ SELRPN>  11660 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 806 end
+ SELRPN>  11670 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 807 end
+ SELRPN>  11694 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 808 end
+ SELRPN>  11711 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 809 end
+ SELRPN>  11725 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 810 end
+ SELRPN>  11737 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 811 end
+ SELRPN>  11744 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 812 end
+ SELRPN>  11751 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 813 end
+ SELRPN>  11765 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 814 end
+ SELRPN>  11782 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 815 end
+ SELRPN>  11802 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 816 end
+ SELRPN>  11826 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 817 end
+ SELRPN>  11850 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 818 end
+ SELRPN>  11866 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 819 end
+ SELRPN>  11873 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 820 end
+ SELRPN>  11890 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 821 end
+ SELRPN>  11907 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 822 end
+ SELRPN>  11923 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 823 end
+ SELRPN>  11930 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 824 end
+ SELRPN>  11947 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 825 end
+ SELRPN>  11961 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 826 end
+ SELRPN>  11978 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 827 end
+ SELRPN>  11997 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 828 end
+ SELRPN>  12011 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 829 end
+ SELRPN>  12021 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 830 end
+ SELRPN>  12042 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 831 end
+ SELRPN>  12064 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 832 end
+ SELRPN>  12083 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 833 end
+ SELRPN>  12094 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 834 end
+ SELRPN>  12104 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 835 end
+ SELRPN>  12111 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 836 end
+ SELRPN>  12126 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 837 end
+ SELRPN>  12137 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 838 end
+ SELRPN>  12153 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 839 end
+ SELRPN>  12167 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 840 end
+ SELRPN>  12174 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 841 end
+ SELRPN>  12189 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 842 end
+ SELRPN>  12209 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 843 end
+ SELRPN>  12219 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 844 end
+ SELRPN>  12240 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 845 end
+ SELRPN>  12261 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 846 end
+ SELRPN>  12271 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 847 end
+ SELRPN>  12293 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 848 end
+ SELRPN>  12310 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 849 end
+ SELRPN>  12320 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 850 end
+ SELRPN>  12330 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 851 end
+ SELRPN>  12346 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 852 end
+ SELRPN>  12362 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 853 end
+ SELRPN>  12379 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 854 end
+ SELRPN>  12398 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 855 end
+ SELRPN>  12409 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 856 end
+ SELRPN>  12423 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 857 end
+ SELRPN>  12444 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 858 end
+ SELRPN>  12461 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 859 end
+ SELRPN>  12475 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 860 end
+ SELRPN>  12491 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 861 end
+ SELRPN>  12513 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 862 end
+ SELRPN>  12537 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 863 end
+ SELRPN>  12547 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 864 end
+ SELRPN>  12571 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 865 end
+ SELRPN>  12582 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 866 end
+ SELRPN>  12599 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 867 end
+ SELRPN>  12613 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 868 end
+ SELRPN>  12628 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 869 end
+ SELRPN>  12642 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 870 end
+ SELRPN>  12649 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 871 end
+ SELRPN>  12656 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 872 end
+ SELRPN>  12673 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 873 end
+ SELRPN>  12687 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 874 end
+ SELRPN>  12706 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 875 end
+ SELRPN>  12713 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 876 end
+ SELRPN>  12732 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 877 end
+ SELRPN>  12746 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 878 end
+ SELRPN>  12756 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 879 end
+ SELRPN>  12768 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 880 end
+ SELRPN>  12779 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 881 end
+ SELRPN>  12793 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 882 end
+ SELRPN>  12817 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 883 end
+ SELRPN>  12828 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 884 end
+ SELRPN>  12842 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 885 end
+ SELRPN>  12852 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 886 end
+ SELRPN>  12871 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 887 end
+ SELRPN>  12891 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 888 end
+ SELRPN>  12905 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 889 end
+ SELRPN>  12919 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 890 end
+ SELRPN>  12931 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 891 end
+ SELRPN>  12945 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 892 end
+ SELRPN>  12964 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 893 end
+ SELRPN>  12988 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 894 end
+ SELRPN>  12998 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 895 end
+ SELRPN>  13013 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 896 end
+ SELRPN>  13032 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 897 end
+ SELRPN>  13047 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 898 end
+ SELRPN>  13058 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 899 end
+ SELRPN>  13077 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 900 end
+ SELRPN>  13087 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 901 end
+ SELRPN>  13103 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 902 end
+ SELRPN>  13113 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 903 end
+ SELRPN>  13123 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 904 end
+ SELRPN>  13140 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 905 end
+ SELRPN>  13156 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 906 end
+ SELRPN>  13177 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 907 end
+ SELRPN>  13189 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 908 end
+ SELRPN>  13206 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 909 end
+ SELRPN>  13225 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 910 end
+ SELRPN>  13249 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 911 end
+ SELRPN>  13269 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 912 end
+ SELRPN>  13276 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 913 end
+ SELRPN>  13290 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 914 end
+ SELRPN>  13311 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 915 end
+ SELRPN>  13328 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 916 end
+ SELRPN>  13339 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 917 end
+ SELRPN>  13346 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 918 end
+ SELRPN>  13353 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 919 end
+ SELRPN>  13369 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 920 end
+ SELRPN>  13376 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 921 end
+ SELRPN>  13396 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 922 end
+ SELRPN>  13410 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 923 end
+ SELRPN>  13427 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 924 end
+ SELRPN>  13448 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 925 end
+ SELRPN>  13458 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 926 end
+ SELRPN>  13469 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 927 end
+ SELRPN>  13479 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 928 end
+ SELRPN>  13493 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 929 end
+ SELRPN>  13514 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 930 end
+ SELRPN>  13528 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 931 end
+ SELRPN>  13540 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 932 end
+ SELRPN>  13554 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 933 end
+ SELRPN>  13573 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 934 end
+ SELRPN>  13592 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 935 end
+ SELRPN>  13607 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 936 end
+ SELRPN>  13619 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 937 end
+ SELRPN>  13639 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 938 end
+ SELRPN>  13650 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 939 end
+ SELRPN>  13671 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 940 end
+ SELRPN>  13693 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 941 end
+ SELRPN>  13700 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 942 end
+ SELRPN>  13711 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 943 end
+ SELRPN>  13726 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 944 end
+ SELRPN>  13745 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 945 end
+ SELRPN>  13752 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 946 end
+ SELRPN>  13771 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 947 end
+ SELRPN>  13783 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 948 end
+ SELRPN>  13804 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 949 end
+ SELRPN>  13814 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 950 end
+ SELRPN>  13821 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 951 end
+ SELRPN>  13828 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 952 end
+ SELRPN>  13850 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 953 end
+ SELRPN>  13867 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 954 end
+ SELRPN>  13877 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 955 end
+ SELRPN>  13888 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 956 end
+ SELRPN>  13907 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 957 end
+ SELRPN>  13929 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 958 end
+ SELRPN>  13936 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 959 end
+ SELRPN>  13948 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 960 end
+ SELRPN>  13970 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 961 end
+ SELRPN>  13989 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 962 end
+ SELRPN>  14003 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 963 end
+ SELRPN>  14020 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 964 end
+ SELRPN>  14032 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 965 end
+ SELRPN>  14051 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 966 end
+ SELRPN>  14070 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 967 end
+ SELRPN>  14085 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 968 end
+ SELRPN>  14100 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 969 end
+ SELRPN>  14119 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 970 end
+ SELRPN>  14138 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 971 end
+ SELRPN>  14162 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 972 end
+ SELRPN>  14172 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 973 end
+ SELRPN>  14187 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 974 end
+ SELRPN>  14201 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 975 end
+ SELRPN>  14213 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 976 end
+ SELRPN>  14234 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 977 end
+ SELRPN>  14244 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 978 end
+ SELRPN>  14263 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 979 end
+ SELRPN>  14277 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 980 end
+ SELRPN>  14294 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 981 end
+ SELRPN>  14315 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 982 end
+ SELRPN>  14330 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 983 end
+ SELRPN>  14340 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 984 end
+ SELRPN>  14361 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 985 end
+ SELRPN>  14375 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 986 end
+ SELRPN>  14389 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 987 end
+ SELRPN>  14405 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 988 end
+ SELRPN>  14415 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 989 end
+ SELRPN>  14430 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 990 end
+ SELRPN>  14441 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 991 end
+ SELRPN>  14458 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 992 end
+ SELRPN>  14478 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 993 end
+ SELRPN>  14485 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 994 end
+ SELRPN>  14492 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 995 end
+ SELRPN>  14503 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 996 end
+ SELRPN>  14519 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 997 end
+ SELRPN>  14543 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 998 end
+ SELRPN>  14553 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 999 end
+ SELRPN>  14564 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1000 end
+ SELRPN>  14575 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1001 end
+ SELRPN>  14585 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1002 end
+ SELRPN>  14595 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1003 end
+ SELRPN>  14605 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1004 end
+ SELRPN>  14612 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1005 end
+ SELRPN>  14623 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1006 end
+ SELRPN>  14630 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1007 end
+ SELRPN>  14641 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1008 end
+ SELRPN>  14651 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1009 end
+ SELRPN>  14667 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1010 end
+ SELRPN>  14677 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1011 end
+ SELRPN>  14688 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1012 end
+ SELRPN>  14698 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1013 end
+ SELRPN>  14712 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1014 end
+ SELRPN>  14719 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1015 end
+ SELRPN>  14738 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1016 end
+ SELRPN>  14748 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1017 end
+ SELRPN>  14765 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1018 end
+ SELRPN>  14779 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1019 end
+ SELRPN>  14789 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1020 end
+ SELRPN>  14808 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1021 end
+ SELRPN>  14819 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1022 end
+ SELRPN>  14829 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1023 end
+ SELRPN>  14853 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1024 end
+ SELRPN>  14864 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1025 end
+ SELRPN>  14883 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1026 end
+ SELRPN>  14894 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1027 end
+ SELRPN>  14911 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1028 end
+ SELRPN>  14930 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1029 end
+ SELRPN>  14937 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1030 end
+ SELRPN>  14954 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1031 end
+ SELRPN>  14975 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1032 end
+ SELRPN>  14990 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1033 end
+ SELRPN>  15014 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1034 end
+ SELRPN>  15030 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1035 end
+ SELRPN>  15037 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1036 end
+ SELRPN>  15061 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1037 end
+ SELRPN>  15080 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1038 end
+ SELRPN>  15087 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1039 end
+ SELRPN>  15107 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1040 end
+ SELRPN>  15127 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1041 end
+ SELRPN>  15134 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1042 end
+ SELRPN>  15155 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1043 end
+ SELRPN>  15167 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1044 end
+ SELRPN>  15186 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1045 end
+ SELRPN>  15203 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1046 end
+ SELRPN>  15215 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1047 end
+ SELRPN>  15232 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1048 end
+ SELRPN>  15243 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1049 end
+ SELRPN>  15257 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1050 end
+ SELRPN>  15267 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1051 end
+ SELRPN>  15278 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1052 end
+ SELRPN>  15285 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1053 end
+ SELRPN>  15296 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1054 end
+ SELRPN>  15317 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1055 end
+ SELRPN>  15328 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1056 end
+ SELRPN>  15349 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1057 end
+ SELRPN>  15366 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1058 end
+ SELRPN>  15377 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1059 end
+ SELRPN>  15389 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1060 end
+ SELRPN>  15404 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1061 end
+ SELRPN>  15411 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1062 end
+ SELRPN>  15428 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1063 end
+ SELRPN>  15442 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1064 end
+ SELRPN>  15462 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1065 end
+ SELRPN>  15477 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1066 end
+ SELRPN>  15494 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1067 end
+ SELRPN>  15518 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1068 end
+ SELRPN>  15525 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1069 end
+ SELRPN>  15541 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1070 end
+ SELRPN>  15555 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1071 end
+ SELRPN>  15576 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1072 end
+ SELRPN>  15590 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1073 end
+ SELRPN>  15604 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1074 end
+ SELRPN>  15625 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1075 end
+ SELRPN>  15635 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1076 end
+ SELRPN>  15652 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1077 end
+ SELRPN>  15666 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1078 end
+ SELRPN>  15682 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1079 end
+ SELRPN>  15689 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1080 end
+ SELRPN>  15706 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1081 end
+ SELRPN>  15723 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1082 end
+ SELRPN>  15734 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1083 end
+ SELRPN>  15744 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1084 end
+ SELRPN>  15765 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1085 end
+ SELRPN>  15775 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1086 end
+ SELRPN>  15782 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1087 end
+ SELRPN>  15801 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1088 end
+ SELRPN>  15817 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1089 end
+ SELRPN>  15827 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1090 end
+ SELRPN>  15834 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1091 end
+ SELRPN>  15844 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1092 end
+ SELRPN>  15861 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1093 end
+ SELRPN>  15872 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1094 end
+ SELRPN>  15882 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1095 end
+ SELRPN>  15896 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1096 end
+ SELRPN>  15913 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1097 end
+ SELRPN>  15925 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1098 end
+ SELRPN>  15935 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1099 end
+ SELRPN>  15959 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1100 end
+ SELRPN>  15975 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1101 end
+ SELRPN>  15994 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1102 end
+ SELRPN>  16005 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1103 end
+ SELRPN>  16019 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1104 end
+ SELRPN>  16038 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1105 end
+ SELRPN>  16062 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1106 end
+ SELRPN>  16084 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1107 end
+ SELRPN>  16100 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1108 end
+ SELRPN>  16110 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1109 end
+ SELRPN>  16130 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1110 end
+ SELRPN>  16141 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1111 end
+ SELRPN>  16153 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1112 end
+ SELRPN>  16177 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1113 end
+ SELRPN>  16189 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1114 end
+ SELRPN>  16208 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1115 end
+ SELRPN>  16222 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1116 end
+ SELRPN>  16242 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1117 end
+ SELRPN>  16254 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1118 end
+ SELRPN>  16278 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1119 end
+ SELRPN>  16285 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1120 end
+ SELRPN>  16306 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1121 end
+ SELRPN>  16322 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1122 end
+ SELRPN>  16336 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1123 end
+ SELRPN>  16360 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1124 end
+ SELRPN>  16375 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1125 end
+ SELRPN>  16396 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1126 end
+ SELRPN>  16403 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1127 end
+ SELRPN>  16422 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1128 end
+ SELRPN>  16429 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1129 end
+ SELRPN>  16439 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1130 end
+ SELRPN>  16453 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1131 end
+ SELRPN>  16477 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1132 end
+ SELRPN>  16492 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1133 end
+ SELRPN>  16513 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1134 end
+ SELRPN>  16527 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1135 end
+ SELRPN>  16549 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1136 end
+ SELRPN>  16565 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1137 end
+ SELRPN>  16575 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1138 end
+ SELRPN>  16582 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1139 end
+ SELRPN>  16597 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1140 end
+ SELRPN>  16621 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1141 end
+ SELRPN>  16633 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1142 end
+ SELRPN>  16652 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1143 end
+ SELRPN>  16671 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1144 end
+ SELRPN>  16690 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1145 end
+ SELRPN>  16700 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1146 end
+ SELRPN>  16707 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1147 end
+ SELRPN>  16724 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1148 end
+ SELRPN>  16745 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1149 end
+ SELRPN>  16752 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1150 end
+ SELRPN>  16776 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1151 end
+ SELRPN>  16791 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1152 end
+ SELRPN>  16805 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1153 end
+ SELRPN>  16812 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1154 end
+ SELRPN>  16822 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1155 end
+ SELRPN>  16844 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1156 end
+ SELRPN>  16864 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1157 end
+ SELRPN>  16972 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1158 end
+ SELRPN>  16983 atoms have been selected out of  17303
+  
+ CHARMM>    defi fixed sele fixed .or. resi 1159 end
+ SELRPN>  17023 atoms have been selected out of  17303
+  
+ CHARMM>    cons fix sele fixed end
+ SELRPN>  17023 atoms have been selected out of  17303
+  
+ CHARMM>     
+  
+ CHARMM>    skip all excl angl bond dihe elec impr urey vdw cdih
+ SKIPE> The following energy terms will be computed :
+  BOND ANGL UREY DIHE IMPR VDW  ELEC CDIH
+  
+ CHARMM>    mini abnr nstep 5000 nprint 50 -
+ CHARMM>     tolgrd 0.01 tolenr 0.0001 tolstp 0.00
+
+ NONBOND OPTION FLAGS: 
+     ELEC     VDW      ATOMs    CDIElec  SHIFt    VATOm    VSWItch 
+     BYGRoup  NOEXtnd  NOEWald 
+ CUTNB  = 14.000 CTEXNB =999.000 CTONNB = 10.000 CTOFNB = 12.000
+ WMIN   =  1.500 WRNMXD =  0.500 E14FAC =  1.000 EPS    =  1.000
+ NBXMOD =      5
+ There are  7228480 atom  pairs and    94170 atom  exclusions.
+ There are        0 group pairs and    15182 group exclusions.
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  7458087 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+   183170 ATOM PAIRS WERE FOUND FOR ATOM LIST
+    11419 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+
+
+ ABNER> An energy minimization has been requested.
+
+ EIGRNG =    0.0005000   MINDIM =            5
+ NPRINT =           50   NSTEP  =         5000
+ PSTRCT =    0.0000000   SDSTP  =    0.0200000
+ STPLIM =    1.0000000   STRICT =    0.1000000
+ TOLFUN =    0.0001000   TOLGRD =    0.0100000
+ TOLITR =          100   TOLSTP =    0.0000000
+ FMEM   =    0.0000000
+MINI MIN: Cycle      ENERgy      Delta-E         GRMS    Step-size
+MINI INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+MINI EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+MINI CONSTR:       HARMonic    CDIHedral          CIC     RESDistance       NOE
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>        0    -61.48690      0.00000    152.72519      0.00000
+MINI INTERN>       21.25797     87.62872      0.30744     77.25042      6.64869
+MINI EXTERN>     -168.95354   -144.75355      0.00000      0.00000      0.00000
+MINI CONSTR>        0.00000     59.12695      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       50   -157.96428     96.47738     11.13926      0.00179
+MINI INTERN>       18.22616     72.41751      0.24889     77.19350      5.90788
+MINI EXTERN>     -170.99436   -161.10701      0.00000      0.00000      0.00000
+MINI CONSTR>        0.00000      0.14315      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      100   -168.85586     10.89159      3.33834      0.00092
+MINI INTERN>       17.07088     66.75224      0.27827     76.98160      5.65065
+MINI EXTERN>     -166.99907   -168.60237      0.00000      0.00000      0.00000
+MINI CONSTR>        0.00000      0.01194      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      150   -178.15440      9.29854      7.35907      0.00130
+MINI INTERN>       17.13261     68.90176      0.24512     75.84264      5.29587
+MINI EXTERN>     -167.30000   -178.33669      0.00000      0.00000      0.00000
+MINI CONSTR>        0.00000      0.06429      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+
+ ABNER> Minimization exiting with function tolerance ( 0.0001000) satisfied.
+
+ABNR MIN: Cycle      ENERgy      Delta-E         GRMS    Step-size
+ABNR INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+ABNR EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ABNR CONSTR:       HARMonic    CDIHedral          CIC     RESDistance       NOE
+ ----------       ---------    ---------    ---------    ---------    ---------
+ABNR>      154   -179.09234      0.93794      5.87810      0.00077
+ABNR INTERN>       17.49013     68.53633      0.24258     75.68955      5.17981
+ABNR EXTERN>     -167.51790   -178.76025      0.00000      0.00000      0.00000
+ABNR CONSTR>        0.00000      0.04740      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+  
+ CHARMM>     
+  
+ CHARMM>    ! Output DESIGN Molecule A
+ CHARMM>    open write unit 10 name group1_moleculea_postperturbation.pdb card
+ VOPEN> Attempting to open::group1_moleculea_postperturbation.pdb::
+ OPNLGU> Unit 10 opened for WRITE access to group1_moleculea_postperturbation.pdb
+  
+ CHARMM>    write coor sele segi mla end pdb unit 10 card
+ RDTITL> CLOSE UNIT 10
+  Write CHARMM-pdb format
+ SELRPN>   8572 atoms have been selected out of  17303
+ NOTE: A SELECTED SUBSET OF ATOMS WILL BE USED
+
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Output DESIGN Molecule D
+ CHARMM>    open write unit 10 name group1_moleculed_postperturbation.pdb card
+ VOPEN> Attempting to open::group1_moleculed_postperturbation.pdb::
+ OPNLGU> Unit 10 opened for WRITE access to group1_moleculed_postperturbation.pdb
+  
+ CHARMM>    write coor sele segi mld end pdb unit 10 card
+ RDTITL> CLOSE UNIT 10
+  Write CHARMM-pdb format
+ SELRPN>   8572 atoms have been selected out of  17303
+ NOTE: A SELECTED SUBSET OF ATOMS WILL BE USED
+
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Output TARGET Molecule F
+ CHARMM>    open write unit 10 name group1_moleculef_postperturbation.pdb card
+ VOPEN> Attempting to open::group1_moleculef_postperturbation.pdb::
+ OPNLGU> Unit 10 opened for WRITE access to group1_moleculef_postperturbation.pdb
+  
+ CHARMM>    write coor sele segi mlf end pdb unit 10 card
+ RDTITL> CLOSE UNIT 10
+  Write CHARMM-pdb format
+ SELRPN>    108 atoms have been selected out of  17303
+ NOTE: A SELECTED SUBSET OF ATOMS WILL BE USED
+
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Output TARGET Molecule M
+ CHARMM>    open write unit 10 name group1_moleculem_postperturbation.pdb card
+ VOPEN> Attempting to open::group1_moleculem_postperturbation.pdb::
+ OPNLGU> Unit 10 opened for WRITE access to group1_moleculem_postperturbation.pdb
+  
+ CHARMM>    write coor sele segi mlm end pdb unit 10 card
+ RDTITL> CLOSE UNIT 10
+  Write CHARMM-pdb format
+ SELRPN>     11 atoms have been selected out of  17303
+ NOTE: A SELECTED SUBSET OF ATOMS WILL BE USED
+
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Output TARGET Molecule B
+ CHARMM>    open write unit 10 name group1_moleculeb_postperturbation.pdb card
+ VOPEN> Attempting to open::group1_moleculeb_postperturbation.pdb::
+ OPNLGU> Unit 10 opened for WRITE access to group1_moleculeb_postperturbation.pdb
+  
+ CHARMM>    write coor sele segi mlb end pdb unit 10 card
+ RDTITL> CLOSE UNIT 10
+  Write CHARMM-pdb format
+ SELRPN>     40 atoms have been selected out of  17303
+ NOTE: A SELECTED SUBSET OF ATOMS WILL BE USED
+
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    stop
+$$$$$$  New timer profile $$$$$
+         Electrostatic & VDW             2.04 Other:            0.00
+      Nonbond force                   2.04 Other:            0.00
+         Bond energy                     0.03 Other:            0.00
+         Angle energy                    0.03 Other:            0.00
+         Dihedral energy                 0.12 Other:            0.00
+         Restraints energy               0.05 Other:            0.00
+      INTRNL energy                   0.27 Other:            0.04
+   Energy time                     2.39 Other:            0.08
+ Total time                     10.52 Other:            8.13
+
+                    NORMAL TERMINATION BY NORMAL STOP
+                    MAXIMUM STACK SPACE USED IS  250184
+                    STACK CURRENTLY IN USE IS         0
+                    MOST SEVERE WARNING WAS AT LEVEL  4
+                    HEAP PRINTOUT-  HEAP SIZE         10240000
+                    SPACE CURRENTLY IN USE IS            13824
+                    MAXIMUM SPACE USED IS              7946266
+                    FREE LIST
+  PRINHP> ADDRESS:               1 LENGTH:        10225676 NEXT:        10239501
+  PRINHP> ADDRESS:        10239501 LENGTH:             500 NEXT:               0
+
+                    $$$$$ JOB ACCOUNTING INFORMATION $$$$$
+                     ELAPSED TIME:    10.52  SECONDS 
+                         CPU TIME:     0.00  SECONDS 

@@ -1,0 +1,9 @@
+27    SER THR 
+28    GLY 
+29    ALA THR 
+30    ILE VAL 
+31    THR 
+35    SER THR 
+36    ARG ASP GLY ILE SER 
+37    ASN HIS 
+38    HIS PHE TYR 

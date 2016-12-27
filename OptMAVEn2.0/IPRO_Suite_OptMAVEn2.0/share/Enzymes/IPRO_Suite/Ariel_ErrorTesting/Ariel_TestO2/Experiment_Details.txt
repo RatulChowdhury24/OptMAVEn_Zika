@@ -1,0 +1,65 @@
+Basic Experiment Information
+User:                         aml52
+Type:                         OptZyme
+Name:                         Ariel_TestO2
+File Format:                  PDB
+Force Field:                  CHARMM
+Folder:                       /gpfs/scratch/aml52/IPRO_Suite/IPRO/experiments/Ariel_TestO2/
+
+How to run IPRO
+IPRO Iterations:              3000
+IPRO Annealing Temperature:   3640.000
+Annealing Sharing:            yes
+Energy Calculation:           Interaction
+
+How to use CHARMM
+CHARMM Topology File:         mcr_topology.rtf
+CHARMM Parameter File:        mcr_parameters.prm
+CHARMM Energy Term:           angl
+CHARMM Energy Term:           bond
+CHARMM Energy Term:           dihe
+CHARMM Energy Term:           elec
+CHARMM Energy Term:           impr
+CHARMM Energy Term:           urey
+CHARMM Energy Term:           vdw
+CHARMM Iterations:            4998
+Lj Phi:                       0.005
+
+How to use Implicit Solvation
+Use Solvation:                no
+
+How to use rotamers
+Rotamer Library:              /gpfs/group/cdm/rotlib/
+Rotamer Window:               40.000
+Max Rotamer Number:           1300
+Packing Cutoff:               4.500
+Packing Method:               Distance
+Packing Selection:            RESTRAINED
+
+How to do Structure Refinements
+Do Refinement:                yes
+Refinement Iterations:        25
+Ensemble Number:              10
+
+How to run Docking
+Docking Frequency:            3
+Docking Iterations:           500
+Docking SD Movements:         0.200
+Docking SD Rotations:         2.000
+Docking Start Temp:           3640.000
+Docking End Temp:             2190.000
+
+The Molecules used in the experiment
+Molecule:                     Molecule E from file 3SQG_E.pdb is Design Molecule A
+Molecule:                     Molecule A from file COB.pdb is Target Molecule B
+
+The Design Groups
+Design Group:                 Maintain binding to Molecules: B
+
+Residues that are Permitted to Mutate
+Design Position:              Residue 200 in Molecule A
+Design Position:              Residue 202 in Molecule A
+Design Position:              Residue 204 in Molecule A
+
+Restraints on Atom-Atom distances
+Distance Restraint:           Between Atom CA in Residue 422 in Molecule A and Atom CB in Residue 422 in Molecule A in all Design Groups KMIN: 100.000 RMIN: 0.500 KMAX: 75.000 RMAX: 2.000 FMAX: 120.000

@@ -1,0 +1,8 @@
+27    GLY 
+28    ASP PHE TYR 
+29    SER THR 
+30    PHE VAL 
+35    ASN THR 
+36    ASN SER 
+37    ASP GLY TYR 
+38    TRP TYR 

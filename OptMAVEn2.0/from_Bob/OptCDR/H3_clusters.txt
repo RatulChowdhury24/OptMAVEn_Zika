@@ -1,0 +1,436 @@
+H3 Cluster 1       Length: 5       Model: 1HH6    Members: 17
+1HH6 1HI6 1BOG 1CFN 1CFT 1HH9 1CFQ 1CFS 2Q8B 2Q8A 1H8S 1H8O 1H8N 1C5B 1C5C 
+1I3G 1IIF 
+
+H3 Cluster 2       Length: 6       Model: 1TQB    Members: 19
+1TQB 1TPX 1TQC 3QG7 3MNV 2VXU 3MO1 2R4S 2R4R 3KJ6 3QG6 1FJ1 3GGW 2VXT 3C6S 
+3BZ4 2DDQ 1NSN 1EMT 
+
+H3 Cluster 3       Length: 7       Model: 2DQE    Members: 63
+2DQE 2DQC 2DQJ 1J1X 1J1P 3A67 3A6B 3A6C 1UA6 1J1O 2DQH 1NDG 2DQD 2DQG 1C08 
+1XGP 1DQJ 1XGU 1XGR 3D9A 2EKS 2DQF 1XGQ 1NBY 1UAC 1XGT 1NBZ 1IC7 1IC4 2DQI 
+2EIZ 2ZNW 1NDM 1IC5 1DQM 1NGY 1DQQ 1NAK 1N7M 1NGW 3FCT 1P4B 1GGI 3HFM 3DSF 
+1AJ7 1GAF 1HKL 3CXD 1IND 1INE 1NGZ 2OZ4 1KTR 2ZKH 1V7M 2RCS 1PSK 2PSK 1GGC 
+1GGB 1P4I 1V7N 
+
+H3 Cluster 4       Length: 7       Model: 1NLD    Members: 12
+1NLD 1E4X 1E4W 1DL7 1CR9 1CU4 1JNL 1JNN 1HFM 1NGX 2HFM 1BBJ 
+
+H3 Cluster 5       Length: 8       Model: 1UB5    Members: 7
+1UB5 1UB6 1FL3 3CFB 3CFC 2EH8 1F3D 
+
+H3 Cluster 6       Length: 8       Model: 3D85    Members: 1
+3D85 
+
+H3 Cluster 7       Length: 9       Model: 1DX2    Members: 37
+1DX2 1DX3 1TET 1ZEA 1YNK 2CGR 3HC4 3HC3 3HC0 1NJ9 1YNL 1KCR 3G5Y 1KCS 3NFS 
+1MLB 1FE8 1CGS 1KC5 3G5V 3NFP 1MCO 2Q76 1KCU 1MLC 3G5Z 3G5X 1KCV 1P2C 2R29 
+2XKN 2ZPK 3LEY 3LEX 2D7T 3IET 3IF1 
+
+H3 Cluster 8       Length: 9       Model: 3FO9    Members: 22
+3FO9 1AXT 2Z91 1T66 1HQ4 2Z92 1CF8 1DZB 2J88 4FAB 2E27 1X9Q 3FZU 2C1O 2C1P 
+1BQL 1YQV 2IFF 1MJU 1MJJ 3HFL 1H3P 
+
+H3 Cluster 9       Length: 10      Model: 1VFB    Members: 61
+1VFB 1KIR 1G7M 1KIP 1G7H 1KIQ 1G7I 1A2Y 1FDL 1BVK 1DVF 1A7O 1A7R 1A7P 1BVL 
+1A7Q 1A7N 1VFA 1F4W 1PG7 1A6T 1F4X 2YBR 3N85 1F4Y 1MIM 2VQ1 1FGN 2R0L 3E8U 
+2VXQ 2GHW 3HR5 1UJ3 1B4J 1K6Q 1AHW 1JPT 1EM4 1T3F 1JPS 1T04 3IU3 2PCP 3AB0 
+2WUC 1B2W 2WUB 2R0K 2JIX 2BDN 1PLG 1CIC 1IQD 1FL5 1XGY 1KEM 2HKH 2HKF 1KEL 
+1FL6 
+
+H3 Cluster 10      Length: 10      Model: 1WEJ    Members: 10
+1WEJ 1QBL 1QBM 1UWG 1UWE 1MAM 1I7Z 1UZ6 3M8O 1UZ8 
+
+H3 Cluster 11      Length: 11      Model: 2XQY    Members: 52
+2XQY 1M71 3BT2 1MHH 2FD6 2FAT 1NLB 2DD8 2G75 1YMH 1N64 2GCY 3LS4 1M7I 1M7D 
+3LS5 1JHL 1PZ5 2FBJ 2A0L 3I2C 1ORS 1IGT 1ORQ 3FFD 1FSK 1WT5 3GNM 2QR0 2GSG 
+2W65 3HNT 3HNS 3HNV 2OTW 2W60 2OTU 3K2U 3IY4 1QLE 1MQK 3EHB 1AR1 2JEL 1JV5 
+2Z4Q 3HB3 1PKQ 1MFB 1MFD 1MFA 1MFC 
+
+H3 Cluster 12      Length: 11      Model: 2ITD    Members: 49
+2ITD 2NLJ 1K4D 2HVK 1R3J 1R3I 1S5H 1R3L 2IH1 2DWE 2IH3 2JK5 2ITC 3FB5 3F7V 
+3FB7 2HJF 3IGA 2W0F 3OR6 3F7Y 3FB8 3F5W 1K4C 3FB6 2BOC 2DWD 3OR7 2HVJ 1R3K 
+1ZWI 2ATK 3GB7 2BOB 3OGC 3HPL 2NZ9 2NYY 3BSZ 3CK0 1CK0 3KS0 2CK0 7FAB 2AEP 
+1YNT 1I9R 2AEQ 2VXS 
+
+H3 Cluster 13      Length: 11      Model: 3CLF    Members: 8
+3CLF 3CLE 2ADF 1CT8 1UM5 1UM4 2OK0 2OJZ 
+
+H3 Cluster 14      Length: 11      Model: 1F8T    Members: 4
+1F8T 1F90 1S5I 1T4K 
+
+H3 Cluster 15      Length: 11      Model: 1A3R    Members: 3
+1A3R 2G2R 1BBD 
+
+H3 Cluster 16      Length: 11      Model: 2HH0    Members: 2
+2HH0 1EO8 
+
+H3 Cluster 17      Length: 11      Model: 1UM6    Members: 1
+1UM6 
+
+H3 Cluster 18      Length: 12      Model: 1DBK    Members: 39
+1DBK 1DBJ 2DBL 1DBA 1DBM 1DBB 1A4J 1JGU 1A4K 1C1E 1JGV 2O5Z 2O5Y 1Q0Y 3R1G 
+1Q0X 2CMR 1SY6 1EGJ 1IGI 3QWO 3IXT 3ESV 1IGJ 1ATM 3H0T 1BFV 1CFV 2BFV 3DGG 
+3DUR 3DUS 3DV6 1BGX 1WZ1 3DUU 1KB5 3IY2 2ZJS 
+
+H3 Cluster 19      Length: 12      Model: 1BLN    Members: 24
+1BLN 2UYL 1LO4 1LO2 1LO0 1LO3 3PP3 1UCB 1CLY 2HWZ 1CBV 1CLZ 3EYV 1S3K 2UUD 
+1RFD 1NBV 3LOH 2DTG 1MIG 1RMF 1CE1 1BEY 1RVF 
+
+H3 Cluster 20      Length: 12      Model: 3HAE    Members: 21
+3HAE 3GJG 3GJF 3GJE 1A3L 1RUQ 1RUR 1AD0 1CLO 1I9I 1I9J 2XWT 1RIU 1RIV 1QYG 
+2AGJ 3OZ9 1L7S 1VPO 3DIF 1L7T 
+
+H3 Cluster 21      Length: 12      Model: 2VDQ    Members: 21
+2VDQ 2VDR 2VDO 2VDL 2VDP 2VDN 2VDK 2VDM 3NID 3NIF 1TXV 1TY3 2VC2 3NIG 1TY5 
+1TY6 1TY7 3ETB 3ESU 3ET9 1QNZ 
+
+H3 Cluster 22      Length: 12      Model: 3HMW    Members: 18
+3HMW 1QKZ 2VL5 2V7H 3QOS 3KYK 1ZTX 3O11 2ZUQ 1AY1 1FVB 3MCL 3KYM 3MXV 3MXW 
+1FOR 3I50 2FVB 
+
+H3 Cluster 23      Length: 12      Model: 2I9L    Members: 10
+2I9L 1IGF 2IGF 3L95 1MHP 2B2X 3EOT 1S78 1L7I 2KH2 
+
+H3 Cluster 24      Length: 12      Model: 2AK1    Members: 7
+2AK1 2AJY 2AJX 2AJZ 2AJU 2AJV 2AJS 
+
+H3 Cluster 25      Length: 12      Model: 3GM0    Members: 6
+3GM0 3GKZ 1MH5 1MJ8 1AIF 3IY5 
+
+H3 Cluster 26      Length: 12      Model: 1NCW    Members: 6
+1NCW 1RUK 1RUP 1RUM 1ND0 32C2 
+
+H3 Cluster 27      Length: 12      Model: 3JWD    Members: 5
+3JWD 3JWO 1RZ7 1F11 1FIG 
+
+H3 Cluster 28      Length: 12      Model: 3O45    Members: 4
+3O45 3O41 1JNH 1JN6 
+
+H3 Cluster 29      Length: 12      Model: 35C8    Members: 2
+35C8 25C8 
+
+H3 Cluster 30      Length: 12      Model: 43CA    Members: 2
+43CA 43C9 
+
+H3 Cluster 31      Length: 12      Model: 1KNO    Members: 2
+1KNO 1EAP 
+
+H3 Cluster 32      Length: 12      Model: 2GFB    Members: 1
+2GFB 
+
+H3 Cluster 33      Length: 12      Model: 3LIZ    Members: 1
+3LIZ 
+
+H3 Cluster 34      Length: 12      Model: 15C8    Members: 1
+15C8 
+
+H3 Cluster 35      Length: 13      Model: 1RJL    Members: 18
+1RJL 1KEG 1EHL 1AD9 1XF3 1IGC 1FVD 1NC4 1NC2 3H3B 1FVE 1AFV 1OAR 1OAX 1OAY 
+1OAZ 1OAU 2FJF 
+
+H3 Cluster 36      Length: 13      Model: 3MBX    Members: 14
+3MBX 3L5W 3L5X 3L7F 3L5Y 3L7E 1I8K 1I8I 3RAJ 1YY9 1YY8 3HQK 3NCY 3HI6 
+
+H3 Cluster 37      Length: 13      Model: 1NCD    Members: 12
+1NCD 1NCA 1NCB 1NCC 2ADG 2ADI 2ADJ 3EO1 1N4X 1XF2 1I8M 2FR4 
+
+H3 Cluster 38      Length: 13      Model: 1NGP    Members: 11
+1NGP 1A6W 1NGQ 1A6U 3IY3 1A6V 1AI1 1ACY 1AE6 1JP5 1SVZ 
+
+H3 Cluster 39      Length: 13      Model: 1FVC    Members: 11
+1FVC 3BDY 3BE1 1N8Z 3IY0 1HIL 2H1P 1NQB 3CFE 2VWE 3CFD 
+
+H3 Cluster 40      Length: 13      Model: 3NH7    Members: 7
+3NH7 2MCP 1MCP 1E6J 1E6O 1XF4 2FL5 
+
+H3 Cluster 41      Length: 13      Model: 3DVG    Members: 6
+3DVG 3DVN 1TZI 1OB1 2FJG 2GKI 
+
+H3 Cluster 42      Length: 13      Model: 3D69    Members: 4
+3D69 1NL0 1P7K 3L1O 
+
+H3 Cluster 43      Length: 13      Model: 1D5B    Members: 3
+1D5B 1AXS 1D5I 
+
+H3 Cluster 44      Length: 13      Model: 12E8    Members: 2
+12E8 1CL7 
+
+H3 Cluster 45      Length: 13      Model: 1KEN    Members: 1
+1KEN 
+
+H3 Cluster 46      Length: 13      Model: 2JB5    Members: 1
+2JB5 
+
+H3 Cluster 47      Length: 13      Model: 2BJM    Members: 1
+2BJM 
+
+H3 Cluster 48      Length: 13      Model: 3OKM    Members: 1
+3OKM 
+
+H3 Cluster 49      Length: 13      Model: 1QOK    Members: 1
+1QOK 
+
+H3 Cluster 50      Length: 13      Model: 1OHQ    Members: 1
+1OHQ 
+
+H3 Cluster 51      Length: 14      Model: 1OTU    Members: 34
+1OTU 2EZ0 2EXY 1OTT 2HTK 2HLF 3EJZ 2FED 1OTS 3DET 3EJY 2FEE 2FEC 2EXW 2HT2 
+2HT4 2HTL 2H2P 2H2S 2HT3 1IT9 2A6J 1IAI 1IQW 3NAC 2A6K 2A6I 6FAB 1JFQ 3NAA 
+3NA9 3NAB 3NCJ 2A6D 
+
+H3 Cluster 52      Length: 14      Model: 8FAB    Members: 13
+8FAB 1DN0 1QLR 2R56 1OSP 3NGB 3GBN 3GBM 1KFA 1DEE 1IGM 1HEZ 3CVH 
+
+H3 Cluster 53      Length: 14      Model: 1SBS    Members: 6
+1SBS 1JRH 3CVI 3MA9 3G04 3MAC 
+
+H3 Cluster 54      Length: 14      Model: 3NN8    Members: 4
+3NN8 1H0D 3FMG 2VXV 
+
+H3 Cluster 55      Length: 14      Model: 1FVW    Members: 4
+1FVW 2FVW 2G5B 2OSL 
+
+H3 Cluster 56      Length: 14      Model: 3EOA    Members: 4
+3EOA 3EOB 3EO9 2XA8 
+
+H3 Cluster 57      Length: 14      Model: 2AP2    Members: 3
+2AP2 1MVU 1AP2 
+
+H3 Cluster 58      Length: 14      Model: 2MPA    Members: 3
+2MPA 1MPA 1MNU 
+
+H3 Cluster 59      Length: 14      Model: 3C09    Members: 2
+3C09 1IL1 
+
+H3 Cluster 60      Length: 14      Model: 1C12    Members: 1
+1C12 
+
+H3 Cluster 61      Length: 14      Model: 2FJH    Members: 1
+2FJH 
+
+H3 Cluster 62      Length: 14      Model: 2R8S    Members: 1
+2R8S 
+
+H3 Cluster 63      Length: 14      Model: 1DSF    Members: 1
+1DSF 
+
+H3 Cluster 64      Length: 15      Model: 1N6Q    Members: 14
+1N6Q 1T03 1R0A 1N5Y 3KLH 1HYS 1J5O 2HMI 1EZV 1KYO 1KB9 2IBZ 1P84 1IBG 
+
+H3 Cluster 65      Length: 15      Model: 2GJZ    Members: 10
+2GJZ 2GK0 1NMC 1A14 1NMA 1NMB 3FO2 3FO0 3FO1 1W72 
+
+H3 Cluster 66      Length: 15      Model: 3EYS    Members: 5
+3EYS 3EYU 2R0Z 2IQ9 2R0W 
+
+H3 Cluster 67      Length: 15      Model: 2ZCL    Members: 4
+2ZCL 2ZCH 2ZCK 3IVK 
+
+H3 Cluster 68      Length: 15      Model: 3QCV    Members: 3
+3QCV 3QCU 3QCT 
+
+H3 Cluster 69      Length: 15      Model: 1Q9O    Members: 3
+1Q9O 1Q9W 3I02 
+
+H3 Cluster 70      Length: 15      Model: 3G6A    Members: 3
+3G6A 3G6D 3O2D 
+
+H3 Cluster 71      Length: 15      Model: 1R24    Members: 2
+1R24 1BZ7 
+
+H3 Cluster 72      Length: 15      Model: 2XRA    Members: 2
+2XRA 1TZH 
+
+H3 Cluster 73      Length: 15      Model: 2OP4    Members: 2
+2OP4 2NTF 
+
+H3 Cluster 74      Length: 15      Model: 3MCK    Members: 1
+3MCK 
+
+H3 Cluster 75      Length: 15      Model: 1FBI    Members: 1
+1FBI 
+
+H3 Cluster 76      Length: 15      Model: 2J6E    Members: 1
+2J6E 
+
+H3 Cluster 77      Length: 15      Model: 3GIZ    Members: 1
+3GIZ 
+
+H3 Cluster 78      Length: 15      Model: 3BKY    Members: 1
+3BKY 
+
+H3 Cluster 79      Length: 16      Model: 1YEI    Members: 10
+1YEI 1YEC 1KN2 1KN4 1YEJ 1YEG 1YEH 1YEF 1YEK 1YEE 
+
+H3 Cluster 80      Length: 16      Model: 3OAU    Members: 8
+3OAU 1ZLS 1OP3 1ZLW 3OB0 1ZLU 2OQJ 1OP5 
+
+H3 Cluster 81      Length: 16      Model: 1Y0L    Members: 6
+1Y0L 1Y18 1FNS 1OAK 3RKD 2AJ3 
+
+H3 Cluster 82      Length: 16      Model: 2DQU    Members: 5
+2DQU 1HYY 2DQT 1HYX 1UWX 
+
+H3 Cluster 83      Length: 16      Model: 2VIT    Members: 5
+2VIT 2VIR 2VIS 2QSC 1GIG 
+
+H3 Cluster 84      Length: 16      Model: 1CZ8    Members: 3
+1CZ8 1BJ1 2BRR 
+
+H3 Cluster 85      Length: 16      Model: 3LZF    Members: 2
+3LZF 3QHF 
+
+H3 Cluster 86      Length: 16      Model: 1OM3    Members: 2
+1OM3 2QHR 
+
+H3 Cluster 87      Length: 16      Model: 2J5L    Members: 2
+2J5L 2J4W 
+
+H3 Cluster 88      Length: 16      Model: 2AAB    Members: 1
+2AAB 
+
+H3 Cluster 89      Length: 16      Model: 1AAG    Members: 1
+1AAG 
+
+H3 Cluster 90      Length: 16      Model: 3G6J    Members: 1
+3G6J 
+
+H3 Cluster 91      Length: 16      Model: 2QQN    Members: 1
+2QQN 
+
+H3 Cluster 92      Length: 16      Model: 1DQD    Members: 1
+1DQD 
+
+H3 Cluster 93      Length: 16      Model: 2A1W    Members: 1
+2A1W 
+
+H3 Cluster 94      Length: 16      Model: 3GO1    Members: 1
+3GO1 
+
+H3 Cluster 95      Length: 16      Model: 1ADQ    Members: 1
+1ADQ 
+
+H3 Cluster 96      Length: 17      Model: 3IJH    Members: 8
+3IJH 3IKC 3IJS 3IJY 3HZV 3HZK 3HZM 3HZY 
+
+H3 Cluster 97      Length: 17      Model: 3MLS    Members: 5
+3MLS 3MLT 3MLV 3MLR 3MLU 
+
+H3 Cluster 98      Length: 17      Model: 2B1A    Members: 3
+2B1A 2B0S 2B1H 
+
+H3 Cluster 99      Length: 17      Model: 3HI1    Members: 2
+3HI1 1U6A 
+
+H3 Cluster 100     Length: 17      Model: 2F19    Members: 2
+2F19 1FAI 
+
+H3 Cluster 101     Length: 17      Model: 3GI9    Members: 2
+3GI9 3GI8 
+
+H3 Cluster 102     Length: 17      Model: 2QQK    Members: 2
+2QQK 2QQL 
+
+H3 Cluster 103     Length: 17      Model: 3BAE    Members: 1
+3BAE 
+
+H3 Cluster 104     Length: 17      Model: 3AAZ    Members: 1
+3AAZ 
+
+H3 Cluster 105     Length: 17      Model: 3OJD    Members: 1
+3OJD 
+
+H3 Cluster 106     Length: 17      Model: 1YED    Members: 1
+1YED 
+
+H3 Cluster 107     Length: 17      Model: 2VYR    Members: 1
+2VYR 
+
+H3 Cluster 108     Length: 17      Model: 3PJS    Members: 1
+3PJS 
+
+H3 Cluster 109     Length: 18      Model: 2HRP    Members: 4
+2HRP 1MF2 2HFG 1ETZ 
+
+H3 Cluster 110     Length: 18      Model: 3EYF    Members: 2
+3EYF 1RIH 
+
+H3 Cluster 111     Length: 18      Model: 1OPG    Members: 1
+1OPG 
+
+H3 Cluster 112     Length: 18      Model: 3LQA    Members: 1
+3LQA 
+
+H3 Cluster 113     Length: 18      Model: 3LMJ    Members: 1
+3LMJ 
+
+H3 Cluster 114     Length: 18      Model: 3INU    Members: 1
+3INU 
+
+H3 Cluster 115     Length: 19      Model: 1F58    Members: 3
+1F58 2F58 3F58 
+
+H3 Cluster 116     Length: 19      Model: 1OBE    Members: 2
+1OBE 1DFB 
+
+H3 Cluster 117     Length: 19      Model: 3FN0    Members: 1
+3FN0 
+
+H3 Cluster 118     Length: 19      Model: 3MLW    Members: 1
+3MLW 
+
+H3 Cluster 119     Length: 19      Model: 3P30    Members: 1
+3P30 
+
+H3 Cluster 120     Length: 19      Model: 3NPS    Members: 1
+3NPS 
+
+H3 Cluster 121     Length: 19      Model: 1IKF    Members: 1
+1IKF 
+
+H3 Cluster 122     Length: 20      Model: 2FX7    Members: 4
+2FX7 1TZG 2FX9 2FX8 
+
+H3 Cluster 123     Length: 20      Model: 2NY7    Members: 4
+2NY7 1HZH 1N0X 3JUY 
+
+H3 Cluster 124     Length: 20      Model: 2OR9    Members: 1
+2OR9 
+
+H3 Cluster 125     Length: 20      Model: 2A9M    Members: 1
+2A9M 
+
+H3 Cluster 126     Length: 20      Model: 2A9N    Members: 1
+2A9N 
+
+H3 Cluster 127     Length: 21      Model: 2NY3    Members: 19
+2NY3 2NXZ 2NY1 2NY4 2NXY 2NY2 2NY0 2NY5 2NY6 1YYL 2I5Y 1RZJ 1YYM 1G9M 2I60 
+1RZ8 1G9N 1RZK 1GC1 
+
+H3 Cluster 128     Length: 21      Model: 3MLX    Members: 3
+3MLX 3MLY 3MLZ 
+
+H3 Cluster 129     Length: 21      Model: 3IDX    Members: 2
+3IDX 3IDY 
+
+H3 Cluster 130     Length: 21      Model: 3BN9    Members: 1
+3BN9 
+
+H3 Cluster 131     Length: 22      Model: 3GHB    Members: 4
+3GHB 3C2A 1Q1J 3GHE 
+
+H3 Cluster 132     Length: 22      Model: 1ZA3    Members: 1
+1ZA3 
+
+H3 Cluster 133     Length: 23      Model: 3PIQ    Members: 1
+3PIQ 
+
+H3 Cluster 134     Length: 24      Model: 1U95    Members: 31
+1U95 1U91 1U93 1U8J 1U8I 1U8H 1U8P 1U8L 3IDG 1U8O 1U8Q 1U92 1U8M 1U8N 3D0V 
+2P8L 2F5B 3IDJ 2PW1 1U8K 3IDN 3IDM 1TJG 1TJH 3MOA 3MOB 1TJI 2PW2 3MOD 2P8P 
+3LEV 
+
+H3 Cluster 135     Length: 24      Model: 2F5A    Members: 1
+2F5A 
+

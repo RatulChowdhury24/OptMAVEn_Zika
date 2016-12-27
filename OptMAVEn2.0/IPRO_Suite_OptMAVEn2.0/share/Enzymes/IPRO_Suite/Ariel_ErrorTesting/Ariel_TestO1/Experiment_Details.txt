@@ -1,0 +1,63 @@
+Basic Experiment Information
+User:                         aml52
+Type:                         OptZyme
+Name:                         Ariel_TestO1
+File Format:                  PDB
+Force Field:                  CHARMM
+Folder:                       /gpfs/scratch/aml52/IPRO_Suite/IPRO/experiments/Ariel_TestO1/
+
+How to run IPRO
+IPRO Iterations:              3000
+IPRO Annealing Temperature:   3640.000
+Annealing Sharing:            yes
+Energy Calculation:           Interaction
+
+How to use CHARMM
+CHARMM Topology File:         mcr_topology.rtf
+CHARMM Parameter File:        mcr_parameters.prm
+CHARMM Energy Term:           angl
+CHARMM Energy Term:           bond
+CHARMM Energy Term:           dihe
+CHARMM Energy Term:           elec
+CHARMM Energy Term:           impr
+CHARMM Energy Term:           urey
+CHARMM Energy Term:           vdw
+CHARMM Iterations:            4999
+Lj Phi:                       0.005
+
+How to use Implicit Solvation
+Use Solvation:                no
+
+How to use rotamers
+Rotamer Library:              /gpfs/group/cdm/rotlib/
+Rotamer Window:               40.000
+Max Rotamer Number:           1300
+Packing Cutoff:               4.500
+Packing Method:               Distance
+Packing Selection:            RESTRAINED
+
+How to do Structure Refinements
+Do Refinement:                yes
+Refinement Iterations:        25
+Ensemble Number:              10
+
+How to run Docking
+Docking Frequency:            3
+Docking Iterations:           500
+Docking SD Movements:         0.200
+Docking SD Rotations:         2.000
+Docking Start Temp:           3640.000
+Docking End Temp:             2190.000
+
+The Molecules used in the experiment
+Molecule:                     Molecule D from file 3SQG_D.pdb is Design Molecule A
+Molecule:                     Molecule D from file COM.pdb is Target Molecule B
+
+The Design Groups
+Design Group:                 Improve binding to Molecules: B
+
+Residues that are Permitted to Mutate
+Design Position:              Residue 100 in Molecule A
+
+Restraints on Atom Positions
+Position Restraint:           All Atoms in all Residues in all Molecules in all Design Groups, using a force constant of 80.000, to their initial positions

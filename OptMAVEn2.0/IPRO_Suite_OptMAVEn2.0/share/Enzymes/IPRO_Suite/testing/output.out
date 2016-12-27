@@ -1,0 +1,189 @@
+./CHARMM.py:        except (KeyError, TypeError, AttributeError, IPRO_Error):
+./CHARMM.py:    except (KeyError, TypeError, AttributeError, IPRO_Error):
+./CHARMM.py:    except (KeyError, TypeError, AttributeError, EXPERIMENT.ExperimentError):
+./CHARMM.py:    except (KeyError, TypeError, AttributeError, IPRO_Error):
+./CHARMM.py:    except (KeyError, TypeError, AttributeError, IPRO_Error):
+./CHARMM.py:    except (KeyError, TypeError, AttributeError, IPRO_Error):
+./CHARMM.py:    except (KeyError, TypeError, AttributeError, IPRO_Error):
+./EXPERIMENT.py:        elif external in ['User', 'Type', 'Name', 'Force Field', 'File Format',\
+./EXPERIMENT.py:        'Perturbation Solvation', 'Energy Solvation', 'Solvation Type', \
+./EXPERIMENT.py:        if self["Type"] in ['IPRO', 'Mutator', 'OptMAVEn']:
+./EXPERIMENT.py:        if self["Type"] in ['IPRO', 'Mutator', 'OptMAVEn']:
+./EXPERIMENT.py:        if self["Type"] in ['IPRO', 'Mutator', 'OptMAVEn']:
+./EXPERIMENT.py:        if self["Type"] in ['IPRO', 'Mutator', 'OptMAVEn']:
+./EXPERIMENT.py:        if self["Type"] in ['IPRO', 'Mutator', 'OptMAVEn']:
+./EXPERIMENT.py:        if self["Type"] in ['IPRO', 'Mutator', 'OptMAVEn']:
+./EXPERIMENT.py:        if self["Type"] in ['IPRO', 'Mutator', 'OptMAVEn']:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", 'OptMAVEn']:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", 'OptMAVEn']:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO"]:
+./EXPERIMENT.py:        if self["Type"] in ["Mutator"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator"]:
+./EXPERIMENT.py:        if self["Type"] in ['IPRO', 'Mutator', "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO"]:
+./EXPERIMENT.py:        #if self["Type"] in ["OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO"]:
+./EXPERIMENT.py:        if self["Type"] in ["Mutator"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]: 
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ['IPRO', 'Mutator', "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO"]:
+./EXPERIMENT.py:        if self["Type"] in ["Mutator"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator"]:
+./EXPERIMENT.py:        #if self["Type"] in ["OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
+./EXPERIMENT.py:        #if self["Type"] in ["OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "OptZyme"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["OptZyme"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
+./EXPERIMENT.py:        if self["Type"] in ["Mutator"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "OptMAVEn", "OptZyme"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptZyme"]:
+./EXPERIMENT.py:        #if self["Type"] in ["OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:                    if self["Type"] in ["IPRO", "Mutator"]:
+./EXPERIMENT.py:                    if self["Type"] in ["OptMAVEn"] and molecule.design:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./EXPERIMENT.py:        if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+./GAMS.py:    except (IOError, TypeError, OSError):
+./GAMS.py:    except (KeyError, TypeError, AttributeError):
+./GAMS.py:    except (IOError, OSError, KeyError, TypeError, ValueError, AttributeError, \
+./IO_ASK.py:    FUNCTIONS.get_value("Type", "string", experiment, supportedPrograms, False,\
+./IO_ASK.py:    question = "What would you like to name this " + experiment["Type"] 
+./IO_ASK.py:    if experiment["Type"] == "Mutator":
+./IO_ASK.py:    question += "default is " + defaultSolvationType + "."
+./IO_ASK.py:    FUNCTIONS.get_value("Solvation Type", "string", experiment, \
+./IO_ASK.py:                supportedSolvations, default, defaultSolvationType, question)
+./IO_ASK.py:        if experiment["Solvation Type"] == "Lazaridis-Karplus":
+./IO_CHECK.py:    elif attribute == "Type":
+./IO_CHECK.py:            text = "The Type of an IPRO Suite Experiment must be in the "
+./IO_CHECK.py:    elif attribute == "Solvation Type":
+./IO_LOADING.py:    for attribute in ['User', 'Type', 'Name', 'File Format', 'Force Field', \
+./IO_LOADING.py:    if "Type" in experiment and experiment["Type"] == "Mutator":
+./IO_LOADING.py:            errors += standard_load("Solvation Type", experiment, data,"string")
+./IO_LOADING.py:            if errors == '' and experiment["Solvation Type"] == \
+./IO_OUTPUT.py:    for name in ['User', 'Type', 'Name', 'File Format', 'Force Field','Folder']:
+./IO_OUTPUT.py:        if "Type" in experiment and experiment["Type"] == "Mutator" and name \
+./IO_OUTPUT.py:        text += standard_format("Solvation Type", \
+./IO_OUTPUT.py:                                    experiment["Solvation Type"])
+./IO_OUTPUT.py:        if experiment["Solvation Type"] == "Lazaridis-Karplus":
+./IO_OUTPUT.py:    if "Type" in experiment and experiment["Type"] in ['OptMAVEn', 'OptCDR']:
+./IO_OUTPUT.py:    if "Type" in experiment and experiment["Type"] in ['OptMAVEn', 'OptCDR']:
+./IO_VALIDATE.py:    for name in ['User', 'Type', 'Name', 'File Format', 'Force Field','Folder']:
+./IO_VALIDATE.py:        if "Solvation Type" not in experiment:
+./IO_VALIDATE.py:            errors += "\nThe Solvation Type attribute is missing"
+./IO_VALIDATE.py:                CHECK.solvation_info("Solvation Type", \
+./IO_VALIDATE.py:                                     experiment["Solvation Type"])
+./IO_VALIDATE.py:        if not problem and experiment["Solvation Type"] == "Lazaridis-Karplus":
+./IPRO_FUNCTIONS.py:    if experiment["Type"] in ['IPRO', 'Mutator']:
+./IPRO_FUNCTIONS.py:    elif experiment["Type"] in ['OptMAVEn']:
+./IPRO_FUNCTIONS.py:        text += experiment["Type"] + " IPRO Suite Experiment type."
+./IPRO_FUNCTIONS.py:    if experiment["Type"] in ['IPRO', "Mutator"]:
+./IPRO_FUNCTIONS.py:    elif experiment["Type"] in ['OptMAVEn']:
+./IPRO_FUNCTIONS.py:        text += experiment["Type"] + " IPRO Suite Experiment type"
+./IPRO_FUNCTIONS.py:    if experiment["Type"] in ['IPRO', 'Mutator', 'OptMAVEn']:
+./IPRO_FUNCTIONS.py:        text += experiment["Type"] + " IPRO Suite Experiment type"
+./IPRO_FUNCTIONS.py:    if experiment["Type"] in ['IPRO', 'Mutator', 'OptMAVEn']:
+./IPRO_FUNCTIONS.py:    elif experiment["Type"] in ['OptZyme']:
+./IPRO_FUNCTIONS.py:        text += experiment["Type"] + " IPRO Suite Experiment type."
+./IPRO_FUNCTIONS.py:    if experiment["Type"] == "Mutator":
+./IPRO_FUNCTIONS.py:        if experiment["Type"] == "Mutator":
+./REFINEMENT.py:    if experiment["Type"] == "Mutator":
+./REFINEMENT.py:    if experiment["Type"] == "Mutator":
+./REFINEMENT.py:    if experiment["Type"] == "Mutator":
+./REFINEMENT.py:    if experiment["Type"] == "Mutator":
+./REFINEMENT.py:    if experiment["Type"] != "Mutator":
+./REFINEMENT.py:        if experiment["Type"] != "Mutator":
+./REFINEMENT.py:    if experiment["Type"] == "Mutator":
+./REFINEMENT.py:    if experiment["Type"] != "Mutator" and n != 0:
+./REFINEMENT.py:    if experiment["Type"] == "Mutator":
+./REFINEMENT.py:    if experiment["Type"] == "Mutator":
+./REFINEMENT.py:            if experiment["Type"] != "Mutator" or mn in [None, 0]:
+./ROTAMERS.py:    except (KeyError, TypeError, AttributeError, IPRO_Error):
+./ROTAMERS.py:def open_nb_file(path, fileName, fileType):
+./ROTAMERS.py:            text = "The " + fileName + " " + fileType + " file could not be "
+./ROTAMERS.py:    except (KeyError, TypeError, AttributeError, IPRO_Error):
+./ROTAMERS.py:    except (KeyError, TypeError, AttributeError, IPRO_Error):
+./ROTAMERS.py:    except (KeyError, TypeError, AttributeError, IPRO_Error):
+./ROTAMERS.py:    except (KeyError, TypeError, AttributeError, IPRO_Error):
+./ROTAMERS.py:        except (KeyError, TypeError, AttributeError, IPRO_Error):
+./ROTAMERS.py:                solvation = experiment["Solvation Type"]
+./ROTAMERS.py:        except (KeyError, TypeError, AttributeError, IPRO_Error):
+./ROTAMERS.py:                solvation = defaultSolvationType
+./ROTAMERS.py:        except (KeyError, TypeError, AttributeError, IPRO_Error):
+./ROTAMERS.py:                solvation = experiment["Solvation Type"]
+./ROTAMERS.py:        except (KeyError, TypeError, AttributeError, IPRO_Error):
+./ROTAMERS.py:                solvation = defaultSolvationType
+./ROTAMERS.py:        except (KeyError, TypeError, AttributeError, IPRO_Error):
+./ROTAMERS.py:    except (KeyError, TypeError, AttributeError, IPRO_Error):
+./ROTAMERS.py:    except (KeyError, TypeError, AttributeError, IPRO_Error):
+./ROTAMERS.py:    if experiment != None and experiment["Type"] in ['OptMAVEn']:
+./SHARING.py:    if experiment["Type"] == "Mutator":
+./SHARING.py:    if experiment["Type"] == "Mutator":
+./SOLVATION.py:    except (KeyError, TypeError, AttributeError, IPRO_Error):
+./SOLVATION.py:    except (KeyError, TypeError, AttributeError, IPRO_Error):
+./STANDARDS.py:defaultSolvationType = "Lazaridis-Karplus"
+./SUBMITTER.py:    question += "of the " + experiment["Name"] + " " + experiment["Type"]
+./SUBMITTER.py:    text += "python " + experiment["Type"] + ".py\n"
+Binary file ./EXPERIMENT.pyc matches
+Binary file ./STANDARDS.pyc matches
+Binary file ./IO_CHECK.pyc matches
+Binary file ./IO_LOADING.pyc matches
+Binary file ./IO_OUTPUT.pyc matches
+Binary file ./SUBMITTER.pyc matches
+Binary file ./SOLVATION.pyc matches
+Binary file ./CHARMM.pyc matches
+Binary file ./SHARING.pyc matches
+Binary file ./IO_ASK.pyc matches
+./MOLECULES.py:    except (TypeError, ValueError, IndexError, AttributeError, IPRO_Error):
+./MOLECULES.py:    except (TypeError, IndexError, ValueError, AttributeError, IPRO_Error):
+./MOLECULES.py:            raise TypeError
+./MOLECULES.py:    except (TypeError, IndexError, ValueError, AttributeError, IPRO_Error):
+./MOLECULES.py:            raise TypeError
+./MOLECULES.py:    except (TypeError, IndexError, ValueError, AttributeError, IPRO_Error):
+./MOLECULES.py:            raise TypeError
+./MOLECULES.py:    except (TypeError, IndexError, ValueError, AttributeError, IPRO_Error):
+./MOLECULES.py:    # Type is the class, name is the attribute name, and value is its assigned
+./MOLECULES.py:        except (TypeError, IndexError, ValueError, AttributeError):
+./MOLECULES.py:        except (TypeError, IndexError, ValueError, AttributeError):
+./MOLECULES.py:            except (TypeError, IndexError, ValueError, AttributeError):
+./MOLECULES.py:                raise TypeError
+./MOLECULES.py:        except (TypeError, IndexError, ValueError, AttributeError):
+./MOLECULES.py:        except (TypeError, IndexError, ValueError, AttributeError):
+./MOLECULES.py:        raise TypeError
+./MOLECULES.py:        raise TypeError
+./MOLECULES.py:        except TypeError:
+./MOLECULES.py:        except TypeError:
+./MOLECULES.py:        except TypeError:
+./MOLECULES.py:        except TypeError:
+./MOLECULES.py:        except TypeError:
+Binary file ./IO_VALIDATE.pyc matches
+Binary file ./REFINEMENT.pyc matches
+Binary file ./IPRO_FUNCTIONS.pyc matches
+Binary file ./ROTAMERS.pyc matches
+Binary file ./GAMS.pyc matches
+Binary file ./.ROTAMERS.py.swo matches
+Binary file ./MOLECULES.pyc matches
