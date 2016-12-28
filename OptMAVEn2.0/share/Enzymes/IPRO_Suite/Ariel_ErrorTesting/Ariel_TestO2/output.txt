@@ -1,0 +1,20 @@
+
+The Optzyme Groups
+Optzyme Group:                Reduce Kcat/km using TSA Molecules: B
+
+
+
+# can only use one optzyme group per target group?
+
+
+The Optzyme Groups
+Optzyme Group:                Maintain Km using ground Molecules: B
+
+The Optzyme Groups
+Optzyme Group:                Eliminate Kcat/km using TSA Molecules: B
+
+The Optzyme Groups
+Optzyme Group:                Reduce Km using ground Molecules: B
+
+The Optzyme Groups
+Optzyme Group:                Improve Kcat/km using TSA Molecules: B

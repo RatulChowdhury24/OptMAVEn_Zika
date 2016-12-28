@@ -1,0 +1,1615 @@
+Experiment_Details.txt
+input_files
+job_C8_round2_1
+job_C8_round2_10
+job_C8_round2_2
+job_C8_round2_3
+job_C8_round2_4
+job_C8_round2_5
+job_C8_round2_6
+job_C8_round2_7
+job_C8_round2_8
+job_C8_round2_9
+Mutator.py
+results
+structures
+submit.py
+ 
+ 
+Job started on lionxf45 at Thu Apr 17 12:42:04 EDT 2014
+iteration:  1 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8750.86, 'Interaction': -190.6800000000003}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  1
+iteration:  2 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8624.0, 'Interaction': -69.17000000000007}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  2
+iteration:  3 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8806.19, 'Interaction': -184.20000000000027}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  3
+iteration:  4 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8913.54, 'Interaction': -146.9700000000007}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  4
+iteration:  5 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8765.49, 'Interaction': -47.779999999999745}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  5
+iteration:  6 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8923.78, 'Interaction': -122.64000000000033}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  6
+iteration:  7 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8755.52, 'Interaction': -120.77000000000044}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  7
+iteration:  8 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8793.01, 'Interaction': -111.2800000000002}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  8
+iteration:  9 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8917.27, 'Interaction': -179.1200000000008}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  9
+iteration:  10 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8769.66, 'Interaction': -114.00999999999931}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  10
+iteration:  11 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8772.2, 'Interaction': -146.45000000000118}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  11
+iteration:  12 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8839.48, 'Interaction': -127.92000000000007}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  12
+iteration:  13 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8883.36, 'Interaction': -137.00000000000045}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  13
+iteration:  14 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8883.54, 'Interaction': -138.9900000000007}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  14
+iteration:  15 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8971.87, 'Interaction': -143.54000000000087}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  15
+iteration:  16 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8868.57, 'Interaction': -130.72999999999956}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  16
+iteration:  17 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8996.99, 'Interaction': -151.97000000000025}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  17
+iteration:  18 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8474.42, 'Interaction': 35.210000000000036}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  18
+iteration:  19 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8923.85, 'Interaction': -140.70000000000027}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  19
+iteration:  20 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8916.33, 'Interaction': -142.3699999999999}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  20
+iteration:  21 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9104.28, 'Interaction': -145.19000000000005}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  21
+iteration:  22 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9130.4, 'Interaction': -211.90999999999985}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  22
+iteration:  23 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9481.49, 'Interaction': -287.37999999999965}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  23
+iteration:  24 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9288.13, 'Interaction': -268.65999999999985}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  24
+iteration:  25 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9242.87, 'Interaction': -270.5900000000006}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  25
+iteration:  26 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9361.74, 'Interaction': -332.80999999999995}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  26
+iteration:  27 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9324.11, 'Interaction': -290.1400000000003}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  27
+iteration:  28 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9302.04, 'Interaction': -267.90000000000146}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  28
+iteration:  29 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9338.39, 'Interaction': -251.83999999999924}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  29
+iteration:  30 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9222.98, 'Interaction': -279.8599999999992}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  30
+iteration:  31 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9382.63, 'Interaction': -286.1299999999992}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  31
+iteration:  32 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9482.57, 'Interaction': -312.8999999999992}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  32
+iteration:  33 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9340.76, 'Interaction': -310.0700000000006}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  33
+iteration:  34 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9341.42, 'Interaction': -299.2099999999996}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  34
+iteration:  35 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9357.77, 'Interaction': -312.0600000000004}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  35
+iteration:  36 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9316.21, 'Interaction': -300.0499999999988}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  36
+iteration:  37 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9328.41, 'Interaction': -290.2199999999998}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  37
+iteration:  38 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9331.86, 'Interaction': -282.90000000000055}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  38
+iteration:  39 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9380.79, 'Interaction': -310.4800000000014}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  39
+iteration:  40 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9334.64, 'Interaction': -294.4699999999989}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  40
+iteration:  41 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9319.23, 'Interaction': -317.8800000000001}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  41
+iteration:  42 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9392.18, 'Interaction': -312.5700000000006}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  42
+iteration:  43 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9377.62, 'Interaction': -304.5700000000006}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  43
+iteration:  46 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9294.85, 'Interaction': -291.53000000000065}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  46
+iteration:  51 refinement:  False
+iteration:  51 refinement:  False
+iteration:  51 refinement:  False
+iteration:  51 refinement:  False
+iteration:  51 refinement:  False
+iteration:  51 refinement:  False
+iteration:  51 refinement:  False
+iteration:  51 refinement:  False
+iteration:  51 refinement:  False
+iteration:  51 refinement:  False
+iteration:  51 refinement:  False
+['GLY']
+True
+['LYS']
+True
+['LYS']
+True
+['LYS']
+True
+['GLU']
+True
+['GLU']
+True
+['ARG']
+True
+iteration:  1 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9216.59, 'Interaction': -120.90000000000055}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  1
+iteration:  2 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9197.56, 'Interaction': -93.69999999999891}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  2
+iteration:  3 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9150.85, 'Interaction': -78.32999999999993}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  3
+iteration:  4 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9160.71, 'Interaction': -91.5699999999988}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  4
+iteration:  5 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9209.36, 'Interaction': -91.72000000000071}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  5
+iteration:  6 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9113.49, 'Interaction': -208.1899999999996}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  6
+iteration:  7 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9194.77, 'Interaction': -102.76999999999998}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  7
+iteration:  8 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9252.28, 'Interaction': -119.14000000000078}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  8
+iteration:  9 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9117.45, 'Interaction': -132.40000000000055}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  9
+iteration:  10 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9078.14, 'Interaction': -114.52999999999929}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  10
+iteration:  11 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9178.26, 'Interaction': -119.61999999999989}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  11
+iteration:  12 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9427.92, 'Interaction': -259.5699999999997}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  12
+iteration:  13 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9176.37, 'Interaction': -235.95000000000118}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  13
+iteration:  14 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9260.79, 'Interaction': -167.84000000000106}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  14
+iteration:  15 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9315.49, 'Interaction': -233.30000000000018}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  15
+iteration:  16 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9481.07, 'Interaction': -281.6999999999998}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  16
+iteration:  17 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9266.92, 'Interaction': -287.5}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  17
+iteration:  18 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9378.92, 'Interaction': -282.5799999999999}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  18
+iteration:  19 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9199.82, 'Interaction': -236.00999999999976}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  19
+iteration:  20 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9313.74, 'Interaction': -273.6300000000001}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  20
+iteration:  21 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9273.11, 'Interaction': -230.5900000000006}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  21
+iteration:  22 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9194.4, 'Interaction': -227.8699999999999}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  22
+iteration:  24 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9378.42, 'Interaction': -251.40999999999985}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  24
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  25 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9385.54, 'Interaction': -97.20000000000073}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  25
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+['GLY']
+True
+['LYS']
+True
+['LYS']
+True
+['LYS']
+True
+['GLU']
+True
+['GLU']
+True
+['LYS']
+True
+iteration:  1 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8939.03, 'Interaction': -155.45000000000073}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  1
+iteration:  2 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9048.9, 'Interaction': -123.67999999999938}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  2
+iteration:  3 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9010.83, 'Interaction': -121.14000000000033}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  3
+iteration:  4 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9081.14, 'Interaction': -127.12999999999965}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  4
+iteration:  5 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8991.11, 'Interaction': -181.3800000000001}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  5
+iteration:  6 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8875.32, 'Interaction': -75.08999999999924}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  6
+iteration:  7 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8758.85, 'Interaction': -81.34999999999991}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  7
+iteration:  8 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9085.32, 'Interaction': -131.1500000000001}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  8
+iteration:  9 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9028.64, 'Interaction': -37.8199999999988}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  9
+iteration:  10 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8944.36, 'Interaction': -294.38000000000056}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  10
+iteration:  11 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8897.0, 'Interaction': -105.32000000000016}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  11
+iteration:  12 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8835.72, 'Interaction': -105.62999999999965}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  12
+iteration:  13 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8923.4, 'Interaction': -59.35999999999922}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  13
+iteration:  14 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9004.39, 'Interaction': -124.99999999999955}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  14
+iteration:  15 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8991.17, 'Interaction': -128.37000000000035}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  15
+iteration:  16 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8958.1, 'Interaction': -108.7199999999998}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  16
+iteration:  17 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8942.07, 'Interaction': -122.02999999999929}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  17
+iteration:  18 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8948.07, 'Interaction': -120.80999999999995}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  18
+iteration:  19 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9035.1, 'Interaction': -122.55999999999995}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  19
+iteration:  20 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8922.17, 'Interaction': -124.24999999999955}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  20
+iteration:  21 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8991.57, 'Interaction': -111.12999999999965}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  21
+iteration:  22 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9068.64, 'Interaction': -128.25999999999885}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  22
+iteration:  23 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8916.74, 'Interaction': -119.58999999999969}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  23
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  23 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9129.04, 'Interaction': -178.35000000000082}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  23
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  1 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8861.36, 'Interaction': -88.12000000000035}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  1
+iteration:  2 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8958.28, 'Interaction': -77.67000000000053}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  2
+iteration:  3 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8882.17, 'Interaction': -74.39000000000033}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  3
+iteration:  4 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8820.94, 'Interaction': -36.74000000000024}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  4
+iteration:  5 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8828.19, 'Interaction': -83.07000000000062}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  5
+iteration:  6 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8897.46, 'Interaction': -73.71999999999935}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  6
+iteration:  7 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8867.31, 'Interaction': -60.8799999999992}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  7
+iteration:  8 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8847.1, 'Interaction': -105.72000000000025}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  8
+iteration:  9 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8847.53, 'Interaction': -68.35000000000082}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  9
+iteration:  10 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8940.35, 'Interaction': -69.75000000000045}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  10
+iteration:  11 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8849.57, 'Interaction': -67.6899999999996}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  11
+iteration:  12 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8912.78, 'Interaction': -129.81000000000085}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  12
+iteration:  13 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8842.35, 'Interaction': -38.8100000000004}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  13
+iteration:  14 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8968.17, 'Interaction': -35.870000000000346}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  14
+iteration:  15 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8967.81, 'Interaction': -64.75}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  15
+iteration:  16 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8847.41, 'Interaction': -58.2199999999998}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  16
+iteration:  17 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8809.13, 'Interaction': -72.75999999999885}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  17
+iteration:  18 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8874.79, 'Interaction': -122.61000000000104}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  18
+iteration:  19 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8994.71, 'Interaction': -57.42999999999893}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  19
+iteration:  20 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8983.73, 'Interaction': -57.599999999999454}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  20
+iteration:  21 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9004.41, 'Interaction': -191.3399999999997}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  21
+iteration:  22 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8832.36, 'Interaction': -157.9600000000005}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  22
+iteration:  25 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8927.79, 'Interaction': -143.08000000000084}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  25
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  1 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9002.09, 'Interaction': -149.48000000000047}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  1
+iteration:  2 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8948.7, 'Interaction': -145.76000000000022}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  2
+iteration:  3 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8866.17, 'Interaction': -145.55000000000018}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  3
+iteration:  4 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8910.18, 'Interaction': -57.100000000000364}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  4
+iteration:  5 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8907.66, 'Interaction': -159.51999999999953}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  5
+iteration:  6 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8791.94, 'Interaction': -227.8100000000004}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  6
+iteration:  7 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8924.62, 'Interaction': -153.34000000000106}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  7
+iteration:  8 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8962.64, 'Interaction': -160.6999999999989}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  8
+iteration:  9 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8961.47, 'Interaction': -145.4999999999991}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  9
+iteration:  10 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8975.98, 'Interaction': -158.0699999999997}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  10
+iteration:  11 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8930.16, 'Interaction': -133.3800000000001}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  11
+iteration:  12 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8861.95, 'Interaction': -177.9900000000007}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  12
+iteration:  13 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8733.83, 'Interaction': -141.88999999999942}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  13
+iteration:  14 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8849.72, 'Interaction': -161.17999999999938}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  14
+iteration:  15 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9097.87, 'Interaction': -159.32000000000062}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  15
+iteration:  16 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8972.23, 'Interaction': -290.1700000000001}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  16
+iteration:  17 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9083.65, 'Interaction': -160.60999999999967}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  17
+iteration:  18 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9044.14, 'Interaction': -161.08999999999924}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  18
+iteration:  19 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8772.11, 'Interaction': -225.4600000000005}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  19
+iteration:  20 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8861.3, 'Interaction': -117.79999999999927}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  20
+iteration:  21 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8932.9, 'Interaction': -156.2499999999991}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  21
+iteration:  22 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9030.69, 'Interaction': -159.97000000000025}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  22
+iteration:  23 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9023.86, 'Interaction': -155.4900000000007}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  23
+iteration:  24 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8870.82, 'Interaction': -145.51999999999953}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  24
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  1 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9292.08, 'Interaction': -163.01000000000022}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  1
+iteration:  2 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9126.96, 'Interaction': -92.21999999999889}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  2
+iteration:  3 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9133.72, 'Interaction': -246.349999999999}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  3
+iteration:  4 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9263.5, 'Interaction': -164.34000000000015}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  4
+iteration:  5 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9232.5, 'Interaction': -157.25}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  5
+iteration:  6 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9239.98, 'Interaction': -156.97999999999956}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  6
+iteration:  7 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9059.64, 'Interaction': -147.59999999999945}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  7
+iteration:  8 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9120.44, 'Interaction': -156.9400000000005}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  8
+iteration:  9 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9183.71, 'Interaction': -134.52999999999884}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  9
+iteration:  10 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9194.73, 'Interaction': -148.45999999999958}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  10
+iteration:  11 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9249.46, 'Interaction': -158.16999999999916}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  11
+iteration:  12 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9120.17, 'Interaction': -145.62999999999965}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  12
+iteration:  13 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9231.69, 'Interaction': -157.1900000000005}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  13
+iteration:  14 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9129.54, 'Interaction': -153.97000000000116}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  14
+iteration:  15 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9192.32, 'Interaction': -123.95999999999958}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  15
+iteration:  16 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9379.73, 'Interaction': -153.37999999999965}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  16
+iteration:  17 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9256.71, 'Interaction': -156.17999999999893}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  17
+iteration:  18 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9253.03, 'Interaction': -154.70000000000073}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  18
+iteration:  19 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9262.93, 'Interaction': -140.63000000000056}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  19
+iteration:  20 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9198.56, 'Interaction': -148.49999999999955}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  20
+iteration:  21 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9145.05, 'Interaction': -144.3099999999995}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  21
+iteration:  22 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9283.7, 'Interaction': -149.70000000000073}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  22
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  25 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -9031.6, 'Interaction': -40.970000000000255}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  25
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  1 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8925.39, 'Interaction': -144.72999999999956}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  1
+iteration:  2 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8977.75, 'Interaction': -145.66999999999962}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  2
+iteration:  3 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8922.81, 'Interaction': -125.92000000000007}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  3
+iteration:  4 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8831.39, 'Interaction': -180.84999999999945}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  4
+iteration:  5 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8842.71, 'Interaction': -164.44999999999936}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  5
+iteration:  6 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8924.89, 'Interaction': -128.97999999999956}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  6
+iteration:  7 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8838.01, 'Interaction': -141.76000000000022}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  7
+iteration:  8 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8870.05, 'Interaction': -126.38999999999942}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  8
+iteration:  9 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8953.42, 'Interaction': -160.25000000000045}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  9
+iteration:  10 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8817.64, 'Interaction': -90.80999999999949}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  10
+iteration:  11 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8852.99, 'Interaction': -193.55000000000018}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  11
+iteration:  12 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8850.78, 'Interaction': -85.15000000000055}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  12
+iteration:  13 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8973.26, 'Interaction': -145.7200000000007}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  13
+iteration:  14 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8920.62, 'Interaction': -145.31000000000085}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  14
+iteration:  15 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8890.31, 'Interaction': -102.42999999999984}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  15
+iteration:  16 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8844.08, 'Interaction': -161.54999999999973}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  16
+iteration:  17 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8939.02, 'Interaction': -177.17000000000007}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  17
+iteration:  18 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8880.62, 'Interaction': -121.49000000000069}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  18
+iteration:  19 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8841.7, 'Interaction': -154.7500000000009}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  19
+iteration:  20 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8846.18, 'Interaction': -83.47000000000025}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  20
+iteration:  21 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8998.82, 'Interaction': -158.98999999999933}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  21
+iteration:  22 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8937.64, 'Interaction': -140.04999999999973}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  22
+iteration:  23 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8945.11, 'Interaction': -157.48000000000093}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  23
+iteration:  24 refinement:  False
+Backbone perturbation refinement:  False
+Optimal rotamers refinement:  False
+Docked?:  False  Docked refinement:  False
+Relaxation refinement:  False
+Energies:  {1: {'Complex': -8808.33, 'Interaction': -148.9699999999998}} Energies refinement:  False
+End_Iteration refinement:  False
+iteration:  24
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+iteration:  26 refinement:  False
+ 
+Job ended at Fri Apr 18 03:23:59 EDT 2014
+ 

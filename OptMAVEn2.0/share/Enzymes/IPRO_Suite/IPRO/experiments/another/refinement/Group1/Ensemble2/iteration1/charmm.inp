@@ -1,0 +1,631 @@
+* The Perturbation of Design Group 1
+*
+
+wrnl -2
+!prnl -2
+bomb -2
+
+! Load the Topology file(s)
+open read unit 10 form name mcr_topology.rtf card
+read rtf card unit 10
+close unit 10
+
+! Load the Parameter file(s)
+open read unit 10 form name mcr_parameters.prm card
+read para card unit 10
+close unit 10
+
+! Load DESIGN Molecule A
+open read unit 10 form name group1_moleculea_preperturbation.pdb
+read sequ pdb offi unit 10
+close unit 10
+gene mla setup
+open read unit 10 form name group1_moleculea_preperturbation.pdb
+read coor pdb unit 10
+close unit 10
+
+! Load TARGET Molecule F
+open read unit 10 form name group1_moleculef_preperturbation.pdb
+read sequ pdb offi unit 10
+close unit 10
+gene mlf setup
+open read unit 10 form name group1_moleculef_preperturbation.pdb
+read coor pdb unit 10
+close unit 10
+
+! Add missing Atoms and assign them coordinates
+ic fill preserve
+ic param
+ic build
+hbuild
+
+cons dihe 159 C 160 N 160 CA 160 C force 32800.0 min -86.627
+cons dihe 160 N 160 CA 160 C 161 N  force 32800.0 min 164.122
+! Carry out an energy minimization
+
+
+nbon nbxm 5
+defi fixed sele none end
+defi fixed sele fixed .or. resi 1 end
+defi fixed sele fixed .or. resi 2 end
+defi fixed sele fixed .or. resi 3 end
+defi fixed sele fixed .or. resi 4 end
+defi fixed sele fixed .or. resi 5 end
+defi fixed sele fixed .or. resi 6 end
+defi fixed sele fixed .or. resi 7 end
+defi fixed sele fixed .or. resi 8 end
+defi fixed sele fixed .or. resi 9 end
+defi fixed sele fixed .or. resi 10 end
+defi fixed sele fixed .or. resi 11 end
+defi fixed sele fixed .or. resi 12 end
+defi fixed sele fixed .or. resi 13 end
+defi fixed sele fixed .or. resi 14 end
+defi fixed sele fixed .or. resi 15 end
+defi fixed sele fixed .or. resi 16 end
+defi fixed sele fixed .or. resi 17 end
+defi fixed sele fixed .or. resi 18 end
+defi fixed sele fixed .or. resi 19 end
+defi fixed sele fixed .or. resi 20 end
+defi fixed sele fixed .or. resi 21 end
+defi fixed sele fixed .or. resi 22 end
+defi fixed sele fixed .or. resi 23 end
+defi fixed sele fixed .or. resi 24 end
+defi fixed sele fixed .or. resi 25 end
+defi fixed sele fixed .or. resi 26 end
+defi fixed sele fixed .or. resi 27 end
+defi fixed sele fixed .or. resi 28 end
+defi fixed sele fixed .or. resi 29 end
+defi fixed sele fixed .or. resi 30 end
+defi fixed sele fixed .or. resi 31 end
+defi fixed sele fixed .or. resi 32 end
+defi fixed sele fixed .or. resi 33 end
+defi fixed sele fixed .or. resi 34 end
+defi fixed sele fixed .or. resi 35 end
+defi fixed sele fixed .or. resi 36 end
+defi fixed sele fixed .or. resi 37 end
+defi fixed sele fixed .or. resi 38 end
+defi fixed sele fixed .or. resi 39 end
+defi fixed sele fixed .or. resi 40 end
+defi fixed sele fixed .or. resi 41 end
+defi fixed sele fixed .or. resi 42 end
+defi fixed sele fixed .or. resi 43 end
+defi fixed sele fixed .or. resi 44 end
+defi fixed sele fixed .or. resi 45 end
+defi fixed sele fixed .or. resi 46 end
+defi fixed sele fixed .or. resi 47 end
+defi fixed sele fixed .or. resi 48 end
+defi fixed sele fixed .or. resi 49 end
+defi fixed sele fixed .or. resi 50 end
+defi fixed sele fixed .or. resi 51 end
+defi fixed sele fixed .or. resi 52 end
+defi fixed sele fixed .or. resi 53 end
+defi fixed sele fixed .or. resi 54 end
+defi fixed sele fixed .or. resi 55 end
+defi fixed sele fixed .or. resi 56 end
+defi fixed sele fixed .or. resi 57 end
+defi fixed sele fixed .or. resi 58 end
+defi fixed sele fixed .or. resi 59 end
+defi fixed sele fixed .or. resi 60 end
+defi fixed sele fixed .or. resi 61 end
+defi fixed sele fixed .or. resi 62 end
+defi fixed sele fixed .or. resi 63 end
+defi fixed sele fixed .or. resi 64 end
+defi fixed sele fixed .or. resi 65 end
+defi fixed sele fixed .or. resi 66 end
+defi fixed sele fixed .or. resi 67 end
+defi fixed sele fixed .or. resi 68 end
+defi fixed sele fixed .or. resi 69 end
+defi fixed sele fixed .or. resi 70 end
+defi fixed sele fixed .or. resi 71 end
+defi fixed sele fixed .or. resi 72 end
+defi fixed sele fixed .or. resi 73 end
+defi fixed sele fixed .or. resi 74 end
+defi fixed sele fixed .or. resi 75 end
+defi fixed sele fixed .or. resi 76 end
+defi fixed sele fixed .or. resi 77 end
+defi fixed sele fixed .or. resi 78 end
+defi fixed sele fixed .or. resi 79 end
+defi fixed sele fixed .or. resi 80 end
+defi fixed sele fixed .or. resi 81 end
+defi fixed sele fixed .or. resi 82 end
+defi fixed sele fixed .or. resi 83 end
+defi fixed sele fixed .or. resi 84 end
+defi fixed sele fixed .or. resi 85 end
+defi fixed sele fixed .or. resi 86 end
+defi fixed sele fixed .or. resi 87 end
+defi fixed sele fixed .or. resi 88 end
+defi fixed sele fixed .or. resi 89 end
+defi fixed sele fixed .or. resi 90 end
+defi fixed sele fixed .or. resi 91 end
+defi fixed sele fixed .or. resi 92 end
+defi fixed sele fixed .or. resi 93 end
+defi fixed sele fixed .or. resi 94 end
+defi fixed sele fixed .or. resi 95 end
+defi fixed sele fixed .or. resi 96 end
+defi fixed sele fixed .or. resi 97 end
+defi fixed sele fixed .or. resi 98 end
+defi fixed sele fixed .or. resi 99 end
+defi fixed sele fixed .or. resi 100 end
+defi fixed sele fixed .or. resi 101 end
+defi fixed sele fixed .or. resi 102 end
+defi fixed sele fixed .or. resi 103 end
+defi fixed sele fixed .or. resi 104 end
+defi fixed sele fixed .or. resi 105 end
+defi fixed sele fixed .or. resi 106 end
+defi fixed sele fixed .or. resi 107 end
+defi fixed sele fixed .or. resi 108 end
+defi fixed sele fixed .or. resi 109 end
+defi fixed sele fixed .or. resi 110 end
+defi fixed sele fixed .or. resi 111 end
+defi fixed sele fixed .or. resi 112 end
+defi fixed sele fixed .or. resi 113 end
+defi fixed sele fixed .or. resi 114 end
+defi fixed sele fixed .or. resi 115 end
+defi fixed sele fixed .or. resi 116 end
+defi fixed sele fixed .or. resi 117 end
+defi fixed sele fixed .or. resi 118 end
+defi fixed sele fixed .or. resi 119 end
+defi fixed sele fixed .or. resi 120 end
+defi fixed sele fixed .or. resi 121 end
+defi fixed sele fixed .or. resi 122 end
+defi fixed sele fixed .or. resi 123 end
+defi fixed sele fixed .or. resi 124 end
+defi fixed sele fixed .or. resi 125 end
+defi fixed sele fixed .or. resi 126 end
+defi fixed sele fixed .or. resi 127 end
+defi fixed sele fixed .or. resi 128 end
+defi fixed sele fixed .or. resi 129 end
+defi fixed sele fixed .or. resi 130 end
+defi fixed sele fixed .or. resi 131 end
+defi fixed sele fixed .or. resi 132 end
+defi fixed sele fixed .or. resi 133 end
+defi fixed sele fixed .or. resi 134 end
+defi fixed sele fixed .or. resi 135 end
+defi fixed sele fixed .or. resi 136 end
+defi fixed sele fixed .or. resi 137 end
+defi fixed sele fixed .or. resi 138 end
+defi fixed sele fixed .or. resi 139 end
+defi fixed sele fixed .or. resi 140 end
+defi fixed sele fixed .or. resi 141 end
+defi fixed sele fixed .or. resi 142 end
+defi fixed sele fixed .or. resi 143 end
+defi fixed sele fixed .or. resi 144 end
+defi fixed sele fixed .or. resi 145 end
+defi fixed sele fixed .or. resi 146 end
+defi fixed sele fixed .or. resi 147 end
+defi fixed sele fixed .or. resi 150 end
+defi fixed sele fixed .or. resi 151 end
+defi fixed sele fixed .or. resi 152 end
+defi fixed sele fixed .or. resi 153 end
+defi fixed sele fixed .or. resi 154 end
+defi fixed sele fixed .or. resi 166 end
+defi fixed sele fixed .or. resi 167 end
+defi fixed sele fixed .or. resi 168 end
+defi fixed sele fixed .or. resi 169 end
+defi fixed sele fixed .or. resi 170 end
+defi fixed sele fixed .or. resi 171 end
+defi fixed sele fixed .or. resi 172 end
+defi fixed sele fixed .or. resi 173 end
+defi fixed sele fixed .or. resi 174 end
+defi fixed sele fixed .or. resi 175 end
+defi fixed sele fixed .or. resi 176 end
+defi fixed sele fixed .or. resi 177 end
+defi fixed sele fixed .or. resi 178 end
+defi fixed sele fixed .or. resi 179 end
+defi fixed sele fixed .or. resi 180 end
+defi fixed sele fixed .or. resi 181 end
+defi fixed sele fixed .or. resi 182 end
+defi fixed sele fixed .or. resi 183 end
+defi fixed sele fixed .or. resi 184 end
+defi fixed sele fixed .or. resi 185 end
+defi fixed sele fixed .or. resi 186 end
+defi fixed sele fixed .or. resi 187 end
+defi fixed sele fixed .or. resi 188 end
+defi fixed sele fixed .or. resi 189 end
+defi fixed sele fixed .or. resi 190 end
+defi fixed sele fixed .or. resi 191 end
+defi fixed sele fixed .or. resi 192 end
+defi fixed sele fixed .or. resi 193 end
+defi fixed sele fixed .or. resi 194 end
+defi fixed sele fixed .or. resi 195 end
+defi fixed sele fixed .or. resi 196 end
+defi fixed sele fixed .or. resi 197 end
+defi fixed sele fixed .or. resi 198 end
+defi fixed sele fixed .or. resi 199 end
+defi fixed sele fixed .or. resi 200 end
+defi fixed sele fixed .or. resi 201 end
+defi fixed sele fixed .or. resi 202 end
+defi fixed sele fixed .or. resi 203 end
+defi fixed sele fixed .or. resi 204 end
+defi fixed sele fixed .or. resi 205 end
+defi fixed sele fixed .or. resi 206 end
+defi fixed sele fixed .or. resi 207 end
+defi fixed sele fixed .or. resi 208 end
+defi fixed sele fixed .or. resi 209 end
+defi fixed sele fixed .or. resi 210 end
+defi fixed sele fixed .or. resi 211 end
+defi fixed sele fixed .or. resi 212 end
+defi fixed sele fixed .or. resi 213 end
+defi fixed sele fixed .or. resi 214 end
+defi fixed sele fixed .or. resi 215 end
+defi fixed sele fixed .or. resi 216 end
+defi fixed sele fixed .or. resi 217 end
+defi fixed sele fixed .or. resi 218 end
+defi fixed sele fixed .or. resi 219 end
+defi fixed sele fixed .or. resi 220 end
+defi fixed sele fixed .or. resi 221 end
+defi fixed sele fixed .or. resi 222 end
+defi fixed sele fixed .or. resi 223 end
+defi fixed sele fixed .or. resi 224 end
+defi fixed sele fixed .or. resi 225 end
+defi fixed sele fixed .or. resi 226 end
+defi fixed sele fixed .or. resi 227 end
+defi fixed sele fixed .or. resi 228 end
+defi fixed sele fixed .or. resi 229 end
+defi fixed sele fixed .or. resi 230 end
+defi fixed sele fixed .or. resi 231 end
+defi fixed sele fixed .or. resi 232 end
+defi fixed sele fixed .or. resi 233 end
+defi fixed sele fixed .or. resi 234 end
+defi fixed sele fixed .or. resi 235 end
+defi fixed sele fixed .or. resi 236 end
+defi fixed sele fixed .or. resi 237 end
+defi fixed sele fixed .or. resi 238 end
+defi fixed sele fixed .or. resi 239 end
+defi fixed sele fixed .or. resi 240 end
+defi fixed sele fixed .or. resi 241 end
+defi fixed sele fixed .or. resi 242 end
+defi fixed sele fixed .or. resi 243 end
+defi fixed sele fixed .or. resi 244 end
+defi fixed sele fixed .or. resi 245 end
+defi fixed sele fixed .or. resi 246 end
+defi fixed sele fixed .or. resi 247 end
+defi fixed sele fixed .or. resi 248 end
+defi fixed sele fixed .or. resi 249 end
+defi fixed sele fixed .or. resi 250 end
+defi fixed sele fixed .or. resi 251 end
+defi fixed sele fixed .or. resi 252 end
+defi fixed sele fixed .or. resi 253 end
+defi fixed sele fixed .or. resi 254 end
+defi fixed sele fixed .or. resi 255 end
+defi fixed sele fixed .or. resi 256 end
+defi fixed sele fixed .or. resi 257 end
+defi fixed sele fixed .or. resi 258 end
+defi fixed sele fixed .or. resi 259 end
+defi fixed sele fixed .or. resi 260 end
+defi fixed sele fixed .or. resi 261 end
+defi fixed sele fixed .or. resi 262 end
+defi fixed sele fixed .or. resi 263 end
+defi fixed sele fixed .or. resi 264 end
+defi fixed sele fixed .or. resi 265 end
+defi fixed sele fixed .or. resi 266 end
+defi fixed sele fixed .or. resi 267 end
+defi fixed sele fixed .or. resi 268 end
+defi fixed sele fixed .or. resi 269 end
+defi fixed sele fixed .or. resi 270 end
+defi fixed sele fixed .or. resi 271 end
+defi fixed sele fixed .or. resi 272 end
+defi fixed sele fixed .or. resi 273 end
+defi fixed sele fixed .or. resi 274 end
+defi fixed sele fixed .or. resi 275 end
+defi fixed sele fixed .or. resi 276 end
+defi fixed sele fixed .or. resi 277 end
+defi fixed sele fixed .or. resi 278 end
+defi fixed sele fixed .or. resi 279 end
+defi fixed sele fixed .or. resi 280 end
+defi fixed sele fixed .or. resi 281 end
+defi fixed sele fixed .or. resi 282 end
+defi fixed sele fixed .or. resi 283 end
+defi fixed sele fixed .or. resi 284 end
+defi fixed sele fixed .or. resi 285 end
+defi fixed sele fixed .or. resi 286 end
+defi fixed sele fixed .or. resi 287 end
+defi fixed sele fixed .or. resi 288 end
+defi fixed sele fixed .or. resi 289 end
+defi fixed sele fixed .or. resi 290 end
+defi fixed sele fixed .or. resi 291 end
+defi fixed sele fixed .or. resi 292 end
+defi fixed sele fixed .or. resi 293 end
+defi fixed sele fixed .or. resi 294 end
+defi fixed sele fixed .or. resi 295 end
+defi fixed sele fixed .or. resi 296 end
+defi fixed sele fixed .or. resi 297 end
+defi fixed sele fixed .or. resi 298 end
+defi fixed sele fixed .or. resi 299 end
+defi fixed sele fixed .or. resi 300 end
+defi fixed sele fixed .or. resi 301 end
+defi fixed sele fixed .or. resi 302 end
+defi fixed sele fixed .or. resi 303 end
+defi fixed sele fixed .or. resi 304 end
+defi fixed sele fixed .or. resi 305 end
+defi fixed sele fixed .or. resi 306 end
+defi fixed sele fixed .or. resi 307 end
+defi fixed sele fixed .or. resi 308 end
+defi fixed sele fixed .or. resi 309 end
+defi fixed sele fixed .or. resi 310 end
+defi fixed sele fixed .or. resi 311 end
+defi fixed sele fixed .or. resi 312 end
+defi fixed sele fixed .or. resi 313 end
+defi fixed sele fixed .or. resi 314 end
+defi fixed sele fixed .or. resi 315 end
+defi fixed sele fixed .or. resi 316 end
+defi fixed sele fixed .or. resi 317 end
+defi fixed sele fixed .or. resi 318 end
+defi fixed sele fixed .or. resi 319 end
+defi fixed sele fixed .or. resi 320 end
+defi fixed sele fixed .or. resi 321 end
+defi fixed sele fixed .or. resi 322 end
+defi fixed sele fixed .or. resi 323 end
+defi fixed sele fixed .or. resi 324 end
+defi fixed sele fixed .or. resi 325 end
+defi fixed sele fixed .or. resi 326 end
+defi fixed sele fixed .or. resi 327 end
+defi fixed sele fixed .or. resi 328 end
+defi fixed sele fixed .or. resi 329 end
+defi fixed sele fixed .or. resi 330 end
+defi fixed sele fixed .or. resi 331 end
+defi fixed sele fixed .or. resi 332 end
+defi fixed sele fixed .or. resi 333 end
+defi fixed sele fixed .or. resi 334 end
+defi fixed sele fixed .or. resi 335 end
+defi fixed sele fixed .or. resi 336 end
+defi fixed sele fixed .or. resi 337 end
+defi fixed sele fixed .or. resi 338 end
+defi fixed sele fixed .or. resi 339 end
+defi fixed sele fixed .or. resi 340 end
+defi fixed sele fixed .or. resi 341 end
+defi fixed sele fixed .or. resi 342 end
+defi fixed sele fixed .or. resi 343 end
+defi fixed sele fixed .or. resi 344 end
+defi fixed sele fixed .or. resi 345 end
+defi fixed sele fixed .or. resi 346 end
+defi fixed sele fixed .or. resi 347 end
+defi fixed sele fixed .or. resi 348 end
+defi fixed sele fixed .or. resi 349 end
+defi fixed sele fixed .or. resi 350 end
+defi fixed sele fixed .or. resi 351 end
+defi fixed sele fixed .or. resi 352 end
+defi fixed sele fixed .or. resi 353 end
+defi fixed sele fixed .or. resi 354 end
+defi fixed sele fixed .or. resi 355 end
+defi fixed sele fixed .or. resi 356 end
+defi fixed sele fixed .or. resi 357 end
+defi fixed sele fixed .or. resi 358 end
+defi fixed sele fixed .or. resi 359 end
+defi fixed sele fixed .or. resi 360 end
+defi fixed sele fixed .or. resi 361 end
+defi fixed sele fixed .or. resi 362 end
+defi fixed sele fixed .or. resi 363 end
+defi fixed sele fixed .or. resi 364 end
+defi fixed sele fixed .or. resi 365 end
+defi fixed sele fixed .or. resi 366 end
+defi fixed sele fixed .or. resi 367 end
+defi fixed sele fixed .or. resi 368 end
+defi fixed sele fixed .or. resi 369 end
+defi fixed sele fixed .or. resi 370 end
+defi fixed sele fixed .or. resi 371 end
+defi fixed sele fixed .or. resi 372 end
+defi fixed sele fixed .or. resi 373 end
+defi fixed sele fixed .or. resi 374 end
+defi fixed sele fixed .or. resi 375 end
+defi fixed sele fixed .or. resi 376 end
+defi fixed sele fixed .or. resi 377 end
+defi fixed sele fixed .or. resi 378 end
+defi fixed sele fixed .or. resi 379 end
+defi fixed sele fixed .or. resi 380 end
+defi fixed sele fixed .or. resi 381 end
+defi fixed sele fixed .or. resi 382 end
+defi fixed sele fixed .or. resi 383 end
+defi fixed sele fixed .or. resi 384 end
+defi fixed sele fixed .or. resi 385 end
+defi fixed sele fixed .or. resi 386 end
+defi fixed sele fixed .or. resi 387 end
+defi fixed sele fixed .or. resi 388 end
+defi fixed sele fixed .or. resi 389 end
+defi fixed sele fixed .or. resi 390 end
+defi fixed sele fixed .or. resi 391 end
+defi fixed sele fixed .or. resi 392 end
+defi fixed sele fixed .or. resi 393 end
+defi fixed sele fixed .or. resi 394 end
+defi fixed sele fixed .or. resi 395 end
+defi fixed sele fixed .or. resi 396 end
+defi fixed sele fixed .or. resi 397 end
+defi fixed sele fixed .or. resi 398 end
+defi fixed sele fixed .or. resi 399 end
+defi fixed sele fixed .or. resi 400 end
+defi fixed sele fixed .or. resi 401 end
+defi fixed sele fixed .or. resi 402 end
+defi fixed sele fixed .or. resi 403 end
+defi fixed sele fixed .or. resi 404 end
+defi fixed sele fixed .or. resi 405 end
+defi fixed sele fixed .or. resi 406 end
+defi fixed sele fixed .or. resi 407 end
+defi fixed sele fixed .or. resi 408 end
+defi fixed sele fixed .or. resi 409 end
+defi fixed sele fixed .or. resi 410 end
+defi fixed sele fixed .or. resi 411 end
+defi fixed sele fixed .or. resi 412 end
+defi fixed sele fixed .or. resi 413 end
+defi fixed sele fixed .or. resi 414 end
+defi fixed sele fixed .or. resi 415 end
+defi fixed sele fixed .or. resi 416 end
+defi fixed sele fixed .or. resi 417 end
+defi fixed sele fixed .or. resi 418 end
+defi fixed sele fixed .or. resi 419 end
+defi fixed sele fixed .or. resi 420 end
+defi fixed sele fixed .or. resi 421 end
+defi fixed sele fixed .or. resi 422 end
+defi fixed sele fixed .or. resi 423 end
+defi fixed sele fixed .or. resi 424 end
+defi fixed sele fixed .or. resi 425 end
+defi fixed sele fixed .or. resi 426 end
+defi fixed sele fixed .or. resi 427 end
+defi fixed sele fixed .or. resi 428 end
+defi fixed sele fixed .or. resi 429 end
+defi fixed sele fixed .or. resi 430 end
+defi fixed sele fixed .or. resi 431 end
+defi fixed sele fixed .or. resi 432 end
+defi fixed sele fixed .or. resi 433 end
+defi fixed sele fixed .or. resi 434 end
+defi fixed sele fixed .or. resi 435 end
+defi fixed sele fixed .or. resi 436 end
+defi fixed sele fixed .or. resi 437 end
+defi fixed sele fixed .or. resi 438 end
+defi fixed sele fixed .or. resi 439 end
+defi fixed sele fixed .or. resi 440 end
+defi fixed sele fixed .or. resi 441 end
+defi fixed sele fixed .or. resi 442 end
+defi fixed sele fixed .or. resi 443 end
+defi fixed sele fixed .or. resi 444 end
+defi fixed sele fixed .or. resi 445 end
+defi fixed sele fixed .or. resi 446 end
+defi fixed sele fixed .or. resi 447 end
+defi fixed sele fixed .or. resi 448 end
+defi fixed sele fixed .or. resi 449 end
+defi fixed sele fixed .or. resi 450 end
+defi fixed sele fixed .or. resi 451 end
+defi fixed sele fixed .or. resi 452 end
+defi fixed sele fixed .or. resi 453 end
+defi fixed sele fixed .or. resi 454 end
+defi fixed sele fixed .or. resi 455 end
+defi fixed sele fixed .or. resi 456 end
+defi fixed sele fixed .or. resi 457 end
+defi fixed sele fixed .or. resi 458 end
+defi fixed sele fixed .or. resi 459 end
+defi fixed sele fixed .or. resi 460 end
+defi fixed sele fixed .or. resi 461 end
+defi fixed sele fixed .or. resi 462 end
+defi fixed sele fixed .or. resi 463 end
+defi fixed sele fixed .or. resi 464 end
+defi fixed sele fixed .or. resi 465 end
+defi fixed sele fixed .or. resi 466 end
+defi fixed sele fixed .or. resi 467 end
+defi fixed sele fixed .or. resi 468 end
+defi fixed sele fixed .or. resi 469 end
+defi fixed sele fixed .or. resi 470 end
+defi fixed sele fixed .or. resi 471 end
+defi fixed sele fixed .or. resi 472 end
+defi fixed sele fixed .or. resi 473 end
+defi fixed sele fixed .or. resi 474 end
+defi fixed sele fixed .or. resi 475 end
+defi fixed sele fixed .or. resi 476 end
+defi fixed sele fixed .or. resi 477 end
+defi fixed sele fixed .or. resi 478 end
+defi fixed sele fixed .or. resi 479 end
+defi fixed sele fixed .or. resi 480 end
+defi fixed sele fixed .or. resi 481 end
+defi fixed sele fixed .or. resi 482 end
+defi fixed sele fixed .or. resi 483 end
+defi fixed sele fixed .or. resi 484 end
+defi fixed sele fixed .or. resi 485 end
+defi fixed sele fixed .or. resi 486 end
+defi fixed sele fixed .or. resi 487 end
+defi fixed sele fixed .or. resi 488 end
+defi fixed sele fixed .or. resi 489 end
+defi fixed sele fixed .or. resi 490 end
+defi fixed sele fixed .or. resi 491 end
+defi fixed sele fixed .or. resi 492 end
+defi fixed sele fixed .or. resi 493 end
+defi fixed sele fixed .or. resi 494 end
+defi fixed sele fixed .or. resi 495 end
+defi fixed sele fixed .or. resi 496 end
+defi fixed sele fixed .or. resi 497 end
+defi fixed sele fixed .or. resi 498 end
+defi fixed sele fixed .or. resi 499 end
+defi fixed sele fixed .or. resi 500 end
+defi fixed sele fixed .or. resi 501 end
+defi fixed sele fixed .or. resi 502 end
+defi fixed sele fixed .or. resi 503 end
+defi fixed sele fixed .or. resi 504 end
+defi fixed sele fixed .or. resi 505 end
+defi fixed sele fixed .or. resi 506 end
+defi fixed sele fixed .or. resi 507 end
+defi fixed sele fixed .or. resi 508 end
+defi fixed sele fixed .or. resi 509 end
+defi fixed sele fixed .or. resi 510 end
+defi fixed sele fixed .or. resi 511 end
+defi fixed sele fixed .or. resi 512 end
+defi fixed sele fixed .or. resi 513 end
+defi fixed sele fixed .or. resi 514 end
+defi fixed sele fixed .or. resi 515 end
+defi fixed sele fixed .or. resi 516 end
+defi fixed sele fixed .or. resi 517 end
+defi fixed sele fixed .or. resi 518 end
+defi fixed sele fixed .or. resi 519 end
+defi fixed sele fixed .or. resi 520 end
+defi fixed sele fixed .or. resi 521 end
+defi fixed sele fixed .or. resi 522 end
+defi fixed sele fixed .or. resi 523 end
+defi fixed sele fixed .or. resi 524 end
+defi fixed sele fixed .or. resi 525 end
+defi fixed sele fixed .or. resi 526 end
+defi fixed sele fixed .or. resi 527 end
+defi fixed sele fixed .or. resi 528 end
+defi fixed sele fixed .or. resi 529 end
+defi fixed sele fixed .or. resi 530 end
+defi fixed sele fixed .or. resi 531 end
+defi fixed sele fixed .or. resi 532 end
+defi fixed sele fixed .or. resi 533 end
+defi fixed sele fixed .or. resi 534 end
+defi fixed sele fixed .or. resi 535 end
+defi fixed sele fixed .or. resi 536 end
+defi fixed sele fixed .or. resi 537 end
+defi fixed sele fixed .or. resi 538 end
+defi fixed sele fixed .or. resi 539 end
+defi fixed sele fixed .or. resi 540 end
+defi fixed sele fixed .or. resi 541 end
+defi fixed sele fixed .or. resi 542 end
+defi fixed sele fixed .or. resi 543 end
+defi fixed sele fixed .or. resi 544 end
+defi fixed sele fixed .or. resi 545 end
+defi fixed sele fixed .or. resi 546 end
+defi fixed sele fixed .or. resi 547 end
+defi fixed sele fixed .or. resi 548 end
+defi fixed sele fixed .or. resi 549 end
+defi fixed sele fixed .or. resi 550 end
+defi fixed sele fixed .or. resi 551 end
+defi fixed sele fixed .or. resi 552 end
+defi fixed sele fixed .or. resi 553 end
+defi fixed sele fixed .or. resi 554 end
+defi fixed sele fixed .or. resi 555 end
+defi fixed sele fixed .or. resi 556 end
+defi fixed sele fixed .or. resi 557 end
+defi fixed sele fixed .or. resi 558 end
+defi fixed sele fixed .or. resi 559 end
+defi fixed sele fixed .or. resi 560 end
+defi fixed sele fixed .or. resi 561 end
+defi fixed sele fixed .or. resi 562 end
+defi fixed sele fixed .or. resi 563 end
+defi fixed sele fixed .or. resi 564 end
+defi fixed sele fixed .or. resi 565 end
+defi fixed sele fixed .or. resi 566 end
+defi fixed sele fixed .or. resi 567 end
+defi fixed sele fixed .or. resi 568 end
+defi fixed sele fixed .or. resi 569 end
+defi fixed sele fixed .or. resi 570 end
+defi fixed sele fixed .or. resi 571 end
+defi fixed sele fixed .or. resi 572 end
+defi fixed sele fixed .or. resi 573 end
+defi fixed sele fixed .or. resi 574 end
+defi fixed sele fixed .or. resi 575 end
+defi fixed sele fixed .or. resi 576 end
+defi fixed sele fixed .or. resi 577 end
+defi fixed sele fixed .or. resi 578 end
+defi fixed sele fixed .or. resi 579 end
+cons fix sele fixed end
+
+skip all excl angl bond dihe elec impr urey vdw cdih
+mini abnr nstep 5000 nprint 50 -
+ tolgrd 0.01 tolenr 0.0001 tolstp 0.00
+
+! Output DESIGN Molecule A
+open write unit 10 name group1_moleculea_postperturbation.pdb card
+write coor sele segi mla end pdb unit 10 card
+close unit 10
+
+! Output TARGET Molecule F
+open write unit 10 name group1_moleculef_postperturbation.pdb card
+write coor sele segi mlf end pdb unit 10 card
+close unit 10
+
+stop

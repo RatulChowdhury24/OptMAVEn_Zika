@@ -1,0 +1,128 @@
+IO_ASK.py
+
+132,153d131
+< def for_CHARMM_softening(experiment, default):
+<     """Ask if a Lennard-Jones softening term should be included in C++
+<     calculations"""
+<     if default:
+<         useSoftening = defaultUseSoftening
+<     else:    
+<         question = "Would you like to use a Lennard-Jones softening "
+<         question += "term during C++ energy calculations?"
+<         question += " The default is " 
+<         if defaultUseSoftening:
+<             question += "'yes'."
+<         else:
+<             question += "'no'."
+<         useSoftening = FUNCTIONS.answer_question(question, "bool")
+<     if useSoftening:
+<         question = "What value should be used for the softening term?"
+<         question += " The default is " + str(defaultLjPhi) + "."
+<         FUNCTIONS.get_value("Lj Phi", "float", experiment, [], default, \
+<                             defaultLjPhi, question)
+<     else:
+<         experiment["Lj Phi"] = 1.0   
+< 
+173d150
+<     for_CHARMM_softening(experiment, default)
+1185,1202d1161
+< 
+< def optzyme_info(experiment):
+<     """Ask the user questions relevant to running OptZyme."""
+<     # Clear the screen for the user
+<     os.system("clear")
+<     message = """
+< You now must provide information that is required for running OptZyme.
+< 
+< Please refer to the provided documentation for additional information.
+<     """
+<     print screen_formatting(message[1:])
+<     # Ask the user if they would like to use the default values
+<     FIXTHIS
+<     raise ValueError
+<     # Get the values
+<     for_OPTZYME_objectives(experiment)
+<     for_OPTZYME_groups(experiment)
+<     for_OPTZYME_weights(experiment, default)
+IO_CHECK.py
+
+159,164d158
+<     # Check the softening term
+<     elif attribute == "Lj Phi":
+<         if not isinstance(value, float) or value > 1.0:
+<             text = "The value of " + attribute + " must be a floating point "
+<             text += "number between 0 and 1."
+<             raise FUNCTIONS.IPRO_IOError(text)
+IO_FUNCTIONS.py
+
+IO_GET.py
+
+IO_LOADING.py
+
+143,144d142
+<         # Add the attribute that must be a floating point number
+<         errors += standard_load("Lj Phi", experiment, data, "float")
+IO_OUTPUT.py
+
+77c77
+<                      'CHARMM Energy Terms', 'CHARMM Iterations', 'Lj Phi']:
+---
+>                      'CHARMM Energy Terms', 'CHARMM Iterations']:
+IO_VALIDATE.py
+
+49c49
+<                      'CHARMM Energy Terms', 'CHARMM Iterations', 'Lj Phi']:
+---
+>                      'CHARMM Energy Terms', 'CHARMM Iterations']:
+EXPERIMENT.py
+
+224c224
+<                           'CHARMM Energy Terms', 'CHARMM Iterations', 'Lj Phi']:
+---
+>                           'CHARMM Energy Terms', 'CHARMM Iterations']:
+526c526
+<         if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
+---
+>         if self["Type"] in ["IPRO", "Mutator", 'OptMAVEn']:
+530c530
+<         if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
+---
+>         if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+533c533
+<         if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
+---
+>         if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+536c536
+<         if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
+---
+>         if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+540c540
+<         if self["Type"] in ["IPRO", "OptZyme"]:
+---
+>         if self["Type"] in ["IPRO"]:
+543c543
+<         if self["Type"] in ["IPRO", "Mutator", "OptMAVEn"]:
+---
+>         if self["Type"] in ["IPRO", "Mutator", 'OptMAVEn']:
+546,548c546
+<         if self["Type"] in ["OptZyme"]:
+<             IO_ASK.optzyme_info(self)
+<         if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
+---
+>         if self["Type"] in ["IPRO", "Mutator", 'OptMAVEn']:
+553c551
+<         if self["Type"] in ["IPRO", "OptMAVEn", "OptZyme"]:
+---
+>         if self["Type"] in ['IPRO', 'OptMAVEn']:
+555c553
+<         if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
+---
+>         if self["Type"] in ["IPRO", "Mutator", 'OptMAVEn']:
+557c555
+<         if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
+---
+>         if self["Type"] in ['IPRO', 'Mutator', 'OptMAVEn']:
+559c557
+<         if self["Type"] in ["IPRO", "Mutator", "OptZyme"]:
+---
+>         if self["Type"] in ["IPRO", "Mutator"]:

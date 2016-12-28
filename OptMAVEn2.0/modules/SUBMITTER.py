@@ -106,3 +106,22 @@ def script_generator(experiment):
     if do:
         for I in range(1, N+1):
             submit_script("job_" + experiment["Name"] + "_" + str(I))
+
+#mfa#
+def experiment_script(name, command, hours=23):
+    text = "#PBS -l pmem=4gb\n"
+    text += "#PBS -l walltime=" + str(hours) + ":00:00\n"
+    text += "#PBS -j oe\n"
+    text += "#PBS -q lionxf\n\n"
+    text += "set -u\n"
+    text += 'echo " "\n'
+    text += 'echo " "\n'
+    text += 'echo "Job started on $(hostname -s) at $(date)"\n'
+    text += command + "\n"
+    text += 'echo " "\n'
+    text += 'echo "Job ended at $(date)"\n'
+    text += 'echo " "\n'
+    open(name, "w").write(text)
+    os.system("chmod u+x {}".format(name))
+    #submit_script(name)
+

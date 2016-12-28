@@ -1,0 +1,86 @@
+Basic Experiment Information
+User:                         Matthew Grisewood
+Type:                         OptZyme
+Name:                         MCR_F430_5
+File Format:                  PDB
+Force Field:                  CHARMM
+Folder:                       /gpfs/scratch/mjg5185/IPRO_Suite/IPRO/experiments/Test/
+
+How to run IPRO
+IPRO Iterations:              3000
+IPRO Annealing Temperature:   3640.000
+Annealing Sharing:            yes
+Energy Calculation:           Interaction
+
+How to use CHARMM
+CHARMM Topology File:         mcr_topology.rtf
+CHARMM Parameter File:        mcr_parameters.prm
+CHARMM Energy Term:           angl
+CHARMM Energy Term:           bond
+CHARMM Energy Term:           dihe
+CHARMM Energy Term:           elec
+CHARMM Energy Term:           impr
+CHARMM Energy Term:           urey
+CHARMM Energy Term:           vdw
+CHARMM Iterations:            5000
+Lj Phi:		              0.005 
+
+How to use Implicit Solvation
+Use Solvation:                no
+
+How to use rotamers
+Rotamer Library:              /gpfs/group/cdm/rotlib/
+Rotamer Window:               40.000
+Max Rotamer Number:           1300
+Packing Cutoff:               4.500
+Packing Method:               Distance
+Packing Selection:            RESTRAINED
+
+How to do Structure Refinements
+Do Refinement:                yes
+Refinement Iterations:        25
+Ensemble Number:              10
+
+How to run Docking
+Docking Frequency:            3
+Docking Iterations:           500
+Docking SD Movements:         0.200
+Docking SD Rotations:         2.000
+Docking Start Temp:           3640.000
+Docking End Temp:             2190.000
+
+The Molecules used in the experiment
+Molecule:                     Molecule A from file 3SQG_A.pdb is Design Molecule A
+Molecule:                     Molecule D from file 3SQG_D.pdb is Design Molecule D
+Molecule:                     Molecule _ from file f430.pdb is Target Molecule F
+Molecule:                     Molecule D from file COM.pdb is Target Molecule M
+Molecule:                     Molecule A from file COB.pdb is Target Molecule B
+
+Molecules that are Dimers
+Dimers:                       Molecules A and D
+
+The Design Groups
+Design Group:                 Improve binding to Molecules: B F M
+
+Residues that are Permitted to Mutate
+Design Position:              Residue 72 in Molecule A
+Design Position:              Residue 77 in Molecule A
+Design Position:              Residue 78 in Molecule A
+Design Position:              Residue 90 in Molecule A
+Design Position:              Residue 414 in Molecule A
+Design Position:              Residue 419 in Molecule A
+Design Position:              Residue 423 in Molecule A
+Design Position:              Residue 72 in Molecule D
+Design Position:              Residue 77 in Molecule D
+Design Position:              Residue 78 in Molecule D
+Design Position:              Residue 90 in Molecule D
+Design Position:              Residue 414 in Molecule D
+Design Position:              Residue 419 in Molecule D
+Design Position:              Residue 423 in Molecule D
+
+Restraints on Atom Positions
+Position Restraint:           All Atoms in all Residues in all Molecules in all Design Groups, using a force constant of 0.050, to their initial positions
+
+Restraints on Atom-Atom distances
+Distance Restraint:           Between Atom NI in Residue 1 in Molecule F and Atom S1 in Residue 1003 in Molecule M in all Design Groups KMIN: 75.000 RMIN: 2.200 KMAX: 100.000 RMAX: 2.400 FMAX: 150.000
+Distance Restraint:           Between Atom NI in Residue 1 in Molecule F and Atom OE1 in Residue 155 in Molecule A in all Design Groups KMIN: 75.000 RMIN: 2.200 KMAX: 100.000 RMAX: 2.400 FMAX: 150.000

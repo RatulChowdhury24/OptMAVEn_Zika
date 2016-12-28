@@ -12,6 +12,7 @@ Antibody variable Region Engineering program."""
 
 # Import standard PYTHON modules
 import os
+import itertools #mfa#
 import sys
 import math
 import random
@@ -223,12 +224,27 @@ def initialize_antigen(experiment):
     # Generate a PSF for each molecule in the experiment.
     VMD.generate_PSFs(experiment)
     # Perform an energy minimization on each molecule.
-    VMD.relax_molecules(experiment) # FIXME
+    VMD.relax_molecules(experiment)
     # Position the minimized antigen such that the z coordinates of its epitope
     # have been minimized, the epitope is centered at the origin, and the
     # antigen is facing in the zero degree direction around the z axis.
     VMD.initial_antigen_positions(experiment)
 
+#mfa#
+def cull_clashes(experiment):
+    """ Find the antigen positions that do not cause clashes between
+    the antigen and the antibodies. """
+    VMD.cull_clashes(experiment)
+    
+#mfa#
+def interaction_energies(experiment):
+    """ Calculate the interaction energy between the antigen in each position and each MAPs part. """
+    VMD.MAPs_interaction_energies(experiment)
+
+#mfa#
+def regroup_energies(experiment):
+    """ Regroup the MAPs interaction energies. """
+    raise NotImplementedError("I will write this part next.")
 
 def move_groups_orgin(experiment, groups, average = []):
     """Move the center of the groups to the orgin"""

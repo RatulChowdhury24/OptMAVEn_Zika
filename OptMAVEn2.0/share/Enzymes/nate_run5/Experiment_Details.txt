@@ -1,0 +1,71 @@
+Basic Experiment Information
+User:                         npg115
+Type:                         IPRO
+Name:                         run2
+File Format:                  PDB
+Force Field:                  CHARMM
+Folder:                       /gpfs/work/n/npg115/Thioesterase/DesignRuns/Round2/run5/
+
+How to run IPRO
+IPRO Iterations:              1000
+IPRO Annealing Temperature:   3640.000
+Annealing Sharing:            yes
+Energy Calculation:           Interaction
+
+How to use CHARMM
+CHARMM Topology File:         top_all27_prot_na_edit.rtf
+CHARMM Parameter File:        parameter_all_edit4.prm
+CHARMM Energy Term:           angl
+CHARMM Energy Term:           bond
+CHARMM Energy Term:           dihe
+CHARMM Energy Term:           elec
+CHARMM Energy Term:           impr
+CHARMM Energy Term:           urey
+CHARMM Energy Term:           vdw
+CHARMM Iterations:            5000
+
+How to use Implicit Solvation
+Use Solvation:                yes
+Solvation Type:               Lazaridis-Karplus
+LK Solvation File:            solvation.dat
+
+How to use rotamers
+Rotamer Library:              /gpfs/group/cdm/rotlib/
+Rotamer Window:               40.000
+Max Rotamer Number:           1300
+Packing Cutoff:               4.500
+Packing Method:               Distance
+Packing Selection:            RESTRAINED
+
+How to do Structure Refinements
+Do Refinement:                no
+Refinement Iterations:        15
+Ensemble Number:              10
+
+How to run Docking
+Docking Frequency:            3
+Docking Iterations:           500
+Docking SD Movements:         0.200
+Docking SD Rotations:         2.000
+Docking Start Temp:           3640.000
+Docking End Temp:             2190.000
+
+The Molecules used in the experiment
+Molecule:                     Molecule A from file thio3.pdb is Design Molecule A
+Molecule:                     Molecule U from file ACP_12C_min.pdb is Target Molecule B
+Molecule:                     Molecule U from file ACP_14C_min.pdb is Target Molecule C
+
+The Design Groups
+Design Group:                 Maintain binding to Molecules: B
+Design Group:                 Eliminate binding to Molecules: C
+
+Residues that are Permitted to Mutate
+Design Position:              Residue 11 in Molecule A
+Design Position:              Residue 72 in Molecule A
+Design Position:              Residue 76 in Molecule A
+Design Position:              Residue 107 in Molecule A
+Design Position:              Residue 108 in Molecule A
+Design Position:              Residue 111 in Molecule A
+Design Position:              Residue 139 in Molecule A
+Design Position:              Residue 145 in Molecule A
+

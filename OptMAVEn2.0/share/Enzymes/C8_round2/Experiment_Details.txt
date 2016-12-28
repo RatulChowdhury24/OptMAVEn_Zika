@@ -1,0 +1,99 @@
+Basic Experiment Information
+User:                         npg115
+Type:                         Mutator
+Name:                         C8_Mutants
+File Format:                  PDB
+Force Field:                  CHARMM
+Folder:	                      /gpfs/work/n/npg115/Thioesterase/newinit/C8/mutator/C8_round2/
+
+How to run IPRO
+IPRO Iterations:              3000
+IPRO Annealing Temperature:   3640.000
+Annealing Sharing:            yes
+Energy Calculation:           Interaction
+
+How to use CHARMM
+CHARMM Topology File:         top_all27_prot_na_edit.rtf
+CHARMM Parameter File:        parameter_all_edit4.prm
+CHARMM Energy Term:           angl
+CHARMM Energy Term:           bond
+CHARMM Energy Term:           dihe
+CHARMM Energy Term:           elec
+CHARMM Energy Term:           impr
+CHARMM Energy Term:           urey
+CHARMM Energy Term:           vdw
+CHARMM Iterations:            5000
+
+How to use Implicit Solvation
+Use Solvation:                yes
+Solvation Type:               Lazaridis-Karplus
+LK Solvation File:            solvation.dat
+
+How to use rotamers
+Rotamer Library:              /gpfs/group/cdm/rotlib/
+Rotamer Window:               40.000
+Max Rotamer Number:           1300
+Packing Cutoff:               4.500
+Packing Method:               Distance
+Packing Selection:            RESTRAINED
+
+How to do Structure Refinements
+Refinement Iterations:        25
+Ensemble Number:              10
+
+How to run Docking
+Docking Frequency:            3
+Docking Iterations:           500
+Docking SD Movements:         0.200
+Docking SD Rotations:         2.000
+Docking Start Temp:           3640.000
+Docking End Temp:             2190.000
+
+The Molecules used in the experiment
+Molecule:                     Molecule A from file Thio_8C_min.pdb is Design Molecule A
+Molecule:                     Molecule B from file ACP_8C_min.pdb is Target Molecule B
+
+The Design Groups
+Design Group:                 Improve binding to Molecules: B
+
+Restraints on Atom-Atom distances
+Distance Restraint: Between Atom O in Residue 10 in Molecule A and Atom O12 in Residue 36 in Molecule B in all Design Groups KMIN: 75.000 RMIN: 4.400 KMAX: 100.000 RMAX: 4.600 FMAX: 250.000
+Distance Restraint: Between Atom CA in Residue 43 in Molecule A and Atom O12 in Residue 36 in Molecule B in all Design Groups KMIN: 75.000 RMIN: 3.500 KMAX: 100.000 RMAX: 3.700 FMAX: 250.000
+Distance Restraint: Between Atom ND2 in Residue 73 in Molecule A and Atom O12 in Residue 36 in Molecule B in all Design Groups KMIN: 75.000 RMIN: 2.900 KMAX: 100.000 RMAX: 3.100 FMAX: 250.000
+
+Mutants
+Mutation:                     Mutant 1: Mutate Residue 11 in Molecule A to GLY
+Mutation:                     Mutant 1: Mutate Residue 76 in Molecule A to LYS
+Mutation:                     Mutant 1: Mutate Residue 107 in Molecule A to LYS
+Mutation:                     Mutant 1: Mutate Residue 108 in Molecule A to LYS
+Mutation:                     Mutant 1: Mutate Residue 111 in Molecule A to GLU
+Mutation:                     Mutant 1: Mutate Residue 139 in Molecule A to GLU
+Mutation:                     Mutant 1: Mutate Residue 145 in Molecule A to ARG
+Mutation:                     Mutant 2: Mutate Residue 11 in Molecule A to GLY
+Mutation:                     Mutant 2: Mutate Residue 76 in Molecule A to LYS
+Mutation:                     Mutant 2: Mutate Residue 107 in Molecule A to LYS
+Mutation:                     Mutant 2: Mutate Residue 108 in Molecule A to LYS
+Mutation:                     Mutant 2: Mutate Residue 111 in Molecule A to GLU
+Mutation:                     Mutant 2: Mutate Residue 139 in Molecule A to GLU
+Mutation:                     Mutant 2: Mutate Residue 145 in Molecule A to LYS
+Mutation:                     Mutant 3: Mutate Residue 11 in Molecule A to GLY
+Mutation:                     Mutant 3: Mutate Residue 76 in Molecule A to LYS
+Mutation:                     Mutant 3: Mutate Residue 107 in Molecule A to LYS
+Mutation:                     Mutant 3: Mutate Residue 108 in Molecule A to LYS
+Mutation:                     Mutant 3: Mutate Residue 139 in Molecule A to GLU
+Mutation:                     Mutant 3: Mutate Residue 145 in Molecule A to LYS
+Mutation:                     Mutant 4: Mutate Residue 107 in Molecule A to LYS
+Mutation:                     Mutant 4: Mutate Residue 108 in Molecule A to LYS
+Mutation:                     Mutant 4: Mutate Residue 111 in Molecule A to GLU
+Mutation:                     Mutant 4: Mutate Residue 139 in Molecule A to HIS
+Mutation:                     Mutant 4: Mutate Residue 145 in Molecule A to LYS
+Mutation:                     Mutant 5: Mutate Residue 107 in Molecule A to LYS
+Mutation:                     Mutant 5: Mutate Residue 108 in Molecule A to LYS
+Mutation:                     Mutant 5: Mutate Residue 111 in Molecule A to GLU
+Mutation:                     Mutant 5: Mutate Residue 139 in Molecule A to GLU
+Mutation:                     Mutant 5: Mutate Residue 145 in Molecule A to ARG
+Mutation:                     Mutant 6: Mutate Residue 107 in Molecule A to LYS
+Mutation:                     Mutant 6: Mutate Residue 108 in Molecule A to LYS
+Mutation:                     Mutant 6: Mutate Residue 111 in Molecule A to GLU
+Mutation:                     Mutant 6: Mutate Residue 139 in Molecule A to GLU
+Mutation:                     Mutant 6: Mutate Residue 145 in Molecule A to LYS

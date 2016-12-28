@@ -1,0 +1,40 @@
+/etc/bashrc: line 12: PS1: unbound variable
+ 
+ 
+Job started on lionxf174 at Tue Jun  3 19:46:25 EDT 2014
+============================================================
+status1
+have: False
+deleted
+GG Molecules in Design Group 1:
+Molecule A contains 578 Residues
+Molecule D contains 578 Residues
+Molecule F contains 1 Residues
+Molecule M contains 1 Residues
+Molecule B contains 1 Residues
+{1: {'Complex': -28033.8, 'Interaction': -1643.0789999999993}}
+============================================================
+deleted
+============================================================
+status1
+status2
+status3
+status 4
+have1 True
+start initialization
+deleted
+============================================================
+deleted
+============================================================
+Check1
+1 True
+deleted
+Doing refinement
+============================================================
+deleted
+Gn: 1 False
+Perturb False
+ 
+Job ended at Tue Jun  3 20:40:59 EDT 2014
+ 
+/etc/bashrc: line 12: PS1: unbound variable

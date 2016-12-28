@@ -1,0 +1,5 @@
+Initial Calculations
+Started on 6/4/2014 at 11:14:33
+The Complex Energy of Design Group 1 is -13499.000 kcal / mol
+The Interaction Energy of Design Group 1 is -155.274 kcal / mol
+Ended on 6/4/2014 at 11:44:53

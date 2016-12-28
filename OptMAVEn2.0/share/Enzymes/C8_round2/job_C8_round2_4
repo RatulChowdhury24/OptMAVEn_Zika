@@ -1,0 +1,15 @@
+#PBS -l pmem=4gb
+#PBS -l walltime=50:00:00
+#PBS -j oe
+#PBS -q lionxf-cdm
+
+set -u
+cd /gpfs/work/n/npg115/Thioesterase/newinit/C8/mutator/C8_round2/
+
+echo " "
+echo " "
+echo "Job started on $(hostname -s) at $(date)"
+python Mutator.py
+echo " "
+echo "Job ended at $(date)"
+echo " "

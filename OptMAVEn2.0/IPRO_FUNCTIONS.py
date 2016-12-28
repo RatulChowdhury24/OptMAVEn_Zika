@@ -12,7 +12,7 @@ requires an Experiment class object as its input."""
 
 # Include PYTHON modules
 import os
-import sys
+import sys, pdb
 import math
 import copy
 import time
@@ -27,6 +27,8 @@ import DOCKING_FUNCTIONS
 import SHARING
 import ROTAMERS
 import REFINEMENT
+
+from pore_area import *
 
 def do_superimpose(experiment):
     """Calculate whether or not Molecule superpositions should occur"""
@@ -313,6 +315,9 @@ def dimer_match(mol1, mol2, angles):
     # Match the freedoms and permissions of the Molecules that have been
     # identified as dimers. Also modify the angles dictionary
     for residue in mol1:
+        # If this Residue is unavailable in the second molecule, skip it
+        if residue.name not in mol2:
+            continue
         # Match the angles dictionary for this Residue to the one in the second
         if mol1.name in angles and residue.name in angles[mol1.name]:
             if mol2.name not in angles:
@@ -777,6 +782,99 @@ def standard_decision(experiment, energies, iteration, gn):
                 break
     return best, keep
 
+def standard_decision_ompf(experiment, energies, iteration, gn):
+
+    """Make a decision about retaining the results of an iteration"""
+    print "ompf is in experiment Name!\n"
+    # Keep track of whether the results are the best or kept by SA
+    best = True
+    keep = True
+    # Determine what the maximum number of iteratons should be
+    ITERATIONS = max_iterations(experiment)
+    # Determine if simulated annealing should be used
+    if iteration < ITERATIONS / 10:
+        SA = False
+    else:
+        SA = True
+        # Calculate the window for simulated annealing
+        window = -(experiment["IPRO Annealing Temperature"] * GasConstant) * \
+                   math.log(random.random())
+    # Loop through all relevant design groups
+    for group in experiment:
+        if gn not in [None, group.number]:
+            continue
+        # If this is a standard comparison
+        if experiment["Activity"] == "Standard":
+            # Get the objective
+            objective = group.objective
+            # If the goal is to make binding better, don't do so at the expense
+            # of significant penalties in the complex energy
+            if objective in ['improve', 'maintain']:
+                complex = experiment["Energies"][group.number]["Complex"]
+                # too much worse is 40 kcal / mol or 5%, whichever is greater
+                value = math.fabs(0.05 * complex)
+                if value < 40:
+                    value = 40.0
+                # If the energy has worsened too much
+                if energies[group.number]["Complex"] > complex + value:
+                    best = False
+                    keep = False
+                    break
+            # Compare the interaction energies
+            current = energies[group.number]["Interaction"]
+            reference = experiment["Energies"][group.number]["Interaction"]
+        # Otherwise, just try to improve the complex energy
+        else:
+            objective = "improve"
+            current = energies[group.number]["Complex"]
+            reference = experiment["Energies"][group.number]["Complex"]
+        # Make the decision differently depending on the objective
+        if objective in ['improve', 'maintain']:
+            if current <= reference:
+                pass
+            elif SA and current <= reference + window:
+                best = False
+            else:
+                best = False
+                keep = False
+                break
+        elif objective in ['eliminate']:
+
+            pdbfile = os.path.join(experiment['folder'],'Current','Group1_MoleculeZ.pdb')
+            
+            experiment["Summary"] += "************\n"
+
+            sumAB = []
+            for i in range(-5,5):
+                A, B = pore_area(pdbfile, VDW_radius=0.8, AngleSearchSize=10, RadiusSearchSize=20, Origin=[0,i,0])
+                sumAB.append(A+B)
+
+            min_sumAB = min(sumAB)
+            experiment["Summary"] += "The min_sumAB for this iteration is %.3f\n"%min_sumAB
+
+
+            if current >= reference:
+                if min_sumAB < 7:
+                    best = True
+                    #experiment["Summary"] += "The min_sumAB for this iteration is %.3f\n"%min_sumAB
+                    keep = False
+                elif min_sumAB < 12:
+                    best = False
+                    keep = True
+                    #experiment["Summary"] += "The min_sumAB for this iteration is %.3f\n"%min_sumAB
+                else:
+                    best = False
+                    keep = False
+            elif SA and current >= reference - window and min_sumAB < 12: 
+                best = False
+                #experiment["Summary"] += "The min_sumAB for this iteration is %.3f\n"%min_sumAB
+            else:
+                best = False
+                keep = False
+                break                            
+    return best, keep
+
+
 def optzyme_decision(experiment, energies, iteration, gn):
     """Make a decision about retaining the results from an OptZyme iteration"""
     # Keep track of whether the results are the best or if they are kept by
@@ -886,13 +984,24 @@ def optzyme_decision(experiment, energies, iteration, gn):
                     break
     return best, keep                    
 
+
+
 def iteration_decision(experiment, energies, iteration, gn = None):
     """Make a decision regarding whether or not to keep an iteration"""
     # If the normal decision function is needed
+
     if experiment["Type"] in ['IPRO', 'Mutator', 'OptMAVEn']:
-        best, keep = standard_decision(experiment, energies, iteration, gn)
+        if 'ompf' in experiment["Name"]:
+            print "I work!"
+            #pdb.set_trace()
+            best, keep = standard_decision_ompf(experiment, energies, iteration, gn)
+        else:
+            print "Standard..."
+            #pdb.set_trace()
+            best, keep = standard_decision(experiment, energies, iteration, gn)
     elif experiment["Type"] in ['OptZyme']:
         best, keep = optzyme_decision(experiment, energies, iteration, gn)
+
     else:
         text = "The iteration decision function does not support the "
         text += experiment["Type"] + " IPRO Suite Experiment type."
@@ -979,28 +1088,21 @@ def IPRO_ITERATION(experiment, gn = None):
     """Do an iteration of IPRO."""
     # Start the iteration
     iteration, refinement = Start_Iteration(experiment, gn)
-    print "Gn:", gn, refinement
     if not refinement and iteration > max_iterations(experiment):
         return iteration
     # Do the steps of an iteration
     if not refinement:
         refinement = Backbone_Perturbation(experiment, gn)
-        print "Perturb", refinement
     if not refinement:
         refinement = Optimal_Rotamers(experiment, gn)
-        print "Rotamers", refinement
     if not refinement:
         docked, refinement = Docking(experiment, iteration, gn)
-        print "Docking", refinement
     if not refinement:
         refinement = Relaxation(experiment, gn, True)
-        print "Relax", refinement
     if not refinement:
         energies, refinement = Calculate_Energy(experiment, gn)
-        print energies, refinement
     if not refinement:
         refinement = End_Iteration(experiment, energies, iteration, gn)
-        print "End", refinement
     # If a refinement has been started and an iteration folder was created,
     # delete the iteration folder
     if refinement and iteration > 0:
@@ -1029,7 +1131,6 @@ def initialize_group(experiment, gn):
         refinement = Relaxation(experiment, gn, True)
         # Calculate the initial energies
         energies, refinement = Calculate_Energy(experiment, gn)
-        print energies
         # Store the structures and energies
         store_structures(experiment, gn)
         store_energies(experiment, energies, gn)
@@ -1227,13 +1328,9 @@ def load_initial_info(experiment, folder = None):
             folder = experiment["Folder"] + "results/initial/"
     # Try to load the information
     try:
-        print "status1"
         SHARING.update_Energies(experiment, folder)
-        print "status2"
         SHARING.update_Current(experiment, folder)
-        print "status3"
         SHARING.load_Target_Energies(experiment, folder)
-        print "status 4"
         return True
     except IOError:
         return False
@@ -1246,7 +1343,6 @@ def INITIALIZE(experiment):
     SHARING.Start(experiment)
     # If the initial information is avaible, be done
     have = load_initial_info(experiment)
-    print "have:", have
     if have:
         SHARING.End(experiment)
         return have
@@ -1259,7 +1355,6 @@ def INITIALIZE(experiment):
     SHARING.End(experiment)
     # Go through the groups and Molecules
     for group in experiment:
-        print "GG", group
         did = initialize_group(experiment, group.number)
     if experiment["Energy Calculation"] == "Binding":
         for molecule in experiment[0]:
@@ -1268,7 +1363,6 @@ def INITIALIZE(experiment):
     # Determine if the initial information is available or not
     SHARING.Start(experiment)
     have = load_initial_info(experiment, "./Current/")
-    print "have1", have
     # If everything isn't available
     if not have:
         # End sharing and move to the Experiment's folder
@@ -1286,7 +1380,6 @@ def INITIALIZE(experiment):
             raise IPRO_Error(text)
     # Otherwise, just finish the initialization
     else:
-        print "start initialization"
         finish_initialization(experiment)
     # At this point, all structures are ready and all energies are known, so the
     # function can be done

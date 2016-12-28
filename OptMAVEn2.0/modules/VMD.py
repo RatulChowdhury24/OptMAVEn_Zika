@@ -1,12 +1,13 @@
 __doc__ = """ This module is the interface between IPRO and VMD and
 contains a built-in function for performing each task with VMD. """
 
+import itertools
 import os
 import time
 
 import MOLECULES
 import STANDARDS
-
+import SUBMITTER
 
 # Define how to run VMD.
 ModulesFolder = os.path.join(STANDARDS.InstallFolder, "modules")
@@ -55,29 +56,49 @@ def psf_name(molecule):
     return os.path.join(directory, "{}.psf".format(molecule_name))
 
 
-def run_vmd_script(script, molecules=None, frames=None, args=None):
-    """ Run VMD using a script and optional arguments. """
+def make_vmd_command(script, molecules=None, frames=None, args=None, directory=None):
+    """ Create a VMD command. """
     command = "{} {} {} {}".format(vmd_command, no_display_flag, execute_flag,
             os.path.join(STANDARDS.InstallFolder, "modules", script))
+    if isinstance(directory, str):
+        command = "cd {}\n{}".format(directory, command)
     if isinstance(molecules, list) or isinstance(molecules, tuple):
-        molecules = " ".join(molecules)
+        molecules = " ".join(map(str, molecules))
     if isinstance(molecules, str):
         command += " {} {}".format(molecules_flag, molecules)
     if isinstance(frames, list) or isinstance(frames, tuple):
-        frames = " ".join(frames)
+        frames = " ".join(map(str, frames))
     if isinstance(frames, str):
         command += " {} {}".format(frames_flag, frames)
     if isinstance(args, list) or isinstance(args, tuple):
-        args = " ".join(args)
+        args = " ".join(map(str, args))
     if isinstance(args, str):
         command += " {} {}".format(args_flag, args)
+    return command
+
+
+def run_vmd_script(script, molecules=None, frames=None, args=None):
+    """ Run VMD using a script and optional arguments. """
+    command = make_vmd_command(script, molecules, frames, args)
     i = os.system(command) #FIXME: use subprocess.Popen instead
-    print command
     if i != 0:
         raise Exception("Running VMD with this command has failed:\n{}".format(
                 command))
 
 
+def queue_vmd_script(script, molecules=None, frames=None, args=None, directory=
+        None):
+    """ Run VMD using a script and optional arguments. """
+    command = make_vmd_command(script, molecules, frames, args)
+    SUBMIT.experiment_script(command)
+
+
+def queue_vmd_scripts(argument_list):
+    """ Run a series of VMD scripts given by the argument list. """
+    command = "\n".join([make_vmd_command(**entry) for entry in argument_list])
+    SUBMIT.experiment_script(command)
+    
+    
 def run_namd(configuration_file):
     """ Run NAMD using a configuration file. """
     # FIXME: use subprocess.Popen instead
@@ -238,3 +259,118 @@ def initial_antigen_positions(experiment):
     positions. """
     for molecule in experiment["Molecules"]:
         initial_antigen_position(experiment, molecule[2])
+
+
+def cull_clash(experiment, molecule):
+    """ Find the antigen positions that do not cause clashes between
+    the antigen and the antibodies. """
+    # Get the location of the antigen.
+    Ag = os.path.join(experiment["Folder"], "structures",
+            molecule.generate_name())
+    # Define the locations of the prototype heavy and kappa chain antibodies.
+    chains = ("H", "K")
+    Ig = {chain: os.path.join(STANDARDS.InstallFolder, "input_files",
+            "Molecule{}.pdb".format(chain)) for chain in chains}
+    # Make sure that all of the files exist.
+    missing = [chain for chain, path in Ig.items() if not os.path.exists(path)]
+    if len(missing) > 0:
+        raise IOError("Cannot locate files for prototype antibody chains: {}."
+                .format(", ".join(missing)))
+    # Define the output file.
+    posFile = os.path.join(experiment["Folder"], "input_files", "positions.dat")
+    # Define the experiment details file.
+    detFile = os.path.join(experiment["Folder"], "Experiment_Details.txt")
+    # Define the clash cutoff (Angstroms).
+    clashCutoff = 1.25
+    # Run VMD.
+    run_vmd_script("cull_clashes.tcl", molecules=[Ag, Ig["H"], Ig["K"]], args=[
+            detFile, posFile, clashCutoff])
+    # Ensure that the position file exists.
+    if not os.path.isfile(posFile):
+        raise Exception("VMD failed to generate a file of the non-clashing "
+                "positions.")
+
+def cull_clashes(experiment):
+    """ Find the antigen positions that do not cause clashes between
+    the antigen and the antibodies. """
+    for molecule in experiment["Molecules"]:
+        cull_clash(experiment, molecule[2])
+
+
+def prepare_antigen_part(experiment, antigen, part_file, prefix):
+    """ Combine the structures and coordinates of the antigen and a
+    part in the MAPs database. Write, but do not run, the command. """
+    # Define the files.
+    details = os.path.join(experiment["Folder"], "Experiment_Details.txt")
+    antigen = os.path.join(experiment["Folder"], "structures",
+            antigen.generate_name())
+    args = [experiment["Folder"], antigen, part_file, prefix] + [os.path.join(
+            STANDARDS.InstallFolder, "input_files", f) for f in experiment[
+            "CHARMM Topology Files"]]
+    return make_vmd_command("merge_antigen_part.tcl", args=args)
+
+
+def MAPs_interaction_energy(structure, coordinates, positions, output, details,
+    parameters):
+    """ Write, but do not run a command to calculate the interaction
+    energy between the antigen and a MAPs part. """
+    if isinstance(parameters, (list, tuple)):
+        parameters = " ".join(parameters)
+    return make_vmd_command("interaction_energies.tcl", args=[structure,
+            coordinates, positions, output, details, parameters])
+
+
+def MAPs_interaction_energies(experiment):
+    """ Calculate the interaction energy between a MAPs part and the
+    antigen in each antigen position. """
+    """ Create a structure and coordinate file of the antigen combined
+    with each MAPs part. """
+    # Make a directory to store the interaction energies.
+    ie_directory = os.path.join(experiment["Folder"], "energies")
+    if not os.path.isdir(ie_directory):
+        os.mkdir(ie_directory)
+    # Get some information from the experiment.
+    details = os.path.join(experiment["Folder"], "Experiment_Details.txt")
+    parameter_files = [os.path.join(STANDARDS.InstallFolder, "input_files", f)
+            for f in experiment["CHARMM Parameter Files"]]
+    # List all of the MAPs parts.
+    MAPs_directory = os.path.join(STANDARDS.InstallFolder, "databases", "MAPs")
+    chains = ("H", "L", "K")
+    regions = ("V", "J", "CDR3")
+    MAPs_types = ["".join(x) for x in itertools.product(chains, regions)]
+    MAPs_parts = {Mtype: [os.path.splitext(part)[0] for part in os.listdir(
+            os.path.join(MAPs_directory, Mtype))] for Mtype in MAPs_types}
+    # Loop through each antigen.
+    for antigen in [mol[2] for mol in experiment["Molecules"]]:
+        name = os.path.splitext(antigen.generate_name())[0]
+        mol_directory = os.path.join(ie_directory, name)
+        # Make a sub-directory for each antigen.
+        if not os.path.exists(mol_directory):
+            os.mkdir(mol_directory)
+        # Make a sub-directory for each MAPs part.
+        for Mtype, parts in MAPs_parts.iteritems():
+            for part in parts:
+                part_directory = os.path.join(mol_directory, part)
+                if not os.path.isdir(part_directory):
+                    os.mkdir(part_directory)
+                commands = ["cd {}".format(part_directory)]
+                # Combine the antigen and MAPs part.
+                part_file = os.path.join(MAPs_directory, Mtype, part +
+                        ".pdb")
+                output_prefix = os.path.join(part_directory, name)
+                commands.append(prepare_antigen_part(experiment, antigen, part_file,
+                        output_prefix))
+                # Calculate the interaction energies.
+                struct_file = output_prefix + ".psf"
+                coords_file = output_prefix + ".pdb"
+                positions_file = os.path.join(experiment["Folder"],
+                        "input_files", "positions.dat")
+                energy_file = os.path.join(part_directory, "energies.dat")
+                commands.append(MAPs_interaction_energy(struct_file,
+                        coords_file, positions_file, energy_file, details,
+                        parameter_files))
+                # Run the calculations on the queue.
+                command = "\n".join(commands)
+                script = os.path.join(part_directory, "calc_energy.sh")
+                SUBMITTER.experiment_script(script, command)
+                

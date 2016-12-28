@@ -1,0 +1,15 @@
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=1:00:00
+#PBS -j oe
+#PBS -q lionxj-cdm
+
+set -u
+cd /gpfs/scratch/aml52/IPRO_Suite/IPRO/experiments/Ariel_TestO2/
+
+echo " "
+echo " "
+echo "Job started on $(hostname -s) at $(date)"
+python IPRO.py
+echo " "
+echo "Job ended at $(date)"
+echo " "

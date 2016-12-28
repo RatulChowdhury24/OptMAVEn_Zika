@@ -114,7 +114,7 @@ proc readAttribute {fileName attribute number} {
 		exit 1
 	}
 	# If so, return the associated value.
-	return [lindex $div 1]
+	return [string trim [lindex $div 1]]
 }
 
 # Read an attribute list from an experiment.
