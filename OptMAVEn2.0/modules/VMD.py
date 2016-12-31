@@ -155,14 +155,15 @@ def generate_PSF(experiment, molecule):
             fileFormat="PDB", procedure=""))
     output_coords = os.path.join(struct_directory, molecule.generate_name(
             fileFormat="PDB", procedure=""))
-    output_struct = os.path.join(struct_directory, psf_name(molecule.generate_name(
-            fileFormat="PDB")))
+    output_struct = os.path.join(struct_directory, psf_name(molecule.
+            generate_name(fileFormat="PDB")))
     topology_files = [os.path.join(inputs_directory, f) for f in experiment[
             "CHARMM Topology Files"]]
     # Format the argument list.
     args = [input_coords, output_coords, output_struct] + topology_files
     # Run VMD with the make_antigen_psf script.
-    run_vmd_script(os.path.join(ModulesFolder, "make_antigen_psf.tcl"), args=args)
+    run_vmd_script(os.path.join(ModulesFolder, "make_antigen_psf.tcl"), 
+            args=args)
     # Make sure the output files were generated.
     if not all(os.path.isfile(output) for output in [output_coords,
             output_struct]):
@@ -282,9 +283,11 @@ def cull_clash(experiment, molecule):
     detFile = os.path.join(experiment["Folder"], "Experiment_Details.txt")
     # Define the clash cutoff (Angstroms).
     clashCutoff = 1.25
+    # Define the maximum number of clashes permitted.
+    clashesPermitted = 2
     # Run VMD.
     run_vmd_script("cull_clashes.tcl", molecules=[Ag, Ig["H"], Ig["K"]], args=[
-            detFile, posFile, clashCutoff])
+            detFile, posFile, clashCutoff, clashesPermitted])
     # Ensure that the position file exists.
     if not os.path.isfile(posFile):
         raise Exception("VMD failed to generate a file of the non-clashing "
@@ -358,8 +361,8 @@ def MAPs_interaction_energies(experiment):
                 part_file = os.path.join(MAPs_directory, Mtype, part +
                         ".pdb")
                 output_prefix = os.path.join(part_directory, name)
-                commands.append(prepare_antigen_part(experiment, antigen, part_file,
-                        output_prefix))
+                commands.append(prepare_antigen_part(experiment, antigen,
+			            part_file, output_prefix))
                 # Calculate the interaction energies.
                 struct_file = output_prefix + ".psf"
                 coords_file = output_prefix + ".pdb"
@@ -369,8 +372,12 @@ def MAPs_interaction_energies(experiment):
                 commands.append(MAPs_interaction_energy(struct_file,
                         coords_file, positions_file, energy_file, details,
                         parameter_files))
+                # Call back OptMAVEn once finished.
+                commands.append("cd {}".format(experiment["Folder"]))
+                commands.append("python {}".format(os.path.join(
+                        STANDARDS.InstallFolder, "programs", "Optmaven2.0.py")))
                 # Run the calculations on the queue.
                 command = "\n".join(commands)
-                script = os.path.join(part_directory, "calc_energy.sh")
+                script = os.path.join(part_directory, "{}.sh".format(part))
                 SUBMITTER.experiment_script(script, command)
                 

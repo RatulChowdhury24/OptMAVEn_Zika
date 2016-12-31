@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # Where the IPRO Suite is installed
-InstallFolder = "/home/matthew/Maranas_Lab/IPRO_Suite_OptMAVEn2.0"
+InstallFolder = "/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0"
 
 # Name of this file
 __name__ = "The Iterative Protein Redesign & Optimization Program"

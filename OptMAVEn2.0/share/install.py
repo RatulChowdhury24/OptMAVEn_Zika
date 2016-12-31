@@ -73,9 +73,11 @@ if not validInstallFolder(InstallFolder):
 ProgramsFolder = os.path.join(InstallFolder, "programs")
 edits = [os.path.join(ProgramsFolder, prgm) for prgm in os.listdir(
 		ProgramsFolder)]
-# Also edit the STANDARDS.py module.
+# Also edit the STANDARDS.py module and the TCL modules.
 ModulesFolder = os.path.join(InstallFolder, "modules")
-for module in ("STANDARDS.py",):
+modules = [module for module in os.listdir(ModulesFolder) if module.endswith(
+        ".tcl") or module in ("STANRADRS.py",)]
+for module in modules:
 	edits.append(os.path.join(ModulesFolder, module))
 # Change the InstallFolder to the actual folder for each file.
 for file_ in edits:

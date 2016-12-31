@@ -1,0 +1,42 @@
+Basic Experiment Information
+User:                         mfa5147
+Type:                         OptMAVEn
+Name:                         ZIKV_mini1
+File Format:                  PDB
+Force Field:                  CHARMM
+Folder:                       /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/
+
+How to use CHARMM
+CHARMM Topology File:         top_all27_prot_na.rtf
+CHARMM Parameter File:        par_all27_prot_na.prm
+CHARMM Energy Term:           angl
+CHARMM Energy Term:           bond
+CHARMM Energy Term:           dihe
+CHARMM Energy Term:           elec
+CHARMM Energy Term:           impr
+CHARMM Energy Term:           urey
+CHARMM Energy Term:           vdw
+CHARMM Iterations:            5000
+Lj Phi:                       0.005
+
+The Molecules used in the experiment
+Molecule:                     Molecule A from file /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/input_files/5ire.pdb is Target Molecule E
+
+Antigen epitope residues 
+Epitope Position:             Residue 306 in Molecule E
+Epitope Position:             Residue 307 in Molecule E
+Epitope Position:             Residue 342 in Molecule E
+Epitope Position:             Residue 343 in Molecule E
+Epitope Position:             Residue 344 in Molecule E
+Epitope Position:             Residue 350 in Molecule E
+Epitope Position:             Residue 353 in Molecule E
+Epitope Position:             Residue 355 in Molecule E
+Epitope Position:             Residue 388 in Molecule E
+Epitope Position:             Residue 391 in Molecule E
+Epitope Position:             Residue 392 in Molecule E
+Epitope Position:             Residue 393 in Molecule E
+Epitope Position:             Residue 395 in Molecule E
+Optmaven Grid:                0.0 60.0
+Optmaven Grid:                0.0 5.0
+Optmaven Grid:                -5.0 0.0
+Optmaven Grid:                14.0 16.0

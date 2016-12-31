@@ -833,3 +833,20 @@ class Experiment(object):
         # If Molecules should be superimposed during relaxations
         if self["Type"] in ["IPRO", "Mutator", "OptMAVEn", "OptZyme"]:
             IPRO_FUNCTIONS.do_superimpose(self)
+    #mfa#
+    def get_OptMAVEn_status(self):
+        if self["Type"] != "OptMAVEn":
+            raise TypeError("Cannot get OptMAVEn status because this experiment"
+                    " is not an OptMAVEn experiment.")
+        try:
+            return int(open(os.path.join(self["Folder"], "status")).read())
+        except:
+            return None
+    #mfa#
+    def incr_OptMAVEn_status(self):
+        status = self.get_OptMAVEn_status()
+        if status is None:
+            status = 1
+        else:
+            status += 1
+        open(os.path.join(self["Folder"], "status"), "w").write(str(status))

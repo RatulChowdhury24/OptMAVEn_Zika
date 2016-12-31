@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # Where the IPRO Suite is installed
-InstallFolder = "/home/matthew/Maranas_Lab/IPRO_Suite_OptMAVEn2.0"
+InstallFolder = "/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0"
 
 # name of this file
 __name__ = "IPRO Suite Program to Make Mutants"

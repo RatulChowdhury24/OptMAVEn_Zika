@@ -17,8 +17,8 @@ import sys
 # Include everything from the STANDARDS module, which in this case is useful for
 # the functions and parameters used in answering questions
 from STANDARDS import *
-from IO_FUNCTIONS import answer_question
-from IO_FUNCTIONS import confirm
+#mfa from IO_FUNCTIONS import answer_question
+#mfa from IO_FUNCTIONS import confirm
 
 def submit_script(fileName):
     """A function that submits a script to run on a cluster of machines"""
@@ -123,5 +123,5 @@ def experiment_script(name, command, hours=23):
     text += 'echo " "\n'
     open(name, "w").write(text)
     os.system("chmod u+x {}".format(name))
-    #submit_script(name)
+    submit_script(name)
 

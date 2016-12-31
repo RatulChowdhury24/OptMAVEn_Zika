@@ -12,7 +12,7 @@
 
 # Load the VMD functions.
 package require namdenergy
-set InstallFolder "/home/matthew/Maranas_Lab/IPRO_Suite_OptMAVEn2.0"
+set InstallFolder "/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0"
 source $InstallFolder/modules/VMD_FUNCTIONS.tcl
 
 # Load the arguments.

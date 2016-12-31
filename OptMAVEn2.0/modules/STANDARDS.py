@@ -14,8 +14,8 @@ import os
 import sys
 
 # Make sure the modules know where they are installed
-#InstallFolder = "/home/matthew/Maranas_Lab/IPRO_Suite_OptMAVEn2.0"
-InstallFolder = "/home/matthew/Maranas_Lab/IPRO_Suite_OptMAVEn2.0"
+#InstallFolder = "/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0"
+InstallFolder = "/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0"
 
 # Where the CPLEX solver is located
 CPLEXFolder = "/usr/global/ilog/CPLEX_Studio124/cplex/python/x86-64_sles10_4.1/"

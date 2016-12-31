@@ -2,7 +2,7 @@
 # The following arguments are required:
 # -e: the name of this script.
 # -m: antigen/coords.pdb MoleculeH/coords.pdb MoleculeK/coords.pdb
-# -args: experiment/details.txt output/file.dat clashCutoff
+# -args: experiment/details.txt output/file.dat clashCutoff clashesPermitted
 
 set InstallFolder "/home/matthew/Maranas_Lab/IPRO_Suite_OptMAVEn2.0"
 
@@ -21,13 +21,14 @@ if {[llength [$Ag get name]] == 0 || [llength [$IgH get name]] == 0 || [llength 
 }
 
 # Load the arguments.
-if {[llength $argv] != 3} {
+if {[llength $argv] != 4} {
 	puts "Usage: -args experiment/details.txt output/file.dat clashCutoff"
 	exit 1
 }
 set detailsFile [lindex $argv 0]
 set positionsFile [lindex $argv 1]
 set clashCutoff [lindex $argv 2]
+set clashesPermitted [lindex $argv 3]
 
 # Select the epitope in the antigen.
 set epitopeResidues [readAttributeList $detailsFile "Epitope Position" 1]
@@ -93,9 +94,9 @@ foreach zRot [lindex $levels 0] {
 				set minZAg [expr $minZAg + $translateZ]
 				# Count the number of clashes between the antigen and the antibody.
 				set clashes [llength [lindex [measure contacts $clashCutoff $AgNear $IgHNear] 0]]
-				if {$clashes == 0} {
+				if {$clashes <= $clashesPermitted} {
 					set clashes [llength [lindex [measure contacts $clashCutoff $AgNear $IgKNear] 0]]
-					if {$clashes == 0} {
+					if {$clashes <= $clashesPermitted} {
 						# Write non-clashing positions to the file.
 						puts $positions "$zRot $P"
 					}

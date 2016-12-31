@@ -16,9 +16,12 @@ import itertools #mfa#
 import sys
 import math
 import random
+import numpy as np #mfa#
 # And include IPRO Suite modules
 from STANDARDS import *
 import SHARING
+import STANDARDS #mfa#
+import SUBMITTER #mfa#
 import MOLECULES
 import EXPERIMENT
 import ROTAMERS
@@ -29,7 +32,7 @@ from CPLEX import OptMAVEn_selector
 from IPRO_FUNCTIONS import generate_random_angle
 from DEIMMUNIZATION import load_human_sequences 
 #import DOCKING_FUNCTION
-#import CPLEX
+import CPLEX
 #import DEIMMUNIZATION.py
 
 class OptMAVEnError(IPRO_Error):
@@ -115,7 +118,7 @@ def prepare_MAPs_parts(experiment = {}):
 def load_integer_cuts():
     """Load the data for MAPs integer cuts"""
     # The information is stored here
-    name = InstallFolder + "databases/OptMAVEn/MAPs_Integer_Cuts.txt"
+    name = os.path.join(InstallFolder, "databases/OptMAVEn/MAPs_Integer_Cuts.txt") #mfa#
     try:
         f = open(name, "r")
     except IOError:
@@ -244,7 +247,43 @@ def interaction_energies(experiment):
 #mfa#
 def regroup_energies(experiment):
     """ Regroup the MAPs interaction energies. """
-    raise NotImplementedError("I will write this part next.")
+    energy_dir = os.path.join(experiment["Folder"], "energies")
+    # Convert a split data line into a position string.
+    position_str = lambda data: "zr{}x{}y{}z{}".format(*data)
+    # Read the expected positions from the positions file.
+    positions_file = os.path.join(experiment["Folder"], "input_files",
+            "positions.dat")
+    if not os.path.isfile(positions_file):
+        raise IOError("Cannot find positions file.")
+    positions = {position_str(line.split()): dict() for line in open(
+            positions_file)}
+    # Regroup for each molecule.
+    for molecule in os.listdir(energy_dir):
+        mol_dir = os.path.join(energy_dir, molecule)
+        # List the parts.
+        parts = os.listdir(mol_dir)
+        # Make a structure to hold the energies.
+        energies = {position: {part: np.nan for part in parts} for position in
+                positions}
+        for part in parts:
+            energy_file = os.path.join(mol_dir, part, "energies.dat")
+            if not os.path.isfile(energy_file):
+                raise IOError("Missing energies for part {} in molecule {}."
+                        .format(part, molecule))
+            # Read in the energies.
+            for line in open(energy_file):
+                # Make sure the datum has not yet been written but that there
+                # is a space for it.
+                pos = position_str(line.split()[:4])
+                if energies[pos][part] is not np.nan:
+                    raise ValueError("Entry for part {} at position {} appears"
+                            " twice.".format(part, pos))
+                energies[pos][part] = float(line.split()[4])
+        # For each position, make an energy file whose rows are MAPs parts.
+        for position, parts in energies.iteritems():
+            energy_file = os.path.join(mol_dir, "{}.dat".format(position))
+            open(energy_file, "w").write("\n".join(["{} {}".format(part, energy)
+                    for part, energy in parts.iteritems()]))
 
 def move_groups_orgin(experiment, groups, average = []):
     """Move the center of the groups to the orgin"""
@@ -801,7 +840,6 @@ def select_parts_cplex(energyFile, solutionCuts = []):
     # The energy is the total interaction energy between the selected parts and antigen
     #solution, energy = OptMAVEn_selector(energies, struCuts, solutionCuts)
     solution, energy = OptMAVEn_selector(energies, struCuts, solutionCuts)
-
     # Store the selected parts in a dictionary
     selected_parts = []
     for part in solution:
@@ -809,8 +847,32 @@ def select_parts_cplex(energyFile, solutionCuts = []):
         #selected_parts[part] = solution[part]
         selected_parts.append(part)
         selected_parts.append(solution[part])
-
     return selected_parts, energy
+
+#mfa#
+def select_all_parts(experiment):
+    """ Select parts for all antigen positions in an experiment. """
+    energy_dir = os.path.join(experiment["Folder"], "energies")
+    # Loop through all of the molecules in the experiment.
+    for molecule in os.listdir(energy_dir):
+        mol_dir = os.path.join(energy_dir, molecule)
+        # Loop through all of the positions that were tested for each molecule.
+        positions = [f for f in os.listdir(mol_dir) if f.startswith("zr") and
+                f.endswith(".dat")]
+        for position in positions:
+            position_file = os.path.join(mol_dir, position)
+            # Submit a script to select the parts for that position.
+            commands = list()
+            commands.append("python {} {}".format(os.path.join(
+                    STANDARDS.InstallFolder, "modules", "select_parts.py"),
+                    position_file))
+            # And call back OptMAVEn once finished.
+            commands.append("cd {}".format(experiment["Folder"]))
+            commands.append("python {}".format(os.path.join(
+                    STANDARDS.InstallFolder, "programs", "Optmaven2.0.py")))
+            command = "\n".join(commands)
+            name = "{}.sh".format(os.path.splitext(position_file)[0])
+            SUBMITTER.experiment_script(name, command)
 
 def calculate_molecule_rmsd(moleculeA, moleculeB):
     """ Calculate the rmsd between two conformations of a molecule
