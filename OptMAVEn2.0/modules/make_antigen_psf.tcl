@@ -4,21 +4,24 @@
 # -args: 0: the input coordinate file (PDB) of the antigen
 #        1: the output coordinate file (PDB)
 #        2: the output structure file (PSF)
-#        3 ... : the topology file(s)
+#        3: the antigen segment name
+#        4: the topology file(s)
+#        etc.
 
 # Load required external modules.
 package require psfgen
 
 # Load the arguments.
-if {[llength $argv] < 4} {
-	puts "Usage: -args input/coordinates.pdb output/coordinates.pdb output/structure.psf topology1.rtf topology2.rtf (optional) ..."
+if {[llength $argv] < 5} {
+	puts "Usage: -args input/coordinates.pdb output/coordinates.pdb output/structure.psf antigenSegment topology1.rtf topology2.rtf (optional) ..."
 	exit 1
 }
 
 set inputCoords [lindex $argv 0]
 set outputCoords [lindex $argv 1]
 set outputStruct [lindex $argv 2]
-for {set i 3} {$i < [llength $argv]} {incr i} {
+set antigenSegment [lindex $argv 3]
+for {set i 4} {$i < [llength $argv]} {incr i} {
 	topology [lindex $argv $i]
 }
 
@@ -26,11 +29,11 @@ for {set i 3} {$i < [llength $argv]} {incr i} {
 # Alias atoms and residues to make the structure and the topology file(s) compatible.
 pdbalias residue HIS HSE
 pdbalias atom ILE CD1 CD
-# Generate a segment labeled "A" (for antigen) that has a place for every atom that is present in the topology file(s).
+# Generate a segment labeled for the antigen that has a place for every atom that is present in the topology file(s).
 set AgPDB $inputCoords
-segment A {pdb $AgPDB}
+segment $antigenSegment {pdb $AgPDB}
 # Load the coordinates of the atoms that are present in the coordinate file.
-coordpdb $AgPDB A
+coordpdb $AgPDB $antigenSegment
 # Guess coordinates for missing atoms.
 guesscoord
 # Write a PDB and PSF for the antigen with newly added atoms.

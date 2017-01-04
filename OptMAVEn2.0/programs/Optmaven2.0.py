@@ -98,4 +98,3 @@ elif status == 2:
             header = True
         all_file = os.path.join(mol_directory, "parts_all.csv")
         open(all_file, "w").write("".join(lines))
-

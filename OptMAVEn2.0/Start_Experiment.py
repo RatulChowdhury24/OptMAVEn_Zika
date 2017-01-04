@@ -21,13 +21,13 @@ import sys
 sys.path.append(os.path.join(InstallFolder, "modules"))
 # Include the EXPERIMENT module
 import EXPERIMENT
-# The source of the functions that can generate scripts to run the experiment
-import SUBMITTER
 
 # Make the experiment, using user input
 experiment = EXPERIMENT.Experiment(False)
 # Move to the experiment's folder and output it's information
 os.chdir(experiment["Folder"])
 experiment.output()
-# Generate scripts to run this experiment and possibly submit them
-dummy = SUBMITTER.script_generator(experiment)
+# Start running OptMAVEn from the experiment's folder.
+os.system("python {}".format(os.path.join(InstallFolder, "programs",
+        "OptMAVEn2.0.py")))
+

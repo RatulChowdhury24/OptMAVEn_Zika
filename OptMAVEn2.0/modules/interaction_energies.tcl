@@ -3,11 +3,13 @@
 # -e: the name of this script
 # -args: 0: the antigen/part PSF
 #        1: the antigen/part PDB
-#        2: the file of positions to use
-#        3: the name of the output file
-#        4: the experiment details file
-#        5: the first parameter file
-#        6: (optional) the second parameter file
+#        2: the antigen segment
+#        3: the MAPs part segment
+#        4: the file of positions to use
+#        5: the name of the output file
+#        6: the experiment details file
+#        7: the first parameter file
+#        8: (optional) the second parameter file
 #        etc.
 
 # Load the VMD functions.
@@ -16,17 +18,19 @@ set InstallFolder "/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0"
 source $InstallFolder/modules/VMD_FUNCTIONS.tcl
 
 # Load the arguments.
-if {[llength $argv] < 6} {
-	puts "Usage: structure.psf coordinates.pdb positions/file.dat output/energies.dat experiment/details.txt parameter/file1.prm parameter/file2.prm (optional) ..."
+if {[llength $argv] < 8} {
+	puts "Usage: structure.psf coordinates.pdb antigenSegment MAPsSegment positions/file.dat output/energies.dat experiment/details.txt parameter/file1.prm parameter/file2.prm (optional) ..."
 	exit 1
 }
 set inStruct [lindex $argv 0]
 set inCoords [lindex $argv 1]
-set positionsFile [lindex $argv 2]
-set outEnergy [lindex $argv 3]
-set detailsFile [lindex $argv 4]
+set antigenSegment [lindex $argv 2]
+set MAPsSegment [lindex $argv 3]
+set positionsFile [lindex $argv 4]
+set outEnergy [lindex $argv 5]
+set detailsFile [lindex $argv 6]
 set parameterFiles []
-for {set i 5} {$i < [llength $argv]} {incr i} {
+for {set i 7} {$i < [llength $argv]} {incr i} {
 	lappend parameterFiles [lindex $argv $i]
 }
 
@@ -35,12 +39,12 @@ mol new $inStruct
 mol addfile $inCoords
 
 # Select every atom in each segment. These segments were named by merge_antigen_part.tcl.
-set Ag [atomselect 0 "segname A"]
-set MAPsPart [atomselect 0 "segname I"]
+set Ag [atomselect 0 "segname $antigenSegment"]
+set MAPsPart [atomselect 0 "segname $MAPsSegment"]
 
 # Select the epitope in the antigen.
 set epitopeResidues [readAttributeList $detailsFile "Epitope Position" 1]
-set epitope [atomselect 0 "resid $epitopeResidues"]
+set epitope [atomselect 0 "(segname $antigenSegment) and (resid $epitopeResidues)"]
 if {[llength [$epitope get name]] == 0} {
 	puts "Failed to load epitope from $detailsFile."
 	exit 1
@@ -72,6 +76,12 @@ while {[gets $positions P] >= 0} {
 	# Translate the antigen by the amount needed.
 	$Ag moveby $dxyz
 	set pos [vecadd $pos $dxyz]
+	# FIXME
+	#puts " "
+	puts $pos
+	puts [getAntigenPosition $Ag $epitope 0 $antigenSegment]
+	#set whole [atomselect 0 "all"]
+	#$whole writepdb "$P.pdb"
 	# Calculate the interaction energy (electrostatic and van der Waals) between the antigen and the MAPs part.
 	set outEnergyPos "namdenergy.dat"
 	namdenergy -sel $Ag $MAPsPart -elec -vdw -par $parameterFiles -ofile $outEnergyPos
@@ -93,6 +103,7 @@ set fin [open "finished" "w"]
 close $fin
 
 # Remove the PDB and PSF to save disk space.
+# FIXME
 file delete $inStruct
 file delete $inCoords
 

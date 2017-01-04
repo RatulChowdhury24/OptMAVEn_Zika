@@ -18,6 +18,8 @@ execute_flag = "-e"
 molecules_flag = "-m"
 frames_flag = "-f"
 args_flag = "-args"
+AgSeg = "ANTI"
+MAPsSeg = "MAPP"
 
 # Define how to run NAMD.
 namd_command = "namd"
@@ -108,7 +110,7 @@ def run_namd(configuration_file):
         raise Exception("Running NAMD with this command has failed:\n{}".format(
                 command))
 
-
+'''
 def extract_chains(input_coords, chains, output_coords):
     """ Extract specific chains from a coordinate file. """
     # The molecule's existence should have been verified, but make sure.
@@ -119,7 +121,7 @@ def extract_chains(input_coords, chains, output_coords):
     run_vmd_script(os.path.join(ModulesFolder, "extract_chains.tcl"), molecules=
             input_coords, args="{} {}".format(output_coords, chains))
 
-'''
+
 def extract_experiment_chains(experiment):
     """ Extract the selected chain of each molecule in an experiment
     and put the output files in the experiment's folder. """
@@ -160,9 +162,9 @@ def generate_PSF(experiment, molecule):
     topology_files = [os.path.join(inputs_directory, f) for f in experiment[
             "CHARMM Topology Files"]]
     # Format the argument list.
-    args = [input_coords, output_coords, output_struct] + topology_files
+    args = [input_coords, output_coords, output_struct, AgSeg] + topology_files
     # Run VMD with the make_antigen_psf script.
-    run_vmd_script(os.path.join(ModulesFolder, "make_antigen_psf.tcl"), 
+    run_vmd_script(os.path.join(ModulesFolder, "make_antigen_psf.tcl"),
             args=args)
     # Make sure the output files were generated.
     if not all(os.path.isfile(output) for output in [output_coords,
@@ -252,8 +254,8 @@ def initial_antigen_position(experiment, molecule):
     name = molecule.name
     details_file = os.path.join(experiment["Folder"], "Experiment_Details.txt")
     run_vmd_script("initial_antigen_position.tcl", molecules=molecule_file,
-            args=[molecule_file, details_file])
-    
+            args=[molecule_file, AgSeg, details_file])
+
 
 def initial_antigen_positions(experiment):
     """ Move all of the antigens in an experiment to their initial
@@ -307,9 +309,9 @@ def prepare_antigen_part(experiment, antigen, part_file, prefix):
     details = os.path.join(experiment["Folder"], "Experiment_Details.txt")
     antigen = os.path.join(experiment["Folder"], "structures",
             antigen.generate_name())
-    args = [experiment["Folder"], antigen, part_file, prefix] + [os.path.join(
-            STANDARDS.InstallFolder, "input_files", f) for f in experiment[
-            "CHARMM Topology Files"]]
+    args = [experiment["Folder"], antigen, part_file, prefix, AgSeg, MAPsSeg] +\
+            [os.path.join(STANDARDS.InstallFolder, "input_files", f) for f in
+            experiment["CHARMM Topology Files"]]
     return make_vmd_command("merge_antigen_part.tcl", args=args)
 
 
@@ -320,7 +322,7 @@ def MAPs_interaction_energy(structure, coordinates, positions, output, details,
     if isinstance(parameters, (list, tuple)):
         parameters = " ".join(parameters)
     return make_vmd_command("interaction_energies.tcl", args=[structure,
-            coordinates, positions, output, details, parameters])
+            coordinates, AgSeg, MAPsSeg, positions, output, details, parameters])
 
 
 def MAPs_interaction_energies(experiment):

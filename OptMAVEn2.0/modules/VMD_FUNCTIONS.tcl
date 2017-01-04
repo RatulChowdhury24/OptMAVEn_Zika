@@ -41,9 +41,9 @@ proc transformationZMin {antigen epitope} {
 }
 
 # Calculate the z angle (in degrees) at which an antigen is facing. This angle is defined arbitrarily as the angle between the positive x axis and the projection onto the x-y plane of the vector from the antigen's center of mass to the C-alpha atom of its first residue, when the antigen has been rotated such that the z coordinates of its epitope are minimized. This definition is in place to provide a standard way to calculate the z rotation of any antigen structure.
-proc getZAngle {antigen epitope antigenMolID} {
+proc getZAngle {antigen epitope antigenMolID antigenSegment} {
 	# Transform the coordinates of the C-alpha atom of the first residue with the transformation matrix needed to minimize the z coordinates of the epitope and center the antigen at the origin. Then find the angle its x-y projection makes with the x axis.
-	return [rad2deg [angleToX [coordtrans [transformationZMin $antigen $epitope] [measure center [atomselect $antigenMolID "resid 1 and name CA"]]]]]
+	return [rad2deg [angleToX [coordtrans [transformationZMin $antigen $epitope] [measure center [atomselect $antigenMolID "segid $antigenSegment and resid 1 and name CA"]]]]]
 }
 
 # Rotate the antigen around the z axis by zRot degrees, ASSUMING that the epitope has had its z coordinates minimized.
@@ -59,23 +59,23 @@ proc rotateZMin {antigen epitope} {
 }
 
 # Calculate the z rotation angle and (x, y, z) position of an antigen's epitope. NOTE: this function should only be used for antigens whose epitopes are already aligned with the negative z axis.
-proc getAntigenPosition {antigen epitope antigenMolID} { 
-	return "[getZAngle $antigen $epitope $antigenMolID] [measure center $epitope]"
+proc getAntigenPosition {antigen epitope antigenMolID antigenSegment} { 
+	return "[getZAngle $antigen $epitope $antigenMolID $antigenSegment] [measure center $epitope]"
 }
 
 # Move the antigen to the position with the epitope centered at the given (x, y, z) point and aligned with the negative z axis, and with the antigen facing the direction (in degrees) given by zRot.
-proc positionAntigen {antigen epitope antigenMolID zRot x y z} {
+proc positionAntigen {antigen epitope antigenMolID antigenSegment zRot x y z} {
 	# Rotate the epitope to minimize its z coordinates.
 	rotateZMin $antigen $epitope
 	# Translate the antigen so that its epitope is centered at (x, y, z).
 	$antigen moveby [vecsub "$x $y $z" [measure center $epitope]]
 	# Rotate the antigen around the z axis so that it points in the direction given by zRot.
-	$antigen move [transaxis z [expr $zRot - [getZAngle $antigen $epitope $antigenMolID]] deg]
+	$antigen move [transaxis z [expr $zRot - [getZAngle $antigen $epitope $antigenMolID $antigenSegment]] deg]
 }
 
 # Move the antigen to the position with the epitope centered at the origin and pointing towards the negative z axis and with the antigen facing zero degrees.
-proc mountAntigen {antigen epitope antigenMolID} {
-	positionAntigen $antigen $epitope $antigenMolID 0 0 0 0
+proc mountAntigen {antigen epitope antigenMolID antigenSegment} {
+	positionAntigen $antigen $epitope $antigenMolID $antigenSegment 0 0 0 0
 }
 
 # Generate a range of numbers.

@@ -167,9 +167,6 @@ def copy_forceField_files(experiment, folder):
     """Copy the force field files to the current folder."""
     # Store the file names here
     files = []
-    print experiment["CHARMM Topology Files"]
-    print experiment["CHARMM Parameter Files"]
-    raw_input("Copying files")
     if experiment["Force Field"] == "CHARMM":
         files.extend(experiment["CHARMM Topology Files"])
         files.extend(experiment["CHARMM Parameter Files"])

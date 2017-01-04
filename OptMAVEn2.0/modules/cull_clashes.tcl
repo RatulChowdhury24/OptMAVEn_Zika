@@ -1,10 +1,15 @@
 # This VMD script tests all of the combinations of levels in the OptMAVEn grid and outputs the combinations that do not cause clashes between the antigen and both prototype antibodies.
 # The following arguments are required:
 # -e: the name of this script.
-# -m: antigen/coords.pdb MoleculeH/coords.pdb MoleculeK/coords.pdb
-# -args: experiment/details.txt output/file.dat clashCutoff clashesPermitted
+# -m: 0: antigen/coords.pdb 
+#     1: MoleculeH/coords.pdb
+#     2: MoleculeK/coords.pdb
+# -args: 0: experiment/details.txt
+#        1: output/file.dat
+#        2: clashCutoff
+#        3: clashesPermitted
 
-set InstallFolder "/home/matthew/Maranas_Lab/IPRO_Suite_OptMAVEn2.0"
+set InstallFolder "/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0"
 
 # Load the VMD functions.
 source $InstallFolder/modules/VMD_FUNCTIONS.tcl
