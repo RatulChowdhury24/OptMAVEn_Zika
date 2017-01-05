@@ -257,11 +257,16 @@ def regroup_energies(experiment):
         raise IOError("Cannot find positions file.")
     positions = {position_str(line.split()): dict() for line in open(
             positions_file)}
+    # Get all of the MAPs parts.
+    MAPs_dir = os.path.join(InstallFolder, "databases", "MAPs")
+    parts = list()
+    for part_type in [d for d in os.listdir(MAPs_dir) if d.startswith((
+            "H", "K", "L"))]:
+        part_dir = os.path.join(MAPs_dir, part_dir)
+        parts.extend([os.path.splitext(part)[0] for part in os.listdir(part_dir) if part.endswith(".pdb")])
     # Regroup for each molecule.
     for molecule in os.listdir(energy_dir):
         mol_dir = os.path.join(energy_dir, molecule)
-        # List the parts.
-        parts = os.listdir(mol_dir)
         # Make a structure to hold the energies.
         energies = {position: {part: np.nan for part in parts} for position in
                 positions}

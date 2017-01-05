@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-InstallFolder = "/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0"
+InstallFolder = "/home/matthew/Maranas_Lab/Mini_OptMAVEn2_Test"
 
 # The name of this program
 __name__ = "The IPRO Suite Experiment Starter"

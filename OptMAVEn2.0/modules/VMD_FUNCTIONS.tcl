@@ -67,10 +67,10 @@ proc getAntigenPosition {antigen epitope antigenMolID antigenSegment} {
 proc positionAntigen {antigen epitope antigenMolID antigenSegment zRot x y z} {
 	# Rotate the epitope to minimize its z coordinates.
 	rotateZMin $antigen $epitope
-	# Translate the antigen so that its epitope is centered at (x, y, z).
-	$antigen moveby [vecsub "$x $y $z" [measure center $epitope]]
 	# Rotate the antigen around the z axis so that it points in the direction given by zRot.
 	$antigen move [transaxis z [expr $zRot - [getZAngle $antigen $epitope $antigenMolID $antigenSegment]] deg]
+	# Translate the antigen so that its epitope is centered at (x, y, z).
+	$antigen moveby [vecsub "$x $y $z" [measure center $epitope]]
 }
 
 # Move the antigen to the position with the epitope centered at the origin and pointing towards the negative z axis and with the antigen facing zero degrees.

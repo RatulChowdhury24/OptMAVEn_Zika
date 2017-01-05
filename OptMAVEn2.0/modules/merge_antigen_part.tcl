@@ -15,7 +15,7 @@
 package require psfgen
 
 # Load the VMD functions.
-set InstallFolder "/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0"
+set InstallFolder "/home/matthew/Maranas_Lab/IPRO_Suite_OptMAVEn2.0"
 source $InstallFolder/modules/VMD_FUNCTIONS.tcl
 
 # Load the arguments.
@@ -42,15 +42,17 @@ segment $antigenSegment {
 	pdb $AgPDB
 }
 
-# Read antigen coordinates into segment A.
+# Read antigen coordinates into the antigen segment.
 coordpdb $AgPDB $antigenSegment
 
-# Build a segment for the immunoglobulin part.
+# Build a segment for the MAPs part. Do not patch the terminal residues.
 segment $MAPsSegment {
+    first none
+    last none
 	pdb $MAPsPDB
 }
 
-# Read the immunoglobulin coordinates into segment I.
+# Read the immunoglobulin coordinates into the MAPs segment.
 coordpdb $MAPsPDB $MAPsSegment
 
 # Create the PDB and PSF.

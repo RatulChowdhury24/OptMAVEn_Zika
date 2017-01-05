@@ -9,7 +9,7 @@
 #        2: clashCutoff
 #        3: clashesPermitted
 
-set InstallFolder "/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0"
+set InstallFolder "/home/matthew/Maranas_Lab/IPRO_Suite_OptMAVEn2.0"
 
 # Load the VMD functions.
 source $InstallFolder/modules/VMD_FUNCTIONS.tcl

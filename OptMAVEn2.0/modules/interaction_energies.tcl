@@ -14,7 +14,7 @@
 
 # Load the VMD functions.
 package require namdenergy
-set InstallFolder "/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0"
+set InstallFolder "/home/matthew/Maranas_Lab/IPRO_Suite_OptMAVEn2.0"
 source $InstallFolder/modules/VMD_FUNCTIONS.tcl
 
 # Load the arguments.
@@ -44,7 +44,7 @@ set MAPsPart [atomselect 0 "segname $MAPsSegment"]
 
 # Select the epitope in the antigen.
 set epitopeResidues [readAttributeList $detailsFile "Epitope Position" 1]
-set epitope [atomselect 0 "(segname $antigenSegment) and (resid $epitopeResidues)"]
+set epitope [atomselect 0 "segname $antigenSegment and resid $epitopeResidues"]
 if {[llength [$epitope get name]] == 0} {
 	puts "Failed to load epitope from $detailsFile."
 	exit 1
@@ -77,20 +77,13 @@ while {[gets $positions P] >= 0} {
 	$Ag moveby $dxyz
 	set pos [vecadd $pos $dxyz]
 	# FIXME
-	#puts " "
+	puts " "
 	puts $pos
 	puts [getAntigenPosition $Ag $epitope 0 $antigenSegment]
-	#set whole [atomselect 0 "all"]
-	#$whole writepdb "$P.pdb"
 	# Calculate the interaction energy (electrostatic and van der Waals) between the antigen and the MAPs part.
-	set outEnergyPos "namdenergy.dat"
-	namdenergy -sel $Ag $MAPsPart -elec -vdw -par $parameterFiles -ofile $outEnergyPos
-	# Read the energy on the second line of the output energy file.
-	set outEnergyPosFile [open $outEnergyPos]
-	gets $outEnergyPosFile line
-	gets $outEnergyPosFile line
-	set energy [lindex $line 4]
-	close $outEnergyPosFile
+	set energyList [namdenergy -sel $Ag $MAPsPart -elec -vdw -par $parameterFiles]
+	# Read the energy from the fourth position in the list.
+	set energy [lindex $energyList 4]
 	# Write the energy to the file of all energies.
 	set eFile [open $outEnergy "a"]
 	puts $eFile "$P $energy"
@@ -103,7 +96,6 @@ set fin [open "finished" "w"]
 close $fin
 
 # Remove the PDB and PSF to save disk space.
-# FIXME
 file delete $inStruct
 file delete $inCoords
 
