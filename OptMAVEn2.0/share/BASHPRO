@@ -1,0 +1,18 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin:.:/usr/global/cdm/bin:/usr/global/ilog/cplex91/bin/x86-64_rhel4.0_3.4:/usr/global/ilog/ampl20021038.cplex91:/usr/global/ilog/opl401/bin:/usr/global/gams:/usr/global/ilog/OPLSt371/bin/x86_RHEL3.0_3.2:/usr/global/Mathematica-5/5.2/SystemFiles
+
+module load python/2.7.5.ucs4
+
+alias ls='ls --color="always"'
+
+export PATH
+unset USERNAME
+

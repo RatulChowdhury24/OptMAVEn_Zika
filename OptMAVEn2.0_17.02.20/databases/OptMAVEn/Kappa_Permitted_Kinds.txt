@@ -1,0 +1,104 @@
+Permitted Kinds:              Residue 1 in Molecule K: ALA ASP GLU PHE GLY HIS LYS MET ASN GLN THR VAL TRP TYR
+Permitted Kinds:              Residue 2 in Molecule K: ALA GLU PHE HIS ILE LEU MET ASN PRO GLN ARG SER THR VAL
+Permitted Kinds:              Residue 3 in Molecule K: ALA CYS GLU GLY HIS ILE LYS LEU MET GLN ARG SER THR VAL TRP
+Permitted Kinds:              Residue 4 in Molecule K: ALA ILE LEU MET VAL TRP
+Permitted Kinds:              Residue 5 in Molecule K: ALA ILE LYS MET ASN PRO ARG SER THR
+Permitted Kinds:              Residue 6 in Molecule K: ALA HIS LYS LEU GLN
+Permitted Kinds:              Residue 7 in Molecule K: ALA CYS ASP PHE LEU ASN PRO SER THR TYR
+Permitted Kinds:              Residue 8 in Molecule K: ALA GLY HIS LEU PRO SER THR
+Permitted Kinds:              Residue 9 in Molecule K: ALA CYS ASP GLU PHE GLY ILE LEU PRO ARG SER THR VAL
+Permitted Kinds:              Residue 10 in Molecule K: ALA CYS PHE HIS ILE LEU ASN PRO SER THR VAL TYR
+Permitted Kinds:              Residue 11 in Molecule K: ALA CYS PHE GLY LEU MET PRO GLN ARG SER VAL
+Permitted Kinds:              Residue 12 in Molecule K: ALA CYS PHE ILE PRO ARG SER THR VAL TYR
+Permitted Kinds:              Residue 13 in Molecule K: ALA PHE GLY LEU MET PRO SER THR VAL
+Permitted Kinds:              Residue 14 in Molecule K: ALA CYS PHE ILE ASN PRO ARG SER THR VAL TYR
+Permitted Kinds:              Residue 15 in Molecule K: ALA ASP GLU PHE ILE LYS LEU PRO GLN SER THR VAL
+Permitted Kinds:              Residue 16 in Molecule K: ALA GLU GLY LYS ARG SER
+Permitted Kinds:              Residue 17 in Molecule K: ALA ASP GLU GLY HIS LYS ASN PRO GLN VAL TYR
+Permitted Kinds:              Residue 18 in Molecule K: ALA GLY LYS LEU ASN PRO ARG SER THR
+Permitted Kinds:              Residue 19 in Molecule K: ALA GLY ILE LEU PRO THR VAL
+Permitted Kinds:              Residue 20 in Molecule K: ALA ASP ILE LEU ASN PRO ARG SER THR VAL
+Permitted Kinds:              Residue 21 in Molecule K: PHE ILE LEU MET PRO THR VAL TYR
+Permitted Kinds:              Residue 22 in Molecule K: ALA PHE ILE LEU ASN PRO ARG SER THR
+Permitted Kinds:              Residue 23 in Molecule K: CYS GLY TRP TYR
+Permitted Kinds:              Residue 24 in Molecule K: GLY HIS LYS LEU MET ASN GLN ARG SER THR TRP
+Permitted Kinds:              Residue 25 in Molecule K: ALA CYS GLU PHE GLY LEU MET PRO SER THR VAL
+Permitted Kinds:              Residue 26 in Molecule K: CYS ASP GLY ASN ARG SER THR
+Permitted Kinds:              Residue 27 in Molecule K: ASP GLU HIS LYS LEU PRO GLN ARG SER
+Permitted Kinds:              Residue 28 in Molecule K: ALA ASP GLU PHE GLY HIS ILE LYS LEU ASN PRO ARG SER THR VAL TYR
+Permitted Kinds:              Residue 29 in Molecule K: ALA ASP GLU PHE GLY ILE LEU MET ASN PRO SER THR VAL
+Permitted Kinds:              Residue 30 in Molecule K: ALA ASP GLU PHE GLY HIS ILE LYS LEU MET ASN PRO ARG SER THR VAL TRP TYR
+Permitted Kinds:              Residue 31 in Molecule K: ALA ASP PHE GLY HIS LEU ASN GLN ARG SER THR VAL TYR
+Permitted Kinds:              Residue 32 in Molecule K: ALA ASP GLY ILE LYS MET ASN PRO ARG SER THR TYR
+Permitted Kinds:              Residue 33 in Molecule K: ALA ASP PHE PRO ARG SER THR TYR
+Permitted Kinds:              Residue 34 in Molecule K: ASP HIS ILE LYS ASN ARG SER THR VAL TYR
+Permitted Kinds:              Residue 35 in Molecule K: ASP GLU GLY ILE LYS ASN GLN ARG SER TYR
+Permitted Kinds:              Residue 36 in Molecule K: ALA CYS ASP GLU PHE GLY HIS ILE LYS LEU MET ASN PRO GLN ARG SER THR VAL TYR
+Permitted Kinds:              Residue 37 in Molecule K: ALA ASP GLU PHE GLY HIS ILE LYS LEU MET ASN PRO GLN ARG SER THR VAL TYR
+Permitted Kinds:              Residue 38 in Molecule K: ALA CYS ASP GLU PHE GLY HIS LYS LEU MET ASN PRO GLN ARG SER THR TRP TYR
+Permitted Kinds:              Residue 39 in Molecule K: PHE ILE LEU MET SER VAL
+Permitted Kinds:              Residue 40 in Molecule K: ALA CYS ASP GLU GLY HIS ILE LYS LEU ASN PRO ARG SER THR VAL TYR
+Permitted Kinds:              Residue 41 in Molecule K: CYS PHE ARG SER TRP
+Permitted Kinds:              Residue 42 in Molecule K: CYS ASP PHE HIS ILE LEU ASN THR VAL TYR
+Permitted Kinds:              Residue 43 in Molecule K: HIS LYS LEU PRO GLN ARG VAL
+Permitted Kinds:              Residue 44 in Molecule K: ASP GLU HIS LYS LEU GLN ARG VAL TYR
+Permitted Kinds:              Residue 45 in Molecule K: ALA GLU GLY HIS ILE LYS ASN GLN ARG SER THR VAL
+Permitted Kinds:              Residue 46 in Molecule K: ALA ASP PHE GLY ILE LEU PRO GLN ARG SER THR VAL
+Permitted Kinds:              Residue 47 in Molecule K: ALA ASP GLU GLY ARG SER
+Permitted Kinds:              Residue 48 in Molecule K: ALA ASP GLU HIS ILE LYS LEU MET ASN GLN ARG SER THR
+Permitted Kinds:              Residue 49 in Molecule K: ALA GLY LEU PRO SER THR VAL
+Permitted Kinds:              Residue 50 in Molecule K: ALA LEU PRO ARG SER
+Permitted Kinds:              Residue 51 in Molecule K: ALA ASP GLU GLY HIS ILE LYS LEU MET ASN GLN ARG SER THR VAL TRP
+Permitted Kinds:              Residue 52 in Molecule K: ALA CYS PHE HIS ILE LYS LEU MET PRO ARG SER VAL
+Permitted Kinds:              Residue 53 in Molecule K: PHE ILE LEU MET ARG VAL
+Permitted Kinds:              Residue 54 in Molecule K: PHE ILE LEU MET ASN THR VAL TYR
+Permitted Kinds:              Residue 55 in Molecule K: CYS ASP PHE HIS LYS LEU MET ASN GLN SER VAL TRP TYR
+Permitted Kinds:              Residue 56 in Molecule K: ALA CYS ASP GLU PHE GLY HIS LYS LEU MET ASN PRO GLN ARG SER THR VAL TRP TYR
+Permitted Kinds:              Residue 57 in Molecule K: ALA CYS GLU GLY HIS ILE LEU PRO ARG SER THR VAL
+Permitted Kinds:              Residue 65 in Molecule K: ALA CYS PHE GLY ILE LEU ASN PRO SER THR VAL TRP TYR
+Permitted Kinds:              Residue 66 in Molecule K: ALA ASP GLU PHE GLY HIS ILE LYS LEU MET ASN PRO GLN ARG SER THR VAL TRP TYR
+Permitted Kinds:              Residue 67 in Molecule K: CYS PHE GLY LYS LEU GLN ARG SER VAL TRP
+Permitted Kinds:              Residue 68 in Molecule K: ALA CYS ASP GLU PHE GLY HIS ILE LYS LEU ASN PRO GLN ARG SER THR VAL TYR
+Permitted Kinds:              Residue 69 in Molecule K: ALA CYS ASP PHE GLY ILE LYS LEU ASN PRO ARG SER THR VAL TYR
+Permitted Kinds:              Residue 70 in Molecule K: ALA ASP GLU GLY LEU GLN ARG THR VAL TRP TYR
+Permitted Kinds:              Residue 71 in Molecule K: ALA PHE GLY ILE LEU MET SER THR VAL
+Permitted Kinds:              Residue 72 in Molecule K: ALA LEU PRO GLN SER THR
+Permitted Kinds:              Residue 74 in Molecule K: ALA ASP GLU GLY HIS ILE LYS LEU ASN PRO ARG SER THR VAL TRP TYR
+Permitted Kinds:              Residue 75 in Molecule K: GLY HIS LYS ASN GLN ARG SER THR VAL
+Permitted Kinds:              Residue 76 in Molecule K: PHE ILE LEU SER VAL TYR
+Permitted Kinds:              Residue 77 in Molecule K: CYS ASP GLY ILE MET ASN ARG SER THR VAL
+Permitted Kinds:              Residue 78 in Molecule K: ALA ASP PHE GLY MET SER VAL
+Permitted Kinds:              Residue 79 in Molecule K: ALA CYS ASP PHE GLY ASN ARG SER THR TYR
+Permitted Kinds:              Residue 80 in Molecule K: ALA GLU GLY LYS GLN ARG THR VAL TRP
+Permitted Kinds:              Residue 83 in Molecule K: ALA CYS PHE LEU PRO SER THR TYR
+Permitted Kinds:              Residue 84 in Molecule K: ALA ASP GLU GLY ARG SER VAL TRP
+Permitted Kinds:              Residue 85 in Molecule K: ALA ILE LYS MET PRO ARG SER THR
+Permitted Kinds:              Residue 86 in Molecule K: ALA ASP GLU PHE GLY HIS LYS ASN GLN ARG THR VAL TYR
+Permitted Kinds:              Residue 87 in Molecule K: CYS PHE LEU SER VAL TYR
+Permitted Kinds:              Residue 88 in Molecule K: ALA PHE ILE ASN PRO ARG SER THR TYR
+Permitted Kinds:              Residue 89 in Molecule K: PHE ILE LEU PRO ARG VAL
+Permitted Kinds:              Residue 90 in Molecule K: ALA GLU PHE ILE LYS ASN PRO GLN ARG SER THR VAL TYR
+Permitted Kinds:              Residue 91 in Molecule K: PHE ILE LEU VAL TYR
+Permitted Kinds:              Residue 92 in Molecule K: ALA CYS ASP PHE GLY ILE ASN ARG SER THR TYR
+Permitted Kinds:              Residue 93 in Molecule K: ALA CYS ASP GLY LYS ASN PRO ARG SER THR TYR
+Permitted Kinds:              Residue 94 in Molecule K: ALA ILE LEU MET PRO GLN VAL
+Permitted Kinds:              Residue 95 in Molecule K: ALA ASP GLU GLY HIS LYS LEU GLN ARG
+Permitted Kinds:              Residue 96 in Molecule K: ALA PHE HIS LEU PRO ARG SER THR VAL
+Permitted Kinds:              Residue 97 in Molecule K: ALA ASP GLU GLY LYS ASN GLN VAL
+Permitted Kinds:              Residue 98 in Molecule K: ALA ASP HIS ASN
+Permitted Kinds:              Residue 99 in Molecule K: ALA CYS ASP PHE ILE LEU SER THR VAL TYR
+Permitted Kinds:              Residue 100 in Molecule K: ALA CYS GLY GLN THR VAL
+Permitted Kinds:              Residue 101 in Molecule K: ALA ASP PHE GLY ILE LEU MET SER THR VAL TYR
+Permitted Kinds:              Residue 102 in Molecule K: CYS PHE HIS ASN SER TYR
+Permitted Kinds:              Residue 103 in Molecule K: CYS ASP PHE HIS ILE SER TRP TYR
+Permitted Kinds:              Residue 104 in Molecule K: CYS SER TRP TYR
+Permitted Kinds:              Residue 118 in Molecule K: PHE LEU SER VAL TYR
+Permitted Kinds:              Residue 119 in Molecule K: ALA ASP GLY ARG SER VAL TRP
+Permitted Kinds:              Residue 120 in Molecule K: ALA GLU GLY HIS LYS LEU PRO GLN ARG SER
+Permitted Kinds:              Residue 121 in Molecule K: PHE GLY ARG VAL
+Permitted Kinds:              Residue 122 in Molecule K: ALA ASP ILE LYS ASN PRO SER THR
+Permitted Kinds:              Residue 123 in Molecule K: ASP GLU GLY ILE LYS MET ASN GLN ARG SER THR VAL TRP TYR
+Permitted Kinds:              Residue 124 in Molecule K: ALA GLU GLY ILE LEU MET ARG SER VAL TRP
+Permitted Kinds:              Residue 125 in Molecule K: ALA ASP GLU GLY HIS LYS LEU GLN ARG THR VAL
+Permitted Kinds:              Residue 126 in Molecule K: ALA CYS ASP PHE ILE LYS LEU MET ASN ARG SER THR VAL
+Permitted Kinds:              Residue 127 in Molecule K: ALA GLU GLY ILE LYS LEU MET ASN GLN ARG SER THR TYR
