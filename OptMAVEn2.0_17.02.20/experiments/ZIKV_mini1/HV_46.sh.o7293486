@@ -1,0 +1,176 @@
+ 
+ 
+Job started on lionxf166 at Wed Dec 28 22:43:11 EST 2016
+Info) VMD for LINUXAMD64, version 1.9.3 (December 1, 2016)
+Info) http://www.ks.uiuc.edu/Research/vmd/                         
+Info) Email questions and bug reports to vmd@ks.uiuc.edu           
+Info) Please include this reference in published work using VMD:   
+Info)    Humphrey, W., Dalke, A. and Schulten, K., `VMD - Visual   
+Info)    Molecular Dynamics', J. Molec. Graphics 1996, 14.1, 33-38.
+Info) -------------------------------------------------------------
+Info) Multithreading available, 12 CPUs detected.
+Info) Free system memory: 33GB (69%)
+Info) Dynamically loaded 2 plugins in directory:
+Info) /storage/home/mfa5147/lib/vmd/plugins/LINUXAMD64/molfile
+1.6.4
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/structures/MoleculeE.pdb
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/databases/MAPs/HV/HV_46.pdb
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/energies/MoleculeE/HV_46/MoleculeE
+psfgen) reading topology file /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/input_files/top_all27_prot_na.rtf
+
+psfgen) >>>>>>>>CHARMM22 All-Hydrogen Topology File for Proteins <<<<<<<
+psfgen) >>>>>>>>>>>>>>>>>>>> and Nucleic Acids <<<<<<<<<<<<<<<<<<<<<<<<<
+psfgen) >>>>> Includes phi, psi cross term map (CMAP) correction <<<<<<<
+psfgen) >>>>>>>>>>>>>>>>>>>>>>   July, 2004    <<<<<<<<<<<<<<<<<<<<<<<<<<
+psfgen)  All comments to ADM jr. via the CHARMM web site: www.charmm.org
+psfgen)                parameter set discussion forum
+psfgen) 
+psfgen) Created by CHARMM version 31 1
+psfgen) cross-term entries present in topology definitions
+psfgen) aliasing residue HIS to HSE
+psfgen) aliasing residue ILE atom CD1 to CD
+psfgen) building segment A
+psfgen) reading residues from pdb file /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/structures/MoleculeE.pdb
+psfgen) extracted 501 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping improper N-C-CA-HN at beginning of segment.
+psfgen) Info: skipping cross-term C-N-CA-C-N-CA-C-N at beginning of segment.
+psfgen) Info: skipping conformation C-N-CA-C at beginning of segment.
+psfgen) Info: skipping conformation C-CA-N-HN at beginning of segment.
+psfgen) Info: skipping bond C-N at end of segment.
+psfgen) Info: skipping improper C-CA-N-O at end of segment.
+psfgen) Info: skipping cross-term C-N-CA-C-N-CA-C-N at end of segment.
+psfgen) Info: skipping conformation CA-C-N-CA at end of segment.
+psfgen) Info: skipping conformation N-CA-C-O at end of segment.
+psfgen) Info: skipping conformation N-CA-C-N at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/structures/MoleculeE.pdb for segment A
+psfgen) building segment I
+psfgen) reading residues from pdb file /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/databases/MAPs/HV/HV_46.pdb
+psfgen) extracted 96 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping improper N-C-CA-HN at beginning of segment.
+psfgen) Info: skipping cross-term C-N-CA-C-N-CA-C-N at beginning of segment.
+psfgen) Info: skipping conformation C-N-CA-C at beginning of segment.
+psfgen) Info: skipping conformation C-CA-N-HN at beginning of segment.
+psfgen) Info: skipping bond C-N at end of segment.
+psfgen) Info: skipping improper C-CA-N-O at end of segment.
+psfgen) Info: skipping cross-term C-N-CA-C-N-CA-C-N at end of segment.
+psfgen) Info: skipping conformation CA-C-N-CA at end of segment.
+psfgen) Info: skipping conformation N-CA-C-O at end of segment.
+psfgen) Info: skipping conformation N-CA-C-N at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/databases/MAPs/HV/HV_46.pdb for segment I
+psfgen) Warning: failed to set coordinate for atom O	 CYS:104	  I
+psfgen) Info: writing pdb file /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/energies/MoleculeE/HV_46/MoleculeE.pdb
+psfgen) Info: pdb file complete.
+psfgen) Info: writing psf file /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/energies/MoleculeE/HV_46/MoleculeE.psf
+psfgen) total of 8960 atoms
+psfgen) total of 9053 bonds
+psfgen) total of 16322 angles
+psfgen) total of 23810 dihedrals
+psfgen) total of 1519 impropers
+psfgen) total of 0 explicit exclusions
+psfgen) total of 593 cross-terms
+psfgen) Info: psf file complete.
+A:501 
+A:1 
+I:104 
+I:1 
+Info) VMD for LINUXAMD64, version 1.9.3 (December 1, 2016)
+Info) Exiting normally.
+Info) VMD for LINUXAMD64, version 1.9.3 (December 1, 2016)
+Info) http://www.ks.uiuc.edu/Research/vmd/                         
+Info) Email questions and bug reports to vmd@ks.uiuc.edu           
+Info) Please include this reference in published work using VMD:   
+Info)    Humphrey, W., Dalke, A. and Schulten, K., `VMD - Visual   
+Info)    Molecular Dynamics', J. Molec. Graphics 1996, 14.1, 33-38.
+Info) -------------------------------------------------------------
+Info) Multithreading available, 12 CPUs detected.
+Info) Free system memory: 33GB (69%)
+Info) Dynamically loaded 2 plugins in directory:
+Info) /storage/home/mfa5147/lib/vmd/plugins/LINUXAMD64/molfile
+1.4
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/energies/MoleculeE/HV_46/MoleculeE.psf
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/energies/MoleculeE/HV_46/MoleculeE.pdb
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/input_files/positions.dat
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/energies/MoleculeE/HV_46/energies.dat
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/Experiment_Details.txt
+psfplugin) Detected a Charmm PSF file
+Info) Using plugin psf for structure file /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/energies/MoleculeE/HV_46/MoleculeE.psf
+Info) Analyzing structure ...
+Info)    Atoms: 8960
+Info)    Bonds: 9053
+Info)    Angles: 16322  Dihedrals: 23810  Impropers: 1519  Cross-terms: 593
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 597
+Info)    Waters: 0
+Info)    Segments: 2
+Info)    Fragments: 2   Protein: 2   Nucleic: 0
+0
+Info) Using plugin pdb for coordinates from file /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/energies/MoleculeE/HV_46/MoleculeE.pdb
+Info) Finished with coordinate file /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/energies/MoleculeE/HV_46/MoleculeE.pdb.
+0
+atomselect0
+atomselect1
+306 307 342 343 344 350 353 355 388 391 392 393 395
+atomselect2
+0
+0 0 0
+file5
+file5
+Info) Opened coordinate file namd-temp.pdb for writing.
+Info) Finished with coordinate file namd-temp.pdb.
+PARS: /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/input_files/par_all27_prot_na.prm
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/input_files/par_all27_prot_na.prm
+Info) Opened coordinate file namd-temp.dcd for writing.
+Info) Finished with coordinate file namd-temp.dcd.
+namdEnergy) 
+Computing interaction energy between:
+namdEnergy) segname A
+namdEnergy) and
+namdEnergy) segname I
+
+namdEnergy) Running:
+namdEnergy) /storage/home/mfa5147/bin/namd2 namd-temp.namd 
+
+Info) Opened coordinate file namd-temp.pdb for writing.
+Info) Finished with coordinate file namd-temp.pdb.
+PARS: /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/input_files/par_all27_prot_na.prm
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/input_files/par_all27_prot_na.prm
+Info) Opened coordinate file namd-temp.dcd for writing.
+Info) Finished with coordinate file namd-temp.dcd.
+namdEnergy) 
+Computing interaction energy between:
+namdEnergy) segname A
+namdEnergy) and
+namdEnergy) segname I
+
+namdEnergy) Running:
+namdEnergy) /storage/home/mfa5147/bin/namd2 namd-temp.namd 
+
+Info) Opened coordinate file namd-temp.pdb for writing.
+Info) Finished with coordinate file namd-temp.pdb.
+PARS: /gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/input_files/par_all27_prot_na.prm
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/input_files/par_all27_prot_na.prm
+Info) Opened coordinate file namd-temp.dcd for writing.
+Info) Finished with coordinate file namd-temp.dcd.
+namdEnergy) 
+Computing interaction energy between:
+namdEnergy) segname A
+namdEnergy) and
+namdEnergy) segname I
+
+namdEnergy) Running:
+namdEnergy) /storage/home/mfa5147/bin/namd2 namd-temp.namd 
+
+file5
+Info) VMD for LINUXAMD64, version 1.9.3 (December 1, 2016)
+Info) Exiting normally.
+Are you currently testing?
+[]
+/gpfs/scratch/mfa5147/GitHub/OptMAVEn2.0/experiments/ZIKV_mini1/energies/MoleculeE/LCDR3_9/finished is not yet finished.
+ 
+Job ended at Wed Dec 28 22:43:15 EST 2016
+ 

@@ -1,0 +1,193 @@
+ 
+ 
+Job started on lionxf181 at Wed Dec 28 23:57:08 EST 2016
+Tried aggregator 1 time.
+MIP Presolve eliminated 45725 rows and 492 columns.
+MIP Presolve modified 99 coefficients.
+Reduced MIP has 3083 rows, 437 columns, and 8391 nonzeros.
+Reduced MIP has 435 binaries, 2 generals, 0 SOSs, and 0 indicators.
+Probing time =    0.00 sec.
+Tried aggregator 1 time.
+MIP Presolve eliminated 2530 rows and 140 columns.
+MIP Presolve modified 210 coefficients.
+Reduced MIP has 553 rows, 297 columns, and 1984 nonzeros.
+Reduced MIP has 295 binaries, 2 generals, 0 SOSs, and 0 indicators.
+Presolve time =    0.58 sec.
+Found feasible solution after 0.58 sec.  Objective = 4.6905e+08
+Probing time =    0.00 sec.
+Clique table members: 2757.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 12 threads.
+Root relaxation solution time =    0.00 sec.
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                       4.69055e+08                     12     --- 
+*     0+    0                        57833.7902                     12     --- 
+*     0     0      integral     0     5811.5934     5811.5934       12    0.00%
+Elapsed real time =   0.60 sec. (tree size =  0.00 MB, solutions = 3)
+
+Root node processing (before b&c):
+  Real time             =    0.01
+Parallel b&c, 12 threads:
+  Real time             =    0.00
+  Sync time (average)   =    0.00
+  Wait time (average)   =    0.00
+                          -------
+Total (root+branch&cut) =    0.01 sec.
+101
+Tried aggregator 1 time.
+MIP Presolve eliminated 45725 rows and 492 columns.
+MIP Presolve modified 99 coefficients.
+Reduced MIP has 3084 rows, 437 columns, and 8395 nonzeros.
+Reduced MIP has 435 binaries, 2 generals, 0 SOSs, and 0 indicators.
+Probing time =    0.00 sec.
+Tried aggregator 1 time.
+MIP Presolve eliminated 2530 rows and 140 columns.
+MIP Presolve modified 210 coefficients.
+Reduced MIP has 554 rows, 297 columns, and 1988 nonzeros.
+Reduced MIP has 295 binaries, 2 generals, 0 SOSs, and 0 indicators.
+Presolve time =    0.58 sec.
+Found feasible solution after 0.59 sec.  Objective = 4.6905e+08
+Probing time =    0.00 sec.
+Clique table members: 2757.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 12 threads.
+Root relaxation solution time =    0.00 sec.
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                       4.69055e+08                     13     --- 
+*     0+    0                        57833.7902                     13     --- 
+*     0     0      integral     0     5811.9047     5811.9047       13    0.00%
+Elapsed real time =   0.63 sec. (tree size =  0.00 MB, solutions = 3)
+
+Root node processing (before b&c):
+  Real time             =    0.05
+Parallel b&c, 12 threads:
+  Real time             =    0.00
+  Sync time (average)   =    0.00
+  Wait time (average)   =    0.00
+                          -------
+Total (root+branch&cut) =    0.05 sec.
+101
+Tried aggregator 1 time.
+MIP Presolve eliminated 45725 rows and 492 columns.
+MIP Presolve modified 99 coefficients.
+Reduced MIP has 3085 rows, 437 columns, and 8399 nonzeros.
+Reduced MIP has 435 binaries, 2 generals, 0 SOSs, and 0 indicators.
+Probing time =    0.00 sec.
+Tried aggregator 1 time.
+MIP Presolve eliminated 2530 rows and 140 columns.
+MIP Presolve modified 210 coefficients.
+Reduced MIP has 555 rows, 297 columns, and 1992 nonzeros.
+Reduced MIP has 295 binaries, 2 generals, 0 SOSs, and 0 indicators.
+Presolve time =    0.59 sec.
+Found feasible solution after 0.59 sec.  Objective = 4.6905e+08
+Probing time =    0.00 sec.
+Clique table members: 2757.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 12 threads.
+Root relaxation solution time =    0.00 sec.
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                       4.69055e+08                     15     --- 
+*     0+    0                        57833.7902                     15     --- 
+*     0     0      integral     0     5812.0807     5812.0807       15    0.00%
+Elapsed real time =   0.61 sec. (tree size =  0.00 MB, solutions = 3)
+
+Root node processing (before b&c):
+  Real time             =    0.03
+Parallel b&c, 12 threads:
+  Real time             =    0.00
+  Sync time (average)   =    0.00
+  Wait time (average)   =    0.00
+                          -------
+Total (root+branch&cut) =    0.03 sec.
+101
+Tried aggregator 1 time.
+MIP Presolve eliminated 45725 rows and 492 columns.
+MIP Presolve modified 99 coefficients.
+Reduced MIP has 3086 rows, 437 columns, and 8403 nonzeros.
+Reduced MIP has 435 binaries, 2 generals, 0 SOSs, and 0 indicators.
+Probing time =    0.00 sec.
+Tried aggregator 1 time.
+MIP Presolve eliminated 2530 rows and 140 columns.
+MIP Presolve modified 210 coefficients.
+Reduced MIP has 556 rows, 297 columns, and 1996 nonzeros.
+Reduced MIP has 295 binaries, 2 generals, 0 SOSs, and 0 indicators.
+Presolve time =    0.56 sec.
+Found feasible solution after 0.56 sec.  Objective = 4.6905e+08
+Probing time =    0.00 sec.
+Clique table members: 2757.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 12 threads.
+Root relaxation solution time =    0.00 sec.
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                       4.69055e+08                     16     --- 
+*     0+    0                        57833.7902                     16     --- 
+*     0     0      integral     0     5812.2362     5812.2362       16    0.00%
+Elapsed real time =   0.59 sec. (tree size =  0.00 MB, solutions = 3)
+
+Root node processing (before b&c):
+  Real time             =    0.03
+Parallel b&c, 12 threads:
+  Real time             =    0.00
+  Sync time (average)   =    0.00
+  Wait time (average)   =    0.00
+                          -------
+Total (root+branch&cut) =    0.03 sec.
+101
+Tried aggregator 1 time.
+MIP Presolve eliminated 45725 rows and 492 columns.
+MIP Presolve modified 99 coefficients.
+Reduced MIP has 3087 rows, 437 columns, and 8407 nonzeros.
+Reduced MIP has 435 binaries, 2 generals, 0 SOSs, and 0 indicators.
+Probing time =    0.00 sec.
+Tried aggregator 1 time.
+MIP Presolve eliminated 2530 rows and 140 columns.
+MIP Presolve modified 210 coefficients.
+Reduced MIP has 557 rows, 297 columns, and 2000 nonzeros.
+Reduced MIP has 295 binaries, 2 generals, 0 SOSs, and 0 indicators.
+Presolve time =    0.55 sec.
+Found feasible solution after 0.55 sec.  Objective = 4.6905e+08
+Probing time =    0.00 sec.
+Clique table members: 2757.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 12 threads.
+Root relaxation solution time =    0.00 sec.
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                       4.69055e+08                     19     --- 
+*     0+    0                        57833.7902                     19     --- 
+*     0     0      integral     0     5812.9860     5812.9860       19    0.00%
+Elapsed real time =   0.57 sec. (tree size =  0.00 MB, solutions = 3)
+
+Root node processing (before b&c):
+  Real time             =    0.03
+Parallel b&c, 12 threads:
+  Real time             =    0.00
+  Sync time (average)   =    0.00
+  Wait time (average)   =    0.00
+                          -------
+Total (root+branch&cut) =    0.03 sec.
+101
+Are you currently testing?
+[]
+ 
+Job ended at Wed Dec 28 23:57:47 EST 2016
+ 
