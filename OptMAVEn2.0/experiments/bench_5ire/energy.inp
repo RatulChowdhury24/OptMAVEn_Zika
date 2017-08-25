@@ -1,0 +1,54 @@
+* A CHARMM energy calculation
+*
+
+wrnl -2
+!prnl -2
+bomb -2
+
+! Load the Topology file(s)
+open read unit 10 form name top_all27_prot_na.rtf card
+read rtf card unit 10
+close unit 10
+
+! Load the Parameter file(s)
+open read unit 10 form name par_all27_prot_na.prm card
+read para card unit 10
+close unit 10
+
+! Load TARGET Molecule H
+open read unit 10 form name moleculeh_preenergy.pdb
+read sequ pdb offi unit 10
+close unit 10
+gene mlh setup
+open read unit 10 form name moleculeh_preenergy.pdb
+read coor pdb unit 10
+close unit 10
+
+! Load TARGET Molecule K
+open read unit 10 form name moleculek_preenergy.pdb
+read sequ pdb offi unit 10
+close unit 10
+gene mlk setup
+open read unit 10 form name moleculek_preenergy.pdb
+read coor pdb unit 10
+close unit 10
+
+! Add missing Atoms and assign them coordinates
+ic fill preserve
+ic param
+ic build
+hbuild
+
+skip all excl angl bond dihe elec impr urey vdw
+
+ener
+
+set tot ?ener
+
+open write card unit 10 name energy_values.txt
+
+write title unit 10
+* @tot
+*
+close unit 10
+stop

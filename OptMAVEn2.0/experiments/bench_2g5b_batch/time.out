@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/gpfs/work/m/mfa5147/OptMAVEn2.0/programs/Optmaven.py", line 66, in <module>
+    OPTMAVEN.interaction_energies(experiment)
+  File "/gpfs/work/m/mfa5147/OptMAVEn2.0/modules/OPTMAVEN.py", line 252, in interaction_energies
+    KS.MAPs_interaction_energies(experiment)
+  File "/gpfs/work/m/mfa5147/OptMAVEn2.0/modules/KS.py", line 482, in MAPs_interaction_energies
+    last = min(i + batch_size, n_parts) - 1
+NameError: global name 'i' is not defined
+real 15.17
+user 9.83
+sys 0.72

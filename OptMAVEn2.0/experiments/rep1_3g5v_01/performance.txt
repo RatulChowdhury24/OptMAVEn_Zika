@@ -1,0 +1,3 @@
+START	rep1_3g5v_01	on 2017 June 13 at 03:05:22
+DISK_USAGE	initial	480
+TIME	antigen_relaxation_and_positioning	5.17

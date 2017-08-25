@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/gpfs/work/m/mfa5147/OptMAVEn2.0/programs/Optmaven.py", line 50, in <module>
+    performance_file.start(experiment)
+  File "/gpfs/work/m/mfa5147/OptMAVEn2.0/modules/PERFORMANCE.py", line 44, in start
+    raise ValueError("Cannot start experiment that is already started.")
+ValueError: Cannot start experiment that is already started.
+real 3.91
+user 0.26
+sys 0.14

@@ -1,0 +1,54 @@
+START	bench_2or9_batch	on 2017 May 27 at 22:50:39
+DISK_USAGE	initial	472
+SUB_TIME	NAMD relaxation of molecule /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_2or9_batch/structures/MoleculeA.pdb	9.72032284737
+SUB_TIME	Mounting antigen A	0.463049173355
+DISK_USAGE	after_antigen_initialization	536
+SUB_TIME	culling_clashes	7.28246617317
+DISK_USAGE	after_culling_clashes	640
+DISK_USAGE	beginning_MAPs_energy_calculations	15464
+TIME	antigen_relaxation_and_positioning	16.04
+TIME	parts_601_to_650_interaction_energies	2191.81
+TIME	parts_1_to_50_interaction_energies	2274.97
+TIME	parts_901_to_924_interaction_energies	2263.71
+TIME	parts_351_to_400_interaction_energies	2256.88
+TIME	parts_51_to_100_interaction_energies	2322.55
+TIME	parts_101_to_150_interaction_energies	2324.28
+TIME	parts_151_to_200_interaction_energies	2362.78
+TIME	parts_701_to_750_interaction_energies	2153.39
+TIME	parts_201_to_250_interaction_energies	2386.05
+TIME	parts_651_to_700_interaction_energies	2164.51
+TIME	parts_251_to_300_interaction_energies	2437.55
+TIME	parts_301_to_350_interaction_energies	2480.51
+TIME	parts_851_to_900_interaction_energies	2818.32
+TIME	parts_401_to_450_interaction_energies	3131.32
+TIME	parts_751_to_800_interaction_energies	3336.62
+TIME	parts_551_to_600_interaction_energies	3658.94
+TIME	parts_801_to_850_interaction_energies	4335.96
+TIME	parts_501_to_550_interaction_energies	5259.22
+DISK_USAGE	after_MAPs_energy_calculations	46592
+SUB_TIME	regrouping_interaction_energies	28.2463319302
+DISK_USAGE	after_regrouping_energies	19984
+TIME	MILP_for_positions_801_to_804	247.22
+TIME	MILP_for_positions_151_to_200	3118.49
+TIME	MILP_for_positions_301_to_350	3086.69
+TIME	MILP_for_positions_201_to_250	3137.42
+TIME	MILP_for_positions_351_to_400	3156.62
+TIME	MILP_for_positions_101_to_150	3119.17
+TIME	MILP_for_positions_51_to_100	3129.7
+TIME	MILP_for_positions_1_to_50	3182.96
+TIME	MILP_for_positions_501_to_550	3213.9
+TIME	MILP_for_positions_451_to_500	3244.02
+TIME	MILP_for_positions_401_to_450	3239.9
+TIME	MILP_for_positions_551_to_600	3257.19
+TIME	MILP_for_positions_701_to_750	3286.08
+TIME	MILP_for_positions_651_to_700	3289.01
+TIME	MILP_for_positions_751_to_800	3299.83
+TIME	MILP_for_positions_601_to_650	3331.76
+DISK_USAGE	after_MILP	7384
+DISK_USAGE	after_removing_MILP_files	968
+SUB_TIME	clustering	39.477230072
+SUB_TIME	antibody_complex_assembly_and_relaxation	111.324075937
+SUB_TIME	clustering	150.808909178
+DISK_USAGE	final	60144
+FINISH	bench_2or9_batch	on 2017 May 28 at 01:29:31
+TIME	MILP_for_positions_251_to_300	3553.3

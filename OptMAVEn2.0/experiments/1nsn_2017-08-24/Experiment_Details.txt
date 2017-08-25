@@ -1,0 +1,30 @@
+Basic Experiment Information
+User:                         mfa5147
+Type:                         OptMAVEn
+Name:                         1nsn_2017-08-24
+File Format:                  PDB
+Force Field:                  CHARMM
+Folder:                       /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/1nsn_2017-08-24/
+
+How to use CHARMM
+CHARMM Topology File:         top_all27_prot_na.rtf
+CHARMM Parameter File:        par_all27_prot_na.prm
+CHARMM Energy Term:           angl
+CHARMM Energy Term:           bond
+CHARMM Energy Term:           dihe
+CHARMM Energy Term:           elec
+CHARMM Energy Term:           impr
+CHARMM Energy Term:           urey
+CHARMM Energy Term:           vdw
+CHARMM Iterations:            5000
+Lj Phi:                       0.005
+
+The Molecules used in the experiment
+Molecule:                     Molecule S from file /gpfs/work/m/mfa5147/OptMAVEn2.0/input_files/1nsn.pdb is Target Molecule T
+
+Antigen epitope residues 
+Epitope Position:             Residue 9 in Molecule T
+Optmaven Grid:                0.0 60.0 120.0 180.0 240.0 300.0
+Optmaven Grid:                -5.0 -2.5 0.0 2.5 5.0 7.5 10.0
+Optmaven Grid:                -10.0 -7.5 -5.0 -2.5 0.0 2.5 5.0
+Optmaven Grid:                3.75 5.0 6.25 7.5 8.75 10.0 11.25 12.5 13.75 15.0 16.25

@@ -1,0 +1,46 @@
+Basic Experiment Information
+User:                         mfa5147
+Type:                         OptMAVEn
+Name:                         bench_3etb
+File Format:                  PDB
+Force Field:                  CHARMM
+Folder:                       /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_3etb/
+
+How to use CHARMM
+CHARMM Topology File:         top_all27_prot_na.rtf
+CHARMM Parameter File:        par_all27_prot_na.prm
+CHARMM Energy Term:           angl
+CHARMM Energy Term:           bond
+CHARMM Energy Term:           dihe
+CHARMM Energy Term:           elec
+CHARMM Energy Term:           impr
+CHARMM Energy Term:           urey
+CHARMM Energy Term:           vdw
+CHARMM Iterations:            5000
+Lj Phi:                       0.005
+
+The Molecules used in the experiment
+Molecule:                     Molecule J from file /gpfs/work/m/mfa5147/OptMAVEn2.0/input_files/3etb.pdb is Target Molecule A
+
+Antigen epitope residues 
+Epitope Position:             Residue 649 in Molecule A
+Epitope Position:             Residue 651 in Molecule A
+Epitope Position:             Residue 652 in Molecule A
+Epitope Position:             Residue 653 in Molecule A
+Epitope Position:             Residue 654 in Molecule A
+Epitope Position:             Residue 655 in Molecule A
+Epitope Position:             Residue 657 in Molecule A
+Epitope Position:             Residue 680 in Molecule A
+Epitope Position:             Residue 681 in Molecule A
+Epitope Position:             Residue 682 in Molecule A
+Epitope Position:             Residue 683 in Molecule A
+Epitope Position:             Residue 684 in Molecule A
+Epitope Position:             Residue 685 in Molecule A
+Epitope Position:             Residue 686 in Molecule A
+Epitope Position:             Residue 687 in Molecule A
+Epitope Position:             Residue 716 in Molecule A
+Epitope Position:             Residue 718 in Molecule A
+Optmaven Grid:                0.0 60.0 120.0 180.0 240.0 300.0
+Optmaven Grid:                -5.0 -2.5 0.0 2.5 5.0 7.5 10.0
+Optmaven Grid:                -10.0 -7.5 -5.0 -2.5 0.0 2.5 5.0
+Optmaven Grid:                3.75 5.0 6.25 7.5 8.75 10.0 11.25 12.5 13.75 15.0 16.25

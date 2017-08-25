@@ -1,0 +1,471 @@
+Charm++: standalone mode (not using charmrun)
+Charm++> Running in Multicore mode:  1 threads
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Converse/Charm++ Commit ID: v6.7.1-0-gbdf6a1b-namd-charm-6.7.1-build-2016-Nov-07-136676
+Warning> Randomization of stack pointer is turned on in kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try run with '+isomalloc_sync'.  
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 unique compute nodes (12-way SMP).
+Charm++> cpu topology info is gathered in 0.000 seconds.
+Info: NAMD CVS-2016-12-28 for Linux-x86_64-multicore
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Comp. Chem. 26:1781-1802 (2005)
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 60701 for multicore-linux64-iccstatic
+Info: Built Wed Dec 28 02:08:02 CST 2016 by jim on canberra.ks.uiuc.edu
+Info: 1 NAMD  CVS-2016-12-28  Linux-x86_64-multicore  1    lionxf149.hpc.rcc.psu.edu  mfa5147
+Info: Running on 1 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 0.0167351 s
+CkLoopLib is used in SMP with a simple dynamic scheduling (converse-level notification) but not using node-level queue
+Info: 49.6719 MB of memory in use based on /proc/self/stat
+Info: Configuration file is /gpfs/work/m/mfa5147/OptMAVEn2.0/input_files/namd_relaxation.conf
+Info: Changed directory to /gpfs/work/m/mfa5147/OptMAVEn2.0/input_files
+TCL: Suspending until startup complete.
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               2
+Info: NUMBER OF STEPS        0
+Info: STEPS PER CYCLE        25
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             5000 steps
+Info: FIRST LDB TIMESTEP     125
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: INITIAL TEMPERATURE    0
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: NO DCD TRAJECTORY OUTPUT
+Info: NO EXTENDED SYSTEM TRAJECTORY OUTPUT
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/rep1_3g5v_01/structures/relaxed_MoleculeA
+Info: NO RESTART FILE
+Info: SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      14
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 0
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        20
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    125
+Info: PRESSURE OUTPUT STEPS  1
+Info: GBIS GENERALIZED BORN IMPLICIT SOLVENT ACTIVE
+Info: GBIS SOLVENT DIELECTRIC: 78.5
+Info: GBIS PROTEIN DIELECTRIC: 1
+Info: GBIS COULOMB RADIUS OFFSET: 0.09 Ang
+Info: GBIS ION CONCENTRATION: 0.2 M
+Info: GBIS DEBYE SCREENING LENGTH: 6.82308 Ang
+Info: GBIS DELTA: 1
+Info: GBIS BETA: 0.8
+Info: GBIS GAMMA: 4.85
+Info: GBIS BORN RADIUS CUTOFF: 20 Ang
+Info: GBIS MAX BORN RADIUS: 30 Ang
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   310
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 1 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: CONJUGATE GRADIENT MINIMIZATION ACTIVE
+Info: LINE MINIMIZATION GOAL = 0.001
+Info: BABY STEP SIZE = 0.001
+Info: TINY STEP SIZE = 1e-06
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      25
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : ALL
+Info:         ERROR TOLERANCE : 1e-08
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: RANDOM NUMBER SEED     1497337528
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/rep1_3g5v_01/structures/relaxed_MoleculeA.coor
+Info: STRUCTURE FILE         /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/rep1_3g5v_01/structures/MoleculeA.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             /gpfs/work/m/mfa5147/OptMAVEn2.0/input_files/par_all27_prot_na.prm
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: SUMMARY OF PARAMETERS:
+Info: 258 BONDS
+Info: 666 ANGLES
+Info: 1134 DIHEDRAL
+Info: 70 IMPROPER
+Info: 6 CROSSTERM
+Info: 167 VDW
+Info: 0 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Info: TIME FOR READING PSF FILE: 0.01088
+Info: Reading pdb file /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/rep1_3g5v_01/structures/relaxed_MoleculeA.coor
+Info: TIME FOR READING PDB FILE: 0.00978589
+Info: 
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 229 ATOMS
+Info: 229 BONDS
+Info: 407 ANGLES
+Info: 584 DIHEDRALS
+Info: 37 IMPROPERS
+Info: 14 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 107 RIGID BONDS
+Info: 580 DEGREES OF FREEDOM
+Info: 122 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 122 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 1788.92 amu
+Info: TOTAL CHARGE = -3 e
+Info: *****************************
+Info: 
+Info: Entering startup at 0.0681481 s, 147.27 MB of memory in use
+Info: Startup phase 0 took 5.6982e-05 s, 147.27 MB of memory in use
+Info: ADDED 1217 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.00047183 s, 147.398 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: ABSOLUTE IMPRECISION IN FAST TABLE ENERGY: 2.53117e-21 AT 11.9974
+Info: RELATIVE IMPRECISION IN FAST TABLE ENERGY: 1.68907e-16 AT 11.9974
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000290274 AT 0.251946
+Info: ABSOLUTE IMPRECISION IN VDWA TABLE ENERGY: 4.59334e-32 AT 11.9974
+Info: RELATIVE IMPRECISION IN VDWA TABLE ENERGY: 7.4108e-17 AT 11.9974
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: ABSOLUTE IMPRECISION IN VDWB TABLE ENERGY: 1.53481e-26 AT 11.9974
+Info: RELATIVE IMPRECISION IN VDWB TABLE ENERGY: 7.96691e-18 AT 11.9974
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.00124002 s, 148.684 MB of memory in use
+Info: Startup phase 3 took 4.91142e-05 s, 148.684 MB of memory in use
+Info: Startup phase 4 took 4.19617e-05 s, 148.684 MB of memory in use
+Info: Startup phase 5 took 0.000368118 s, 148.684 MB of memory in use
+Info: ORIGINAL ATOMS MINMAX IS 15.493 -1.738 -19.723  33.53 23.449 -5.241
+Info: ADJUSTED ATOMS MINMAX IS 18.6525 0.665875 -15.8716  31.4775 21.5971 -6.18538
+Info: PATCH GRID IS 2 BY 2 BY 1
+Info: PATCH GRID IS 1-AWAY BY 1-AWAY BY 1-AWAY
+Info: REMOVING COM VELOCITY 0 0 0
+Info: LARGEST PATCH (0) HAS 88 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.000330925 s, 148.684 MB of memory in use
+Info: Startup phase 7 took 4.88758e-05 s, 148.684 MB of memory in use
+Info: Startup phase 8 took 4.60148e-05 s, 148.684 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 9 took 6.00815e-05 s, 148.684 MB of memory in use
+Info: CREATING 35 COMPUTE OBJECTS
+Info: Startup phase 10 took 0.000319004 s, 148.812 MB of memory in use
+Info: Startup phase 11 took 6.00815e-05 s, 148.812 MB of memory in use
+Info: Startup phase 12 took 6.48499e-05 s, 149.531 MB of memory in use
+Info: Finished startup at 0.071306 s, 149.531 MB of memory in use
+
+TCL: Minimizing for 50 steps
+PRESSURE: 0 0 0 0 0 0 0 0 0 0
+GPRESSURE: 0 0 0 0 0 0 0 0 0 0
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:       0        13.8974        37.7044        27.8425         1.0087           -905.8951       -43.8333         0.0000         0.0000         0.0000           -869.2753         0.0000      -869.2753      -869.2753         0.0000
+
+MINIMIZER STARTING CONJUGATE GRADIENT ALGORITHM
+LINE MINIMIZER REDUCING GRADIENT FROM 2234.24 TO 2.23424
+PRESSURE: 1 0 0 0 0 0 0 0 0 0
+GPRESSURE: 1 0 0 0 0 0 0 0 0 0
+ENERGY:       1        81.0376        50.0458        28.1406         1.4380           -906.1565       -43.8207         0.0000         0.0000         0.0000           -789.3152         0.0000      -789.3152      -789.3152         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.0313265 DU 0 79.9601 DUDX -2234.24 -2234.24 5177.52 
+PRESSURE: 2 0 0 0 0 0 0 0 0 0
+GPRESSURE: 2 0 0 0 0 0 0 0 0 0
+ENERGY:       2        17.3780        38.2200        27.8697         1.0337           -905.9221       -43.9022         0.0000         0.0000         0.0000           -865.3229         0.0000      -865.3229      -865.3229         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00731094 DU 0 3.95242 DUDX -2234.24 -2234.24 1152.92 
+PRESSURE: 3 0 0 0 0 0 0 0 0 0
+GPRESSURE: 3 0 0 0 0 0 0 0 0 0
+ENERGY:       3        14.4040        37.7413        27.8504         1.0132           -905.9034       -43.8661         0.0000         0.0000         0.0000           -868.7606         0.0000      -868.7606      -868.7606         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00294329 DU 0 0.514704 DUDX -2234.24 -2234.24 421.334 
+PRESSURE: 4 0 0 0 0 0 0 0 0 0
+GPRESSURE: 4 0 0 0 0 0 0 0 0 0
+ENERGY:       4        13.9824        37.6929        27.8457         1.0099           -905.8985       -43.8493         0.0000         0.0000         0.0000           -869.2170         0.0000      -869.2170      -869.2170         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00136482 DU 0 0.0582711 DUDX -2234.24 -2234.24 156.971 
+PRESSURE: 5 0 0 0 0 0 0 0 0 0
+GPRESSURE: 5 0 0 0 0 0 0 0 0 0
+ENERGY:       5        13.9067        37.6926        27.8439         1.0091           -905.8967       -43.8413         0.0000         0.0000         0.0000           -869.2857         0.0000      -869.2857      -869.2857         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000669614 0.000695206 DU -0.0104002 0.0686712 DUDX -2234.24 40.5424 156.971 
+PRESSURE: 6 0 0 0 0 0 0 0 0 0
+GPRESSURE: 6 0 0 0 0 0 0 0 0 0
+ENERGY:       6        13.8961        37.6955        27.8434         1.0089           -905.8961       -43.8384         0.0000         0.0000         0.0000           -869.2906         0.0000      -869.2906      -869.2906         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000427543 0.000242071 DU -0.015363 0.00496285 DUDX -2234.24 0.00293872 40.5424 
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM
+LINE MINIMIZER REDUCING GRADIENT FROM 11.8538 TO 0.0118538
+PRESSURE: 7 0 0 0 0 0 0 0 0 0
+GPRESSURE: 7 0 0 0 0 0 0 0 0 0
+ENERGY:       7        74.3590        54.8704        29.1863         2.6066           -907.3546       -43.5153         0.0000         0.0000         0.0000           -789.8476         0.0000      -789.8476      -789.8476         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.10759 DU 0 79.4431 DUDX -11.8538 -11.8538 1489.39 
+PRESSURE: 8 0 0 0 0 0 0 0 0 0
+GPRESSURE: 8 0 0 0 0 0 0 0 0 0
+ENERGY:       8        14.4796        37.8379        27.9129         1.0284           -906.0246       -43.8463         0.0000         0.0000         0.0000           -868.6120         0.0000      -868.6120      -868.6120         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.010759 DU 0 0.678612 DUDX -11.8538 -11.8538 138.064 
+PRESSURE: 9 0 0 0 0 0 0 0 0 0
+GPRESSURE: 9 0 0 0 0 0 0 0 0 0
+ENERGY:       9        13.9002        37.6944        27.8496         1.0095           -905.9093       -43.8396         0.0000         0.0000         0.0000           -869.2953         0.0000      -869.2953      -869.2953         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0010759 0.00968313 DU -0.00465861 0.68327 DUDX -11.8538 3.05466 138.064 
+PRESSURE: 10 0 0 0 0 0 0 0 0 0
+GPRESSURE: 10 0 0 0 0 0 0 0 0 0
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:      10        13.8984        37.6944        27.8483         1.0093           -905.9066       -43.8394         0.0000         0.0000         0.0000           -869.2955         0.0000      -869.2955      -869.2955         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000853378 0.000222525 DU -0.00490581 0.000247201 DUDX -11.8538 -0.0475389 3.05466 
+PRESSURE: 11 0 0 0 0 0 0 0 0 0
+GPRESSURE: 11 0 0 0 0 0 0 0 0 0
+ENERGY:      11        13.8985        37.6944        27.8484         1.0094           -905.9069       -43.8394         0.0000         0.0000         0.0000           -869.2956         0.0000      -869.2956      -869.2956         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.22525e-05 0.000200272 DU -2.61579e-05 0.000273359 DUDX -0.0475389 0.262684 3.05466 
+PRESSURE: 12 0 0 0 0 0 0 0 0 0
+GPRESSURE: 12 0 0 0 0 0 0 0 0 0
+ENERGY:      12        13.8985        37.6944        27.8484         1.0094           -905.9069       -43.8394         0.0000         0.0000         0.0000           -869.2956         0.0000      -869.2956      -869.2956         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.22525e-06 0.000200272 DU -9.69468e-06 0.000273359 DUDX 0.23166 0.262684 3.05466 
+PRESSURE: 13 0 0 0 0 0 0 0 0 0
+GPRESSURE: 13 0 0 0 0 0 0 0 0 0
+ENERGY:      13        13.8985        37.6944        27.8484         1.0094           -905.9069       -43.8394         0.0000         0.0000         0.0000           -869.2956         0.0000      -869.2956      -869.2956         0.0000
+
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM
+LINE MINIMIZER REDUCING GRADIENT FROM 14.2577 TO 0.0142577
+PRESSURE: 14 0 0 0 0 0 0 0 0 0
+GPRESSURE: 14 0 0 0 0 0 0 0 0 0
+ENERGY:      14        65.5195        44.7992        27.8039         1.1351           -905.3799       -43.4400         0.0000         0.0000         0.0000           -809.5622         0.0000      -809.5622      -809.5622         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.0640562 DU 0 59.7333 DUDX -14.2577 -14.2577 1879.81 
+PRESSURE: 15 0 0 0 0 0 0 0 0 0
+GPRESSURE: 15 0 0 0 0 0 0 0 0 0
+ENERGY:      15        14.4380        37.6126        27.8311         1.0060           -905.8461       -43.8224         0.0000         0.0000         0.0000           -868.7807         0.0000      -868.7807      -868.7807         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00640562 DU 0 0.514833 DUDX -14.2577 -14.2577 174.978 
+PRESSURE: 16 0 0 0 0 0 0 0 0 0
+GPRESSURE: 16 0 0 0 0 0 0 0 0 0
+ENERGY:      16        13.9059        37.6788        27.8466         1.0089           -905.9008       -43.8379         0.0000         0.0000         0.0000           -869.2986         0.0000      -869.2986      -869.2986         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000640562 0.00576505 DU -0.00305446 0.517888 DUDX -14.2577 4.65868 174.978 
+PRESSURE: 17 0 0 0 0 0 0 0 0 0
+GPRESSURE: 17 0 0 0 0 0 0 0 0 0
+ENERGY:      17        13.9031        37.6825        27.8470         1.0090           -905.9023       -43.8383         0.0000         0.0000         0.0000           -869.2989         0.0000      -869.2989      -869.2989         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000482285 0.000158276 DU -0.00336236 0.000307902 DUDX -14.2577 -0.0170029 4.65868 
+PRESSURE: 18 0 0 0 0 0 0 0 0 0
+GPRESSURE: 18 0 0 0 0 0 0 0 0 0
+ENERGY:      18        13.9034        37.6821        27.8470         1.0090           -905.9021       -43.8383         0.0000         0.0000         0.0000           -869.2989         0.0000      -869.2989      -869.2989         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000482285 1.58276e-05 DU -0.00336236 8.10957e-05 DUDX -14.2577 -0.0170029 0.450553 
+PRESSURE: 19 0 0 0 0 0 0 0 0 0
+GPRESSURE: 19 0 0 0 0 0 0 0 0 0
+ENERGY:      19        13.9031        37.6825        27.8470         1.0090           -905.9023       -43.8383         0.0000         0.0000         0.0000           -869.2990         0.0000      -869.2990      -869.2990         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.58276e-06 1.42449e-05 DU -3.72513e-05 0.000118347 DUDX -0.0170029 0.0297485 0.450553 
+PRESSURE: 20 0 0 0 0 0 0 0 0 0
+GPRESSURE: 20 0 0 0 0 0 0 0 0 0
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:      20        13.9031        37.6825        27.8470         1.0090           -905.9022       -43.8383         0.0000         0.0000         0.0000           -869.2989         0.0000      -869.2989      -869.2989         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.58276e-07 1.42449e-05 DU -9.10121e-05 0.000118347 DUDX 0.0250596 0.0297485 0.450553 
+PRESSURE: 21 0 0 0 0 0 0 0 0 0
+GPRESSURE: 21 0 0 0 0 0 0 0 0 0
+ENERGY:      21        13.9031        37.6825        27.8470         1.0090           -905.9023       -43.8383         0.0000         0.0000         0.0000           -869.2990         0.0000      -869.2990      -869.2990         0.0000
+
+LINE MINIMIZER REDUCING GRADIENT FROM 6.3031 TO 0.0063031
+PRESSURE: 22 0 0 0 0 0 0 0 0 0
+GPRESSURE: 22 0 0 0 0 0 0 0 0 0
+ENERGY:      22        17.1808        48.3001        28.7080         2.1051           -905.8892       -43.7485         0.0000         0.0000         0.0000           -853.3435         0.0000      -853.3435      -853.3435         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.172599 DU 0 15.9554 DUDX -6.3031 -6.3031 190.752 
+PRESSURE: 23 0 0 0 0 0 0 0 0 0
+GPRESSURE: 23 0 0 0 0 0 0 0 0 0
+ENERGY:      23        13.9715        37.6858        27.8605         1.0230           -905.9040       -43.8759         0.0000         0.0000         0.0000           -869.2391         0.0000      -869.2391      -869.2391         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.0172599 DU 0 0.0599005 DUDX -6.3031 -6.3031 13.3143 
+PRESSURE: 24 0 0 0 0 0 0 0 0 0
+GPRESSURE: 24 0 0 0 0 0 0 0 0 0
+ENERGY:      24        13.9189        37.6586        27.8495         1.0112           -905.9034       -43.8515         0.0000         0.0000         0.0000           -869.3167         0.0000      -869.3167      -869.3167         0.0000
+
+LDB: ============= START OF LOAD BALANCING ============== 0.187805
+LDB: ============== END OF LOAD BALANCING =============== 0.187837
+LDB: =============== DONE WITH MIGRATION ================ 0.187913
+LINE MINIMIZER BRACKET: DX 0.00556555 0.0116944 DU -0.0177443 0.0776447 DUDX -6.3031 -0.0598772 13.3143 
+PRESSURE: 25 0 0 0 0 0 0 0 0 0
+GPRESSURE: 25 0 0 0 0 0 0 0 0 0
+ENERGY:      25        13.9230        37.6565        27.8503         1.0119           -905.9034       -43.8542         0.0000         0.0000         0.0000           -869.3159         0.0000      -869.3159      -869.3159         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00556555 0.00116944 DU -0.0177443 0.000820494 DUDX -6.3031 -0.0598772 1.27766 
+PRESSURE: 26 0 0 0 0 0 0 0 0 0
+GPRESSURE: 26 0 0 0 0 0 0 0 0 0
+ENERGY:      26        13.9193        37.6583        27.8496         1.0113           -905.9034       -43.8518         0.0000         0.0000         0.0000           -869.3167         0.0000      -869.3167      -869.3167         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000116944 0.00105249 DU -1.00111e-05 0.000830505 DUDX -0.0598772 0.0738804 1.27766 
+PRESSURE: 27 0 0 0 0 0 0 0 0 0
+GPRESSURE: 27 0 0 0 0 0 0 0 0 0
+ENERGY:      27        13.9192        37.6584        27.8496         1.0112           -905.9034       -43.8517         0.0000         0.0000         0.0000           -869.3167         0.0000      -869.3167      -869.3167         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.70864e-05 0.00105249 DU -1.06316e-05 0.000830505 DUDX 0.0428975 0.0738804 1.27766 
+PRESSURE: 28 0 0 0 0 0 0 0 0 0
+GPRESSURE: 28 0 0 0 0 0 0 0 0 0
+ENERGY:      28        13.9193        37.6583        27.8496         1.0113           -905.9034       -43.8518         0.0000         0.0000         0.0000           -869.3167         0.0000      -869.3167      -869.3167         0.0000
+
+LINE MINIMIZER REDUCING GRADIENT FROM 14.3202 TO 0.0143202
+PRESSURE: 29 0 0 0 0 0 0 0 0 0
+GPRESSURE: 29 0 0 0 0 0 0 0 0 0
+ENERGY:      29        38.4845        44.6883        27.9692         2.1548           -908.3709       -43.0074         0.0000         0.0000         0.0000           -838.0815         0.0000      -838.0815      -838.0815         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.0791758 DU 0 31.2352 DUDX -14.3202 -14.3202 801.79 
+PRESSURE: 30 0 0 0 0 0 0 0 0 0
+GPRESSURE: 30 0 0 0 0 0 0 0 0 0
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:      30        14.1280        37.8190        27.8339         1.0421           -906.1443       -43.7845         0.0000         0.0000         0.0000           -869.1057         0.0000      -869.1057      -869.1057         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00791758 DU 0 0.210987 DUDX -14.3202 -14.3202 67.5987 
+PRESSURE: 31 0 0 0 0 0 0 0 0 0
+GPRESSURE: 31 0 0 0 0 0 0 0 0 0
+ENERGY:      31        13.9196        37.6774        27.8464         1.0153           -905.9451       -43.8402         0.0000         0.0000         0.0000           -869.3265         0.0000      -869.3265      -869.3265         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00138378 0.00653381 DU -0.00980692 0.220794 DUDX -14.3202 -0.0227647 67.5987 
+PRESSURE: 32 0 0 0 0 0 0 0 0 0
+GPRESSURE: 32 0 0 0 0 0 0 0 0 0
+ENERGY:      32        13.9251        37.6879        27.8450         1.0175           -905.9650       -43.8348         0.0000         0.0000         0.0000           -869.3244         0.0000      -869.3244      -869.3244         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00138378 0.000653381 DU -0.00980692 0.00218486 DUDX -14.3202 -0.0227647 6.7415 
+PRESSURE: 33 0 0 0 0 0 0 0 0 0
+GPRESSURE: 33 0 0 0 0 0 0 0 0 0
+ENERGY:      33        13.9200        37.6784        27.8463         1.0156           -905.9470       -43.8397         0.0000         0.0000         0.0000           -869.3264         0.0000      -869.3264      -869.3264         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00138378 6.53381e-05 DU -0.00980692 0.000103148 DUDX -14.3202 -0.0227647 0.653663 
+PRESSURE: 34 0 0 0 0 0 0 0 0 0
+GPRESSURE: 34 0 0 0 0 0 0 0 0 0
+ENERGY:      34        13.9197        37.6775        27.8464         1.0154           -905.9454       -43.8402         0.0000         0.0000         0.0000           -869.3266         0.0000      -869.3266      -869.3266         0.0000
+
+LINE MINIMIZER BRACKET: DX 6.53381e-06 5.88042e-05 DU -0.000110587 0.000213734 DUDX -0.0227647 0.0448717 0.653663 
+PRESSURE: 35 0 0 0 0 0 0 0 0 0
+GPRESSURE: 35 0 0 0 0 0 0 0 0 0
+ENERGY:      35        13.9197        37.6775        27.8464         1.0154           -905.9453       -43.8402         0.0000         0.0000         0.0000           -869.3266         0.0000      -869.3266      -869.3266         0.0000
+
+LINE MINIMIZER BRACKET: DX 6.53381e-07 5.88042e-05 DU -8.30584e-05 0.000213734 DUDX 0.038094 0.0448717 0.653663 
+PRESSURE: 36 0 0 0 0 0 0 0 0 0
+GPRESSURE: 36 0 0 0 0 0 0 0 0 0
+ENERGY:      36        13.9197        37.6775        27.8464         1.0154           -905.9454       -43.8402         0.0000         0.0000         0.0000           -869.3266         0.0000      -869.3266      -869.3266         0.0000
+
+LINE MINIMIZER REDUCING GRADIENT FROM 26.5346 TO 0.0265346
+PRESSURE: 37 0 0 0 0 0 0 0 0 0
+GPRESSURE: 37 0 0 0 0 0 0 0 0 0
+ENERGY:      37        23.9907        42.2240        27.7414         1.7469           -906.4371       -43.9314         0.0000         0.0000         0.0000           -854.6655         0.0000      -854.6655      -854.6655         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.0435074 DU 0 14.6612 DUDX -26.5346 -26.5346 701.221 
+PRESSURE: 38 0 0 0 0 0 0 0 0 0
+GPRESSURE: 38 0 0 0 0 0 0 0 0 0
+ENERGY:      38        13.9360        37.7952        27.8135         1.0246           -905.9938       -43.8599         0.0000         0.0000         0.0000           -869.2845         0.0000      -869.2845      -869.2845         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00435074 DU 0 0.0421842 DUDX -26.5346 -26.5346 45.901 
+PRESSURE: 39 0 0 0 0 0 0 0 0 0
+GPRESSURE: 39 0 0 0 0 0 0 0 0 0
+ENERGY:      39        13.9003        37.7117        27.8338         1.0171           -905.9628       -43.8477         0.0000         0.0000         0.0000           -869.3477         0.0000      -869.3477      -869.3477         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00159321 0.00275754 DU -0.0210497 0.0632338 DUDX -26.5346 -0.0330214 45.901 
+PRESSURE: 40 0 0 0 0 0 0 0 0 0
+GPRESSURE: 40 0 0 0 0 0 0 0 0 0
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:      40        13.9000        37.7187        27.8316         1.0176           -905.9658       -43.8490         0.0000         0.0000         0.0000           -869.3469         0.0000      -869.3469      -869.3469         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00159321 0.000275754 DU -0.0210497 0.000778132 DUDX -26.5346 -0.0330214 4.55918 
+PRESSURE: 41 0 0 0 0 0 0 0 0 0
+GPRESSURE: 41 0 0 0 0 0 0 0 0 0
+ENERGY:      41        13.9003        37.7124        27.8336         1.0171           -905.9631       -43.8478         0.0000         0.0000         0.0000           -869.3476         0.0000      -869.3476      -869.3476         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00159321 2.75754e-05 DU -0.0210497 9.39016e-05 DUDX -26.5346 -0.0330214 0.426224 
+PRESSURE: 42 0 0 0 0 0 0 0 0 0
+GPRESSURE: 42 0 0 0 0 0 0 0 0 0
+ENERGY:      42        13.9003        37.7117        27.8337         1.0171           -905.9628       -43.8477         0.0000         0.0000         0.0000           -869.3477         0.0000      -869.3477      -869.3477         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00159321 2.75754e-06 DU -0.0210497 2.98982e-05 DUDX -26.5346 -0.0330214 0.0128967 
+LINE MINIMIZER REDUCING GRADIENT FROM 41.964 TO 0.041964
+PRESSURE: 43 0 0 0 0 0 0 0 0 0
+GPRESSURE: 43 0 0 0 0 0 0 0 0 0
+ENERGY:      43        19.3791        40.8470        27.6872         1.1103           -907.0169       -43.2878         0.0000         0.0000         0.0000           -861.2810         0.0000      -861.2810      -861.2810         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.0259986 DU 0 8.06671 DUDX -41.964 -41.964 662.112 
+PRESSURE: 44 0 0 0 0 0 0 0 0 0
+GPRESSURE: 44 0 0 0 0 0 0 0 0 0
+ENERGY:      44        13.8999        37.7961        27.8043         1.0031           -906.0705       -43.7980         0.0000         0.0000         0.0000           -869.3651         0.0000      -869.3651      -869.3651         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00259986 0.0233987 DU -0.0174478 8.08415 DUDX -41.964 28.4623 662.112 
+PRESSURE: 45 0 0 0 0 0 0 0 0 0
+GPRESSURE: 45 0 0 0 0 0 0 0 0 0
+ENERGY:      45        13.8854        37.7558        27.8158         1.0081           -906.0271       -43.8183         0.0000         0.0000         0.0000           -869.3802         0.0000      -869.3802      -869.3802         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00154796 0.0010519 DU -0.0325678 0.01512 DUDX -41.964 -0.0403113 28.4623 
+LINE MINIMIZER REDUCING GRADIENT FROM 46.0798 TO 0.0460798
+PRESSURE: 46 0 0 0 0 0 0 0 0 0
+GPRESSURE: 46 0 0 0 0 0 0 0 0 0
+ENERGY:      46        18.6775        38.2947        27.8640         0.9677           -905.6574       -43.9071         0.0000         0.0000         0.0000           -863.7607         0.0000      -863.7607      -863.7607         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.0217924 DU 0 5.61949 DUDX -46.0798 -46.0798 561.345 
+PRESSURE: 47 0 0 0 0 0 0 0 0 0
+GPRESSURE: 47 0 0 0 0 0 0 0 0 0
+ENERGY:      47        13.9328        37.6784        27.8107         0.9896           -905.9954       -43.8303         0.0000         0.0000         0.0000           -869.4141         0.0000      -869.4141      -869.4141         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00217924 0.0196132 DU -0.0338383 5.65333 DUDX -46.0798 14.8878 561.345 
+PRESSURE: 48 0 0 0 0 0 0 0 0 0
+GPRESSURE: 48 0 0 0 0 0 0 0 0 0
+ENERGY:      48        13.9123        37.6946        27.8117         0.9939           -906.0031       -43.8274         0.0000         0.0000         0.0000           -869.4179         0.0000      -869.4179      -869.4179         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00164589 0.000533351 DU -0.0376901 0.00385172 DUDX -46.0798 -0.0303577 14.8878 
+LINE MINIMIZER REDUCING GRADIENT FROM 91.8859 TO 0.0918859
+PRESSURE: 49 0 0 0 0 0 0 0 0 0
+GPRESSURE: 49 0 0 0 0 0 0 0 0 0
+ENERGY:      49        19.3323        39.1611        27.7530         1.1987           -907.0847       -43.3024         0.0000         0.0000         0.0000           -862.9421         0.0000      -862.9421      -862.9421         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.0137865 DU 0 6.47579 DUDX -91.8859 -91.8859 1033.54 
+PRESSURE: 50 0 0 0 0 0 0 0 0 0
+GPRESSURE: 50 0 0 0 0 0 0 0 0 0
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:      50        13.9123        37.6947        27.8117         0.9939           -906.0031       -43.8274         0.0000         0.0000         0.0000           -869.4179         0.0000      -869.4179      -869.4179         0.0000
+
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 50
+FATAL ERROR: Unable to open text file /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/rep1_3g5v_01/structures/relaxed_MoleculeA.xsc: File exists
+[0] Stack Traceback:
+  [0:0]   [0x1323165]
+  [0:1]   [0x4fdb45]
+  [0:2]   [0xc5eb26]
+  [0:3]   [0xc3569a]
+  [0:4]   [0xc26132]
+  [0:5]   [0x131f050]
+  [0:6]   [0x3d86243760]
+[0] Stack Traceback:
+  [0:0]   [0x1323845]
+  [0:1]   [0x132311e]
+  [0:2]   [0x1323165]
+  [0:3]   [0x4fdb45]
+  [0:4]   [0xc5eb26]
+  [0:5]   [0xc3569a]
+  [0:6]   [0xc26132]
+  [0:7]   [0x131f050]
+  [0:8]   [0x3d86243760]

@@ -1,0 +1,6 @@
+du: cannot access `/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_2ck0/energies/MoleculeA/LV_9/namd-temp.namd': No such file or directory
+du: cannot access `/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_2ck0/energies/MoleculeA/LV_9/namd-temp.dcd': No such file or directory
+du: cannot access `/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_2ck0/energies/MoleculeA/LV_9/namd-temp.log': No such file or directory
+real 203.18
+user 22.35
+sys 16.40

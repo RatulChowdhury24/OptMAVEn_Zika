@@ -1,0 +1,8 @@
+zRot: 240.0, x: 2.5, y: 2.5, z: 16.25, cut: 1, energy: -320.912597656, HV: HV_79, HJ: HJ_3, HCDR3: HCDR3_124, LV: LV_34, LJ: LJ_5, LCDR3: LCDR3_24, cluster: 6, assembly: 6, Pre-Relaxed: -320.4102, Relaxed: nan
+zRot: 60.0, x: 7.5, y: 2.5, z: 16.25, cut: 1, energy: -296.761505127, HV: HV_92, HJ: HJ_5, HCDR3: HCDR3_62, LV: LV_31, LJ: LJ_1, LCDR3: LCDR3_31, cluster: 4, assembly: 4, Pre-Relaxed: -296.7611, Relaxed: nan
+zRot: 120.0, x: 5.0, y: 5.0, z: 16.25, cut: 1, energy: -283.349090576, HV: HV_138, HJ: HJ_1, HCDR3: HCDR3_277, LV: KV_7, LJ: KJ_3, LCDR3: KCDR3_142, cluster: 7, assembly: 7, Pre-Relaxed: -282.6859, Relaxed: nan
+zRot: 300.0, x: 5.0, y: -7.5, z: 15.0, cut: 1, energy: -279.241699219, HV: HV_17, HJ: HJ_5, HCDR3: HCDR3_124, LV: KV_67, LJ: KJ_4, LCDR3: KCDR3_117, cluster: 2, assembly: 2, Pre-Relaxed: -279.2239, Relaxed: nan
+zRot: 60.0, x: 2.5, y: -5.0, z: 15.0, cut: 1, energy: -258.029205322, HV: HV_106, HJ: HJ_4, HCDR3: HCDR3_94, LV: KV_61, LJ: KJ_3, LCDR3: KCDR3_81, cluster: 3, assembly: 3, Pre-Relaxed: -251.863, Relaxed: nan
+zRot: 120.0, x: 7.5, y: 2.5, z: 16.25, cut: 5, energy: -246.194595337, HV: HV_17, HJ: HJ_5, HCDR3: HCDR3_24, LV: KV_61, LJ: KJ_3, LCDR3: KCDR3_81, cluster: 5, assembly: 5, Pre-Relaxed: -243.8194, Relaxed: nan
+zRot: 60.0, x: 7.5, y: 2.5, z: 16.25, cut: 4, energy: -241.9559021, HV: HV_134, HJ: HJ_5, HCDR3: HCDR3_62, LV: LV_31, LJ: LJ_5, LCDR3: LCDR3_7, cluster: 8, assembly: 8, Pre-Relaxed: -241.9552, Relaxed: nan
+zRot: 240.0, x: 7.5, y: -10.0, z: 15.0, cut: 5, energy: -62.1012992859, HV: HV_111, HJ: HJ_2, HCDR3: HCDR3_289, LV: LV_15, LJ: LJ_6, LCDR3: LCDR3_35, cluster: 1, assembly: 1, Pre-Relaxed: -55.4939, Relaxed: nan

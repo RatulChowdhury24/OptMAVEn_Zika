@@ -1,0 +1,27 @@
+START	rep1_3bky	on 2017 May 31 at 06:32:21
+DISK_USAGE	initial	480
+SUB_TIME	NAMD relaxation of molecule /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/rep1_3bky/structures/MoleculeA.pdb	13.1688139439
+SUB_TIME	Mounting antigen A	0.348432064056
+DISK_USAGE	after_antigen_initialization	560
+SUB_TIME	culling_clashes	5.12300395966
+DISK_USAGE	after_culling_clashes	560
+DISK_USAGE	beginning_MAPs_energy_calculations	15680
+TIME	antigen_relaxation_and_positioning	18.86
+TIME	parts_51_to_100_interaction_energies	5189.37
+TIME	parts_151_to_200_interaction_energies	5526.81
+TIME	parts_351_to_400_interaction_energies	5250.24
+TIME	parts_101_to_150_interaction_energies	5134.48
+TIME	parts_1_to_50_interaction_energies	5039.28
+TIME	parts_201_to_250_interaction_energies	5401.3
+TIME	parts_651_to_700_interaction_energies	5056.94
+TIME	parts_251_to_300_interaction_energies	5532.74
+TIME	parts_301_to_350_interaction_energies	5529.96
+TIME	parts_701_to_750_interaction_energies	5132.33
+TIME	parts_401_to_450_interaction_energies	7087.97
+TIME	parts_901_to_924_interaction_energies	4784.57
+TIME	parts_551_to_600_interaction_energies	7699.17
+TIME	parts_751_to_800_interaction_energies	7449.89
+TIME	parts_801_to_850_interaction_energies	9694.01
+TIME	parts_851_to_900_interaction_energies	6369.52
+TIME	parts_451_to_500_interaction_energies	11208.68
+TIME	parts_501_to_550_interaction_energies	11312.65

@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/gpfs/work/m/mfa5147/OptMAVEn2.0/programs/Optmaven.py", line 60, in <module>
+    OPTMAVEN.cull_clashes(experiment)
+  File "/gpfs/work/m/mfa5147/OptMAVEn2.0/modules/OPTMAVEN.py", line 247, in cull_clashes
+    KS.cull_clashes(experiment)
+  File "/gpfs/work/m/mfa5147/OptMAVEn2.0/modules/KS.py", line 431, in cull_clashes
+    cull_clash(experiment, molecule[2])
+  File "/gpfs/work/m/mfa5147/OptMAVEn2.0/modules/KS.py", line 420, in cull_clash
+    raise Exception("There were no positions that did not clash. Please "
+Exception: There were no positions that did not clash. Please re-examine the structure of the antigen and adjust your grid settings.
+real 333.63
+user 329.93
+sys 1.18

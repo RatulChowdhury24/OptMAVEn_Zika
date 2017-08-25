@@ -1,0 +1,14 @@
+du: cannot access `/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_3etb/energies/MoleculeA/KCDR3_192/namd-temp.xsc': No such file or directory
+du: cannot access `/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_3etb/energies/MoleculeA/KCDR3_192/namd-temp.coor': No such file or directory
+du: cannot access `/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_3etb/energies/MoleculeA/KCDR3_192/namd-temp.vel': No such file or directory
+du: cannot access `/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_3etb/energies/MoleculeA/KCDR3_189/namd-temp.pdb': No such file or directory
+du: cannot access `/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_3etb/energies/MoleculeA/KCDR3_189/namd-temp.namd': No such file or directory
+du: cannot access `/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_3etb/energies/MoleculeA/KCDR3_189/namd-temp.dcd': No such file or directory
+du: cannot access `/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_3etb/energies/MoleculeA/KCDR3_189/namd-temp.log': No such file or directory
+du: cannot access `/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_3etb/energies/MoleculeA/LV_34/namd-temp.pdb': No such file or directory
+du: cannot access `/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_3etb/energies/MoleculeA/LV_34/namd-temp.namd': No such file or directory
+du: cannot access `/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_3etb/energies/MoleculeA/LV_34/namd-temp.dcd': No such file or directory
+du: cannot access `/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_3etb/energies/MoleculeA/LV_34/namd-temp.log': No such file or directory
+real 411.34
+user 351.96
+sys 13.40

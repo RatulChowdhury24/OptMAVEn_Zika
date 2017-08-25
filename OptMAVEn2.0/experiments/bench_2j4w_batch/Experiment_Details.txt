@@ -1,0 +1,43 @@
+Basic Experiment Information
+User:                         mfa5147
+Type:                         OptMAVEn
+Name:                         bench_2j4w_batch
+File Format:                  PDB
+Force Field:                  CHARMM
+Folder:                       /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/bench_2j4w_batch/
+
+How to use CHARMM
+CHARMM Topology File:         top_all27_prot_na.rtf
+CHARMM Parameter File:        par_all27_prot_na.prm
+CHARMM Energy Term:           angl
+CHARMM Energy Term:           bond
+CHARMM Energy Term:           dihe
+CHARMM Energy Term:           elec
+CHARMM Energy Term:           impr
+CHARMM Energy Term:           urey
+CHARMM Energy Term:           vdw
+CHARMM Iterations:            5000
+Lj Phi:                       0.005
+
+The Molecules used in the experiment
+Molecule:                     Molecule D from file /gpfs/work/m/mfa5147/OptMAVEn2.0/input_files/2j4w.pdb is Target Molecule A
+
+Antigen epitope residues 
+Epitope Position:             Residue 427 in Molecule A
+Epitope Position:             Residue 428 in Molecule A
+Epitope Position:             Residue 431 in Molecule A
+Epitope Position:             Residue 432 in Molecule A
+Epitope Position:             Residue 433 in Molecule A
+Epitope Position:             Residue 434 in Molecule A
+Epitope Position:             Residue 435 in Molecule A
+Epitope Position:             Residue 436 in Molecule A
+Epitope Position:             Residue 437 in Molecule A
+Epitope Position:             Residue 438 in Molecule A
+Epitope Position:             Residue 450 in Molecule A
+Epitope Position:             Residue 451 in Molecule A
+Epitope Position:             Residue 452 in Molecule A
+Epitope Position:             Residue 453 in Molecule A
+Optmaven Grid:                0.0 60.0 120.0 180.0 240.0 300.0
+Optmaven Grid:                -5.0 -2.5 0.0 2.5 5.0 7.5 10.0
+Optmaven Grid:                -10.0 -7.5 -5.0 -2.5 0.0 2.5 5.0
+Optmaven Grid:                3.75 5.0 6.25 7.5 8.75 10.0 11.25 12.5 13.75 15.0 16.25

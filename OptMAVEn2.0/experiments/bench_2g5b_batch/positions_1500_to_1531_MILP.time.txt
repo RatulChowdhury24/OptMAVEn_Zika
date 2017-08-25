@@ -1,0 +1,4 @@
+/var/spool/pbs/mom_priv/jobs/7769550.lionxf.rcc.psu.edu.SC: line 11: positions_1500_to_1531_MILP.sh: command not found
+real 0.00
+user 0.00
+sys 0.00

@@ -1,0 +1,28 @@
+################################################################################
+
+  
+  # NAMD configuration file generated automatically by NAMDenergy
+
+  # It may be ugly, but it should work.
+
+  # I wouldn't recommend using it for anything else though.
+
+  ################################################################################
+
+structure		/gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/rep1_2igf_20/energies/MoleculeA/HV_49/MoleculeA.psf
+paraTypeCharmm		on
+parameters		/gpfs/work/m/mfa5147/OptMAVEn2.0/input_files/par_all27_prot_na.prm
+numsteps		 1
+exclude			 scaled1-4
+outputname		 namd-temp
+temperature		 0
+COMmotion 		 yes
+cutoff			 12
+dielectric		 1.0
+switchdist		 10
+pairInteraction		 on
+pairInteractionGroup1 1
+pairInteractionFile   namd-temp.pdb
+pairInteractionGroup2 2
+coordinates namd-temp.pdb
+run 0

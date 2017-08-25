@@ -1,0 +1,17 @@
+sh: line 1: 13493 Aborted                 (core dumped) namd /gpfs/work/m/mfa5147/OptMAVEn2.0/input_files/namd_relaxation.conf > /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/rep1_3g5v_01/structures/namd.out 2> /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/rep1_3g5v_01/structures/namd.err
+Traceback (most recent call last):
+  File "/gpfs/work/m/mfa5147/OptMAVEn2.0/programs/Optmaven.py", line 53, in <module>
+    OPTMAVEN.initialize_antigen(experiment)
+  File "/gpfs/work/m/mfa5147/OptMAVEn2.0/modules/OPTMAVEN.py", line 237, in initialize_antigen
+    KS.relax_molecules(experiment)
+  File "/gpfs/work/m/mfa5147/OptMAVEn2.0/modules/KS.py", line 339, in relax_molecules
+    relax_molecule(experiment, molecule_coords, molecule_struct)
+  File "/gpfs/work/m/mfa5147/OptMAVEn2.0/modules/KS.py", line 299, in relax_molecule
+    run_namd(namd_conf, namd_out)
+  File "/gpfs/work/m/mfa5147/OptMAVEn2.0/modules/KS.py", line 133, in run_namd
+    command))
+Exception: Running NAMD with this command has failed:
+namd /gpfs/work/m/mfa5147/OptMAVEn2.0/input_files/namd_relaxation.conf > /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/rep1_3g5v_01/structures/namd.out 2> /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/rep1_3g5v_01/structures/namd.err
+real 6.83
+user 4.76
+sys 0.41

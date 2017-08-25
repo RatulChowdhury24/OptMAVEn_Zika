@@ -1,0 +1,41 @@
+Basic Experiment Information
+User:                         rzc158
+Type:                         OptMAVEn
+Name:                         rep1_2zuq_20
+File Format:                  PDB
+Force Field:                  CHARMM
+Folder:                       /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/rep1_2zuq_20/
+
+How to use CHARMM
+CHARMM Topology File:         top_all27_prot_na.rtf
+CHARMM Parameter File:        par_all27_prot_na.prm
+CHARMM Energy Term:           angl
+CHARMM Energy Term:           bond
+CHARMM Energy Term:           dihe
+CHARMM Energy Term:           elec
+CHARMM Energy Term:           impr
+CHARMM Energy Term:           urey
+CHARMM Energy Term:           vdw
+CHARMM Iterations:            5000
+Lj Phi:                       0.005
+
+The Molecules used in the experiment
+Molecule:                     Molecule A from file /gpfs/work/m/mfa5147/OptMAVEn2.0/input_files/2zuq.pdb is Target Molecule A
+
+Antigen epitope residues 
+Epitope Position:             Residue 85 in Molecule A
+Epitope Position:             Residue 86 in Molecule A
+Epitope Position:             Residue 87 in Molecule A
+Epitope Position:             Residue 88 in Molecule A
+Epitope Position:             Residue 89 in Molecule A
+Epitope Position:             Residue 90 in Molecule A
+Epitope Position:             Residue 91 in Molecule A
+Epitope Position:             Residue 92 in Molecule A
+Epitope Position:             Residue 118 in Molecule A
+Epitope Position:             Residue 119 in Molecule A
+Epitope Position:             Residue 120 in Molecule A
+Epitope Position:             Residue 127 in Molecule A
+Optmaven Grid:                0.0 60.0 120.0 180.0 240.0 300.0
+Optmaven Grid:                -5.0 -2.5 0.0 2.5 5.0 7.5 10.0
+Optmaven Grid:                -10.0 -7.5 -5.0 -2.5 0.0 2.5 5.0
+Optmaven Grid:                3.75 5.0 6.25 7.5 8.75 10.0 11.25 12.5 13.75 15.0 16.25

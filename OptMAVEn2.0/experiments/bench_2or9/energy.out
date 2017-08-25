@@ -1,0 +1,291 @@
+1
+                 Chemistry at HARvard Macromolecular Mechanics
+                   (CHARMM) - Developmental Version 34b1     August 15, 2007   
+       Copyright(c) 1984-2001  President and Fellows of Harvard College
+                              All Rights Reserved
+      Current operating system: Linux-2.6.32-696.1.1.el6.x86_64(x86_64)@lion
+                 Created on  5/24/17 at 22:40:59 by user: mfa5147     
+
+            Maximum number of ATOMS:    240480, and RESidues:       80160
+            Current HEAP size:        10240000, and STACK size:  10000000
+
+ RDTITL> * A CHARMM ENERGY CALCULATION
+ RDTITL> *
+  
+ CHARMM>     
+  
+ CHARMM>    wrnl -2
+  
+ CHARMM>    !prnl -2
+ CHARMM>    bomb -2
+  
+ CHARMM>     
+  
+ CHARMM>    ! Load the Topology file(s)
+ CHARMM>    open read unit 10 form name top_all27_prot_na.rtf card
+ VOPEN> Attempting to open::top_all27_prot_na.rtf::
+ OPNLGU> Unit 10 opened for READONLY access to top_all27_prot_na.rtf
+  
+ CHARMM>    read rtf card unit 10
+ MAINIO> Residue topology file being read from unit  10.
+ TITLE> *>>>>>>>>CHARMM22 ALL-HYDROGEN TOPOLOGY FILE FOR PROTEINS <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>> AND NUCLEIC ACIDS <<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> *>>>>> INCLUDES PHI, PSI CROSS TERM MAP (CMAP) CORRECTION <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>>>>   JULY, 2004    <<<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> * ALL COMMENTS TO ADM JR. VIA THE CHARMM WEB SITE: WWW.CHARMM.ORG
+ TITLE> *               PARAMETER SET DISCUSSION FORUM
+ TITLE> *
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Load the Parameter file(s)
+ CHARMM>    open read unit 10 form name par_all27_prot_na.prm card
+ VOPEN> Attempting to open::par_all27_prot_na.prm::
+ OPNLGU> Unit 10 opened for READONLY access to par_all27_prot_na.prm
+  
+ CHARMM>    read para card unit 10
+
+          PARAMETER FILE BEING READ FROM UNIT 10
+ TITLE> *>>>>> CHARMM22 ALL-HYDROGEN PARAMETER FILE FOR PROTEINS <<<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>> AND NUCLEIC ACIDS <<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> *>>>>> INCLUDES PHI, PSI CROSS TERM MAP (CMAP) CORRECTION <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>>>> DECEMBER, 2003 <<<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> * ALL COMMENTS TO ADM JR. VIA THE CHARMM WEB SITE: WWW.CHARMM.ORG
+ TITLE> *               PARAMETER SET DISCUSSION FORUM
+ TITLE> *
+ PARMIO> NONBOND, HBOND lists and IMAGE atoms cleared.
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Load TARGET Molecule H
+ CHARMM>    open read unit 10 form name moleculeh_preenergy.pdb
+ VOPEN> Attempting to open::moleculeh_preenergy.pdb::
+ OPNLGU> Unit 10 opened for READONLY access to moleculeh_preenergy.pdb
+  
+ CHARMM>    read sequ pdb offi unit 10
+ MAINIO> Sequence information being read from unit  10.
+ TITLE>   Created by mfa5147 on 5/24/2017 at 22:40:58
+ TITLE>  *
+
+          RESIDUE SEQUENCE --   113 RESIDUES
+          GLN VAL GLN LEU GLN GLU SER GLY PRO GLY LEU VAL LYS PRO SER ASP THR LEU SER LEU 
+          THR CYS ALA VAL SER GLY TYR SER ILE SER ARG SER SER ASN TRP TRP GLY TRP ILE ARG 
+          GLN PRO PRO GLY LYS GLY LEU GLU TRP ILE GLY TYR ILE TYR TYR SER GLY SER THR TYR 
+          TYR ASN PRO SER LEU LYS SER ARG VAL THR MET SER VAL ASP THR SER LYS ASN GLN PHE 
+          SER LEU LYS LEU SER SER VAL THR ALA VAL ASP THR GLY VAL TYR TYR CYS ALA TRP PHE 
+          ALA TYR TRP GLY LYS GLY THR THR VAL THR VAL SER SER 
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>    gene mlh setup
+ THE PATCH 'NTER' WILL BE USED FOR THE FIRST RESIDUE
+ THE PATCH 'CTER' WILL BE USED FOR THE LAST  RESIDUE
+ GENPSF> Segment   1 has been generated. Its identifier is MLH.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =      113
+         Number of atoms         =     1736   Number of groups     =      543
+         Number of bonds         =     1763   Number of angles     =     3161
+         Number of dihedrals     =     4668   Number of impropers  =      265
+         Number of cross-terms   =      111
+         Number of HB acceptors  =      170   Number of HB donors  =      205
+         Number of NB exclusions =        0   Total charge =    4.00000
+  
+ CHARMM>    open read unit 10 form name moleculeh_preenergy.pdb
+ VOPEN> Attempting to open::moleculeh_preenergy.pdb::
+ OPNLGU> Unit 10 opened for READONLY access to moleculeh_preenergy.pdb
+  
+ CHARMM>    read coor pdb unit 10
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 10
+ TITLE>   CREATED BY MFA5147 ON 5/24/2017 AT 22:40:58
+ TITLE>  *
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Load TARGET Molecule L
+ CHARMM>    open read unit 10 form name moleculel_preenergy.pdb
+ VOPEN> Attempting to open::moleculel_preenergy.pdb::
+ OPNLGU> Unit 10 opened for READONLY access to moleculel_preenergy.pdb
+  
+ CHARMM>    read sequ pdb offi unit 10
+ MAINIO> Sequence information being read from unit  10.
+ TITLE>   Created by mfa5147 on 5/24/2017 at 22:40:59
+ TITLE>  *
+
+          RESIDUE SEQUENCE --   108 RESIDUES
+          SER TYR VAL LEU THR GLN PRO PRO SER VAL SER VAL ALA PRO GLY GLN THR ALA ARG ILE 
+          THR CYS GLY GLY ASN ASN ILE GLY SER LYS SER VAL HSE TRP TYR GLN GLN LYS PRO GLY 
+          GLN ALA PRO VAL LEU VAL VAL TYR ASP ASP SER ASP ARG PRO SER GLY ILE PRO GLU ARG 
+          PHE SER GLY SER ASN SER GLY ASN THR ALA THR LEU THR ILE SER ARG VAL GLU ALA GLY 
+          ASP GLU ALA ASP TYR TYR CYS SER SER TYR THR SER SER SER THR LEU TRP VAL PHE GLY 
+          THR GLY THR LYS VAL THR VAL LEU 
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>    gene mll setup
+ THE PATCH 'NTER' WILL BE USED FOR THE FIRST RESIDUE
+ THE PATCH 'CTER' WILL BE USED FOR THE LAST  RESIDUE
+ GENPSF> Segment   2 has been generated. Its identifier is MLL.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        2   Number of residues   =      221
+         Number of atoms         =     3312   Number of groups     =     1025
+         Number of bonds         =     3358   Number of angles     =     6026
+         Number of dihedrals     =     8891   Number of impropers  =      534
+         Number of cross-terms   =      217
+         Number of HB acceptors  =      338   Number of HB donors  =      393
+         Number of NB exclusions =        0   Total charge =    3.00000
+  
+ CHARMM>    open read unit 10 form name moleculel_preenergy.pdb
+ VOPEN> Attempting to open::moleculel_preenergy.pdb::
+ OPNLGU> Unit 10 opened for READONLY access to moleculel_preenergy.pdb
+  
+ CHARMM>    read coor pdb unit 10
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 10
+ TITLE>   CREATED BY MFA5147 ON 5/24/2017 AT 22:40:59
+ TITLE>  *
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    ! Add missing Atoms and assign them coordinates
+ CHARMM>    ic fill preserve
+  
+ CHARMM>    ic param
+  
+ CHARMM>    ic build
+  
+ CHARMM>    hbuild
+  
+ CHARMM>     
+  
+ CHARMM>     
+  
+ CHARMM>    GBMV BETA -20 EPSILON 80 DN 1.0 watr 1.4 GEOM -
+ CHARMM>        TOL 1e-8 BUFR 0.5 Mem 10 CUTA 20 HSX1 -0.125 HSX2 0.25 -
+ CHARMM>        ALFRQ 1 EMP 0.25 P4 0.0 P6 8.0 P3 0.70 ONX 1.9 OFFX 2.1 -
+ CHARMM>        WTYP 2 NPHI 38 SHIFT -0.102 SLOPE 0.9085 CORR 1
+ Geometric Cross-Term
+ Using EMP method with value of  0.2500
+ Running Analytical GBMV: Method II (VSA)
+ CFA Correction factor: (1/R^7)^(1/4)
+ Slope  =  0.90850 Shift = -0.10200
+ P1     =  0.45000 P2    =  1.25000 P3     =  0.70000 P4    =  0.00000
+ P5     =  0.16000 P6    =  8.00000
+ Lambda =  0.50000 Beta  =   -20.00
+ CutA   = 20.00000 Bufr  =  0.50000 DN     =  1.00000 Mem   =       10
+ ALFRQ  =        1 EMP   =  0.25000 KAPPA  =  0.00000
+ WProbe =  1.40000 EPS_GB= 80.00000
+ Hard sphere function from -0.125 to  0.250
+ Tail function switched from  1.900 to  2.100
+ GCUT =  1
+ Lebedev integration grid size 38
+ Number of integration points =   798
+ Grid Extents:   71 X   57 X   59
+ Table Size =       9.90 MB
+ Surf. Pts  =       2.64 MB
+ Grid Size  =       3.82 MB
+  
+ CHARMM>    skip all excl angl bond dihe elec impr urey vdw gbener
+ SKIPE> The following energy terms will be computed :
+  BOND ANGL UREY DIHE IMPR VDW  ELEC GBEN
+  
+ CHARMM>     
+  
+ CHARMM>    ener
+
+ NONBOND OPTION FLAGS: 
+     ELEC     VDW      ATOMs    CDIElec  SHIFt    VATOm    VSWItch 
+     BYGRoup  NOEXtnd  NOEWald 
+ CUTNB  = 14.000 CTEXNB =999.000 CTONNB = 10.000 CTOFNB = 12.000
+ WMIN   =  1.500 WRNMXD =  0.500 E14FAC =  1.000 EPS    =  1.000
+ NBXMOD =      5
+ There are        0 atom  pairs and        0 atom  exclusions.
+ There are        0 group pairs and        0 group exclusions.
+ <MAKINB> with mode   5 found   9384 exclusions and   8705 interactions(1-4)
+ <MAKGRP> found   2989 group exclusions.
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR   951708 ATOM PAIRS AND        0 GROUP PAIRS
+ == PRIMARY == SPACE FOR  1427582 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  1004341 ATOM PAIRS WERE FOUND FOR ATOM LIST
+    53359 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+ENER ENR:  Eval#     ENERgy      Delta-E         GRMS
+ENER INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+ENER EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ENER PBEQ:             PBnp       PBelec        GBEnr         GSBP
+ ----------       ---------    ---------    ---------    ---------    ---------
+ENER>        0  -2801.92354      0.00000      3.05336
+ENER INTERN>      201.32891    519.23393     37.72434    941.91423     14.16028
+ENER EXTERN>     -941.00870  -2027.34234      0.00000      0.00000      0.00000
+ENER PBEQ>          0.00000      0.00000  -1547.93419      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+  
+ CHARMM>     
+  
+ CHARMM>    set tot ?ener
+ RDCMND substituted energy or value "?ENER" to "-2801.92"
+ Parameter: TOT <- "-2801.92"
+  
+ CHARMM>     
+  
+ CHARMM>    open write card unit 10 name energy_values.txt
+ VOPEN> Attempting to open::energy_values.txt::
+ OPNLGU> Unit 10 opened for WRITE access to energy_values.txt
+  
+ CHARMM>     
+  
+ CHARMM>    write title unit 10
+ RDTITL> * -2801.92
+ RDTITL> *
+  
+ CHARMM>    close unit 10
+ VCLOSE: Closing unit   10 with status "KEEP"
+  
+ CHARMM>    stop
+$$$$$$  New timer profile $$$$$
+   List time                       0.08 Other:            0.00
+         Electrostatic & VDW             0.04 Other:            0.00
+            GB Radii                        0.75 Other:            0.00
+            GB Energy                       0.07 Other:            0.00
+            GB Force                        0.42 Other:            0.00
+         Gen Born time                   1.23 Other:            0.00
+      Nonbond force                   1.28 Other:            0.00
+         Bond energy                     0.00 Other:            0.00
+         Angle energy                    0.00 Other:            0.00
+         Dihedral energy                 0.00 Other:            0.00
+      INTRNL energy                   0.00 Other:            0.00
+   Energy time                     1.28 Other:            0.00
+ Total time                      1.71 Other:            0.36
+
+                    NORMAL TERMINATION BY NORMAL STOP
+                    MAXIMUM STACK SPACE USED IS  112184
+                    STACK CURRENTLY IN USE IS         0
+                    MOST SEVERE WARNING WAS AT LEVEL  4
+                    HEAP PRINTOUT-  HEAP SIZE         10240000
+                    SPACE CURRENTLY IN USE IS            13824
+                    MAXIMUM SPACE USED IS              1615830
+                    FREE LIST
+  PRINHP> ADDRESS:               1 LENGTH:        10225676 NEXT:        10239501
+  PRINHP> ADDRESS:        10239501 LENGTH:             500 NEXT:               0
+
+                    $$$$$ JOB ACCOUNTING INFORMATION $$$$$
+                     ELAPSED TIME:     1.72  SECONDS 
+                         CPU TIME:     0.00  SECONDS 

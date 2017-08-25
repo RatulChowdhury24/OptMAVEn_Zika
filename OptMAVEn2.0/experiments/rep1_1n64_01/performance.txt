@@ -1,0 +1,4 @@
+START	rep1_1n64_01	on 2017 June 11 at 10:07:45
+DISK_USAGE	initial	480
+TIME	antigen_relaxation_and_positioning	0.96
+TIME	antigen_relaxation_and_positioning	0.4

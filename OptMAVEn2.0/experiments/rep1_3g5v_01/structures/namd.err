@@ -1,0 +1,6 @@
+------------- Processor 0 Exiting: Called CmiAbort ------------
+Reason: FATAL ERROR: Unable to open text file /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/rep1_3g5v_01/structures/relaxed_MoleculeA.xsc: File exists
+
+Charm++ fatal error:
+FATAL ERROR: Unable to open text file /gpfs/work/m/mfa5147/OptMAVEn2.0/experiments/rep1_3g5v_01/structures/relaxed_MoleculeA.xsc: File exists
+
