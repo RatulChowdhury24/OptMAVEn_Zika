@@ -1,0 +1,42 @@
+Basic Experiment Information
+User:                         mfa5147
+Type:                         OptMAVEn
+Name:                         e4
+File Format:                  PDB
+Force Field:                  CHARMM
+Folder:                       /home/matthew/Maranas_Lab/IPRO_Suite_OptMAVEn2.0/experiments/e4/
+
+How to use CHARMM
+CHARMM Topology File:         top_all27_prot_na.rtf
+CHARMM Parameter File:        par_all27_prot_na.prm
+CHARMM Energy Term:           angl
+CHARMM Energy Term:           bond
+CHARMM Energy Term:           dihe
+CHARMM Energy Term:           elec
+CHARMM Energy Term:           impr
+CHARMM Energy Term:           urey
+CHARMM Energy Term:           vdw
+CHARMM Iterations:            5000
+Lj Phi:                       0.005
+
+The Molecules used in the experiment
+Molecule:                     Molecule A from file /home/matthew/Maranas_Lab/IPRO_Suite_OptMAVEn2.0/input_files/5ire.pdb is Target Molecule E
+
+Antigen epitope residues 
+Epitope Position:             Residue 306 in Molecule E
+Epitope Position:             Residue 307 in Molecule E
+Epitope Position:             Residue 342 in Molecule E
+Epitope Position:             Residue 343 in Molecule E
+Epitope Position:             Residue 344 in Molecule E
+Epitope Position:             Residue 350 in Molecule E
+Epitope Position:             Residue 353 in Molecule E
+Epitope Position:             Residue 355 in Molecule E
+Epitope Position:             Residue 388 in Molecule E
+Epitope Position:             Residue 391 in Molecule E
+Epitope Position:             Residue 392 in Molecule E
+Epitope Position:             Residue 393 in Molecule E
+Epitope Position:             Residue 395 in Molecule E
+Optmaven Grid:                0.0 20.0 40.0 60.0
+Optmaven Grid:                -5.0 -3.75 -2.5 -1.25 0.0 1.25 2.5 3.75 5.0 6.25 7.5 8.75 10.0
+Optmaven Grid:                -10.0 -8.75 -7.5 -6.25 -5.0 -3.75 -2.5 -1.25 0.0 1.25 2.5 3.75 5.0
+Optmaven Grid:                3.0 4.25 5.5 6.75 8.0 9.25 10.5 11.75 13.0 14.25 15.5 16.75
